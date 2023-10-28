@@ -1,0 +1,143 @@
+@font-face {
+  font-family: GeogrotesqueCondSmBdIt;
+  src: url("fonts/geogrotesquecond-smbdit.otf");
+}
+
+@font-face {
+  font-family: 'rockebycd-blit';
+  src: url('fonts/rockebycd-blit.otf');
+}
+
+body {
+  font-family: 'rockebycd-blit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #091024;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile-grid {
+  padding-left: 34px;
+  /* for the initial slant */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 24px;
+}
+
+.tile {
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  height: 280px;
+  width: 300px;
+  margin: 10px;
+  display: grid;
+  background-color: white;
+  overflow: clip;
+}
+
+.tile:hover {
+  color: white
+}
+
+.bg {
+  background-size: 102%;
+  background-position: center;
+}
+
+.rarity0 {
+  background-image: url("textures/tiles/backgrounds/rarity0.png");
+}
+
+.rarity1 {
+  background-image: url("textures/tiles/backgrounds/rarity1.png");
+}
+
+.rarity2 {
+  background-image: url("textures/tiles/backgrounds/rarity2.png");
+}
+
+.rarity3 {
+  background-image: url("textures/tiles/backgrounds/rarity3.png");
+}
+
+.hub0 {
+  background-image: url("textures/tiles/backgrounds/hub0.png");
+}
+
+.hub1 {
+  background-image: url("textures/tiles/backgrounds/hub1.png");
+}
+
+.disabled {
+  background-image: url("textures/tiles/backgrounds/disabled.png");
+}
+
+.slanted {
+  transform: skewX(-10deg);
+}
+
+.unslanted {
+  transform: skewX(10deg);
+}
+
+/* todo: add -ms-transform and webkit-transform like transform */
+.tile-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 72%;
+}
+
+.tile-text-wrapper {
+  position: absolute;
+  bottom: 3%;
+  height: 21%;
+  width: 100%;
+  transform: skewY(-4deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile-text {
+  padding: 4%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.tile-top-left {
+  position: absolute;
+  margin: 3%;
+  top: 0;
+  height: 20%;
+}
+
+.tile-top-right {
+  position: absolute;
+  margin: 3%;
+  top: 0;
+  right: 0;
+  height: 20%;
+}
+
+.tile-bottom-left {
+  position: absolute;
+  margin: 3%;
+  bottom: 24%;
+  height: 20%;
+}
+
+.tile-bottom-right {
+  position: absolute;
+  margin: 3%;
+  right: 0;
+  bottom: 30%;
+  height: 20%;
+}
