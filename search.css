@@ -16,7 +16,7 @@
   grid-template-areas:
     'text sumbit'
     'undertext 0';
-  grid-template-columns: 1fr 52px;
+  grid-template-columns: 1fr 58px;
 }
 
 .search-text {
