@@ -23,11 +23,12 @@ body {
   /* for the initial slant */
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit, 300px);
   grid-gap: 24px;
 }
 
 .tile {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   border-radius: 14px;
   height: 280px;
   width: 300px;
@@ -106,7 +107,8 @@ body {
   padding: 4%;
   display: inline-block;
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   text-align: center;
   text-transform: uppercase;
   overflow: auto;

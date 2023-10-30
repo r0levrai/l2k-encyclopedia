@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>L2K Encyclopedia</title>
+    <title>L2KD Encyclopedia</title>
+    <link rel="icon" href="icons/player-perks/incrHandling.png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="search.css">
   </head>
@@ -18,6 +19,11 @@
     <span class="search-undertext">...or browse the categories bellow</span>
   </div>
 </div>
+<script> // when typing anywhere, automaticly focus the search bar (osu! does it and I love it)
+  window.addEventListener("keypress", event => {
+    document.querySelector('input').focus();
+  });
+</script>
 
 <h1>Collectibles</h1>
 
@@ -35,44 +41,58 @@
 
 </div>
 
-<h1>Parts</h1>
+<h1>Vehicles</h1>
 
-<div class="tile-grid">
+<div class="tile-grid" id="vehicles">
 
-  <div class="tile bg rarity0 slanted">
-    <img class="tile-thumbnail" src="textures/bricks/73109.png">
+  <div class="tile bg rarity3 slanted" id="v_tile">
+    <img class="tile-thumbnail" src="textures/woosh.png" id="v_image"
+    onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
     <div class="tile-text-wrapper">
-      <div class="tile-text">Part name</div>
+      <div class="tile-text" id="v_name">Slanted Button</div>
     </div>
-    <div class="tile-corner top right toast" onclick="navigator.clipboard.writeText(73109);">
-      <span>#73109</span>
+    <!--div class="tile-corner top left toast line">
+      <image src="icons/bux.png" class="icon"/>
+      <span>20000</span>
+    </div-->
+    <div class="tile-corner top right toast line">
+      <span id="v_n_surplus">12</span>
+      <image src="icons/surplus.png" class="icon"/>
     </div>
-    <div class="tile-corner middle-left toast">
-      <span>2x2x3</span>
+    <img class="tile-corner middle-left" src="icons/vehicle-terrain/offroad.png" id="v_terrain">
+    <div class="tile-corner middle-right line">
+      <img src="icons/vehicle-perks/mrsBackfire.png" id="v_perk">
+      <!--div class="weight weight6" id="v_weight"><span>6</span></div-->
     </div>
   </div>
 
+  <script src="main.js"></script>
+
 </div>
 
-<h1>Vehicles</h1>
+<h1>Bricks</h1>
 
-<div class="tile-grid">
+<div class="tile-grid" id="bricks">
 
-  <div class="tile bg rarity3 slanted">
-    <img class="tile-thumbnail" src="textures/woosh.png" alt=?>
-    <div class="tile-text-wrapper"><div class="tile-text">Slanted Button</div></div>
-    <div class="tile-corner top left toast line">
-      <image src="icons/bux.png" class="icon"/>
-      <span>20000</span>
+  <div class="tile bg rarity0 slanted" id="brick_tile">
+    <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image"
+      onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
+    <div class="tile-text-wrapper">
+      <div class="tile-text" id="brick_name">Part name</div>
     </div>
-    <div class="tile-corner top right toast line">
-      <span>12</span>
+    <div class="tile-corner top left toast line" id="brick_source">
       <image src="icons/surplus.png" class="icon"/>
+      <span id="brick_n_usage">3</span>
     </div>
-    <img class="tile-corner middle-left" src="icons/vehicle-classes/offroad.png">
-    <div class="tile-corner middle-right line">
-      <img src="icons/vehicle-perks/backfire.png">
-      <div class="weight weight6"><span>6</span></div>
+    <div class="tile-corner top right toast" onclick="navigator.clipboard.writeText(73109);">
+      <span id="brick_id">#73109</span>
+    </div>
+    <div class="tile-corner middle-left toast">
+      <span id="brick_size">2x2x3</span>
+    </div>
+    <div class="tile-corner middle-right toast line">
+      <span id="brick_weight">7</span>
+      <image src="icons/weight.png" class="icon"/>
     </div>
   </div>
 
