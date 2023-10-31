@@ -14,9 +14,9 @@
 
   <section id="vehicle">
     <div id="header">
-      <h1 id="name">
-        <img src="icons/vehicle-terrain/offroad.png" style="filter: invert(0.9);">
-        <span>Name name name</span>
+      <h1>
+        <img id="terrain" src="icons/vehicle-terrain/offroad.png" style="filter: invert(0.9);">
+        <span id="name">Name name name</span>
       </h1>
       <img id="perk" src="icons/vehicle-perks/mrsBackfire.png">
     </div>
@@ -27,9 +27,22 @@
 
     <div id="perfs"></div>
 
+    <div id="sources">
+      <h1>Source</h1>
+      <div class="tile-grid">
+        <div class="tile bg source slanted">
+          <div class="mask">
+            <img class="tile-thumbnail" src="textures/sources/unkie.png" style="width: 108%; height: 95%">
+          </div>
+          <div class="tile-text-wrapper">
+            <div class="tile-text">Unkie Shop<br />(limited)</div>
+          </div>
+        </div>
+      </div>
+
     <div id="surplus">
       <h1>Surplus</h1>
-      <div class="tile-grid" id="surplus_bricks">
+      <div class="tile-grid" id="bricks">
         <div class="tile bg rarity0 slanted" id="brick_tile">
           <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image"
             onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
@@ -53,19 +66,6 @@
         </div>
       </div>
     </div>
-
-    <div id="sources">
-      <h1>Source</h1>
-      <div class="tile-grid">
-        <div class="tile bg source slanted">
-          <div class="mask">
-            <img class="tile-thumbnail" src="textures/sources/unkie.png" style="width: 108%; height: 95%">
-          </div>
-          <div class="tile-text-wrapper">
-            <div class="tile-text">Unkie Shop<br />(limited)</div>
-          </div>
-        </div>
-      </div>
 
       <div id="parts list"></div>
 
