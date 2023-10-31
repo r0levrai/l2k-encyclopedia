@@ -1,7 +1,7 @@
 window.onload = function () {
   console.log('starting...');
 
-  fetch("data/vehicles.json")
+  fetch("data/vehicle_by_name.json")
     .then(response => response.json())
     .then(json => load_vehicles(json));
 
@@ -38,7 +38,7 @@ function load_vehicles(json) {
     // tile.querySelector('#brick_weight').innerText = data.weight
     //tile.querySelector('#v_image').loading = "lazy";
     //tile.querySelector('#v_image').src = ... + data.img + '.png';
-    tiles.onclick = () => alert(data.id);
+    tile.href='vehicle.html?'+data.name;
     tiles.append(tile);
   }
   document.getElementById("v_tile").remove();
