@@ -14,10 +14,15 @@
   position: relative;
   display: grid;
   grid-template-areas:
-    'text sumbit'
-    'undertext 0';
+    'abovetext .'
+    'text submit'
+    'undertext .';
   grid-template-columns: 1fr 58px;
 }
+.search-abovetext { grid-area: abovetext; }
+.search-text { grid-area: text; }
+.search-button { grid-area: submit; }
+.search-undertext { grid-area: undertext; }
 
 .search-text {
   border: 3px solid #c08d41;
@@ -57,7 +62,15 @@
 }
 
 .search-undertext {
-  color: #cccccc;
+  color: #bbb;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  padding: 8px
+}
+
+.search-abovetext {
+  color: #bbb;
   font-size: 18px;
   font-weight: 300;
   text-align: center;

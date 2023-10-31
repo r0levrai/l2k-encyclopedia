@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>L2KD Encyclopedia</title>
+  <link rel="icon" href="icons/player-perks/incrHandling.png">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="vehicle.css">
+</head>
+
+<body class="green">
+
+  <section id="vehicle">
+    <div id="header">
+      <h1 id="name">
+        <img src="icons/vehicle-terrain/offroad.png" style="filter: invert(0.9);">
+        <span>Name name name</span>
+      </h1>
+      <img id="perk" src="icons/vehicle-perks/mrsBackfire.png">
+    </div>
+
+    <div img id="preveiw">
+      <img src="textures/woosh.png">
+    </div>
+
+    <div id="perfs"></div>
+
+    <div id="surplus">
+      <h1>Surplus</h1>
+      <div class="tile-grid" id="surplus_bricks">
+        <div class="tile bg rarity0 slanted" id="brick_tile">
+          <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image"
+            onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
+          <div class="tile-text-wrapper">
+            <div class="tile-text" id="brick_name">Part name</div>
+          </div>
+          <div class="tile-corner top left toast line" id="brick_source">
+            <image src="icons/surplus.png" class="icon" />
+            <span id="brick_n_usage">3</span>
+          </div>
+          <div class="tile-corner top right toast" onclick="navigator.clipboard.writeText(73109);">
+            <span id="brick_id">#73109</span>
+          </div>
+          <div class="tile-corner middle-left toast">
+            <span id="brick_size">2x2x3</span>
+          </div>
+          <div class="tile-corner middle-right toast line">
+            <span id="brick_weight">7</span>
+            <image src="icons/weight.png" class="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sources">
+      <h1>Source</h1>
+      <div class="tile-grid">
+        <div class="tile bg source slanted">
+          <div class="mask">
+            <img class="tile-thumbnail" src="textures/sources/unkie.png" style="width: 108%; height: 95%">
+          </div>
+          <div class="tile-text-wrapper">
+            <div class="tile-text">Unkie Shop<br />(limited)</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="parts list"></div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
