@@ -1,7 +1,9 @@
 window.onload = function () {
   const name = get_url_param()
 
-  const r_vehicle = fetch(`data/vehicle_parts/${encodeURIComponent(name)}.json`).then(response => response.json());
+  const r_vehicle = fetch(`data/vehicle_parts/${encodeURIComponent(encodeURIComponent(name))}.json`)
+  // for some reason github reencode my paths
+    .then(response => response.json());
   const r_all_bricks = fetch('data/bricks.json').then(response => response.json());
   const r_brick_aliases = fetch('data/brick_aliases.json').then(response => response.json());
   Promise.all([r_vehicle, r_all_bricks, r_brick_aliases])
@@ -18,7 +20,7 @@ function load_vehicle(vehicle, all_bricks, brick_aliases) {
   }
   surplus_parts = new Set();
   for (let [part, color] of vehicle["parts_and_colors"]) {
-    brick_id = brick_aliases[part.toString()];
+    brick_id = brick_aliases[part];
     if (all_bricks[brick_id].is_surplus) {
       surplus_parts.add(brick_id);
     }
