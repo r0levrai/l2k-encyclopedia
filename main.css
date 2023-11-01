@@ -80,17 +80,29 @@ section:has(.tile-grid:empty) {
 .rarity0 {
   background-image: url("textures/tiles/backgrounds/rarity0.png");
 }
+.rarity0 > .tile-text-wrapper {
+	background-color: #333a48;
+}
 
 .rarity1 {
   background-image: url("textures/tiles/backgrounds/rarity1.png");
+}
+.rarity1 > .tile-text-wrapper {
+	background-color: #368bf3;
 }
 
 .rarity2 {
   background-image: url("textures/tiles/backgrounds/rarity2.png");
 }
+.rarity2 > .tile-text-wrapper {
+	background-color: #5425c7;
+}
 
 .rarity3 {
   background-image: url("textures/tiles/backgrounds/rarity3.png");
+}
+.rarity3 > .tile-text-wrapper {
+	background-color: #e17211;
 }
 
 .hub0 {
@@ -122,7 +134,7 @@ section:has(.tile-grid:empty) {
   position: absolute;
   top: 36%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) skewX(10deg);
   height: 72%;
 }
 
@@ -143,10 +155,12 @@ section:has(.tile-grid:empty) {
 
 .tile-text-wrapper {
   position: absolute;
-  bottom: 3%;
-  height: 21%;
+  bottom: -20px;
+  height: 71px;
+  left: -6px;
+  padding: 0 6px 27px 7px;
   width: 100%;
-  transform: skewY(-4deg);
+  transform: rotate(-4deg);
   display: flex;
   justify-content: center;
   align-items: center;
