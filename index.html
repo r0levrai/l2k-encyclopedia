@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="search.css">
   </head>
 
-  <body>
+  <body style="background-color: #091024; /* prevents a white frame before the css loads */">
     
     <div class="page" id="main">
 
@@ -32,138 +32,152 @@
   });
 </script>
 
-<h1>Collectibles</h1>
+<section>
+  <h1>Search Results</h1>
+  <div class="tile-grid" id="search-results"></div>
+</section>
 
-<div class="tile-grid">
+<section style="display: none;">
+  <h1>Tile templates (hidden)</h1>
+  
+  <div class="tile-grid" id="search-results">
 
-  <div class="tile bg rarity0 slanted">
-    <img class="tile-thumbnail" src="textures/bricks/73109.png">
-    <div class="tile-text-wrapper"><div class="tile-text">Supply Parts</div></div>
-  </div>
-
-  <div class="tile bg rarity1 slanted">
-    <img class="tile-thumbnail" src="textures/woosh.png">
-    <div class="tile-text-wrapper"><div class="tile-text">Vehicles</div></div>
-  </div>
-
-  <div class="tile bg rarity2 slanted">
-    <img class="tile-thumbnail" src="textures/sources/unkie2.png">
-    <div class="tile-text-wrapper"><div class="tile-text">...More to come!</div></div>
-  </div>
-
-</div>
-
-<h1>Sources</h1>
-
-<div class="tile-grid">
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail outline1" src="icons/bux.png" style="height: 60%">
-    <div class="tile-text-wrapper"><div class="tile-text">Unkie Shop<br/>(permanent)</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail" src="textures/sources/race.png" style="height: 55%">
-    <div class="tile-text-wrapper"><div class="tile-text">Races</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail outline3" src="textures/sources/quest.png" style="height: 49%">
-    <div class="tile-text-wrapper"><div class="tile-text">Quests</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail" src="textures/sources/map_collectible.png" style="height: 50%">
-    <div class="tile-text-wrapper"><div class="tile-text">Map Collectibles</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <div class="mask">
-      <img class="tile-thumbnail" src="textures/sources/unkie.png" style="width: 108%; height: 95%">
-    </div>
-    <div class="tile-text-wrapper"><div class="tile-text">Unkie Shop<br/>(limited)</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail outline1" src="textures/sources/brawl_legend.png" style="height: 55%">
-    <div class="tile-text-wrapper"><div class="tile-text">Multiplayer Leagues<br/>(limited)</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail" src="textures/sources/driverpass.png" style="height: 68%">
-    <div class="tile-text-wrapper"><div class="tile-text">DriverPasses</div></div>
-  </div>
-
-  <div class="tile bg source slanted">
-    <img class="tile-thumbnail" src="textures/sources/DLC2.png">
-    <div class="tile-text-wrapper"><div class="tile-text">DLCs</div></div>
-  </div>
-
-  <!--div class="tile bg source slanted">
-    <img class="tile-thumbnail outline1" src="textures/sources/challenges.png">
-    <div class="tile-text-wrapper"><div class="tile-text">Minigames</div></div>
-  </div-->
-
-</div>
-
-<h1>Vehicles</h1>
-
-<div class="tile-grid" id="vehicles">
-
-  <a class="tile bg rarity3 slanted" id="v_tile">
-    <img class="tile-thumbnail" src="textures/woosh.png" id="v_image"
-    onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
-    <div class="tile-text-wrapper">
-      <div class="tile-text" id="v_name">Slanted Button</div>
-    </div>
-    <!--div class="tile-corner top left toast line">
-      <image src="icons/bux.png" class="icon"/>
-      <span>20000</span>
-    </div-->
-    <div class="tile-corner top right toast line">
-      <span id="v_n_surplus">12</span>
-      <image src="icons/surplus.png" class="icon"/>
-    </div>
-    <img class="tile-corner middle-left" src="icons/vehicle-terrain/offroad.png" id="v_terrain">
-    <div class="tile-corner middle-right line">
-      <img src="icons/vehicle-perks/mrsBackfire.png" id="v_perk">
-      <!--div class="weight weight6" id="v_weight"><span>6</span></div-->
-    </div>
-  </a>
-
-</div>
-
-<h1>Bricks</h1>
-
-<div class="tile-grid" id="bricks">
-
-  <div class="tile bg rarity0 slanted" id="brick_tile">
-    <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image"
+    <a class="tile bg rarity3 slanted" id="v_tile">
+      <img class="tile-thumbnail" src="textures/woosh.png" id="v_image"
       onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
-    <div class="tile-text-wrapper">
-      <div class="tile-text" id="brick_name">Part name</div>
+      <div class="tile-text-wrapper">
+        <div class="tile-text" id="v_name">Slanted Button</div>
+      </div>
+      <!--div class="tile-corner top left toast line">
+        <image src="icons/bux.png" class="icon"/>
+        <span>20000</span>
+      </div-->
+      <div class="tile-corner top right toast line">
+        <span id="v_n_surplus">12</span>
+        <image src="icons/surplus.png" class="icon"/>
+      </div>
+      <img class="tile-corner middle-left" src="icons/vehicle-terrain/offroad.png" id="v_terrain">
+      <div class="tile-corner middle-right line">
+        <img src="icons/vehicle-perks/mrsBackfire.png" id="v_perk">
+        <!--div class="weight weight6" id="v_weight"><span>6</span></div-->
+      </div>
+    </a>
+
+    <div class="tile bg rarity0 slanted" id="brick_tile">
+      <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image"
+        onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
+      <div class="tile-text-wrapper">
+        <div class="tile-text" id="brick_name">Part name</div>
+      </div>
+      <div class="tile-corner top left toast line" id="brick_source">
+        <image src="icons/surplus.png" class="icon"/>
+        <span id="brick_n_usage">3</span>
+      </div>
+      <div class="tile-corner top right toast" onclick="navigator.clipboard.writeText(73109);">
+        <span id="brick_id">#73109</span>
+      </div>
+      <div class="tile-corner middle-left toast">
+        <span id="brick_size">2x2x3</span>
+      </div>
+      <div class="tile-corner middle-right toast line">
+        <span id="brick_weight">7</span>
+        <image src="icons/weight.png" class="icon"/>
+      </div>
     </div>
-    <div class="tile-corner top left toast line" id="brick_source">
-      <image src="icons/surplus.png" class="icon"/>
-      <span id="brick_n_usage">3</span>
-    </div>
-    <div class="tile-corner top right toast" onclick="navigator.clipboard.writeText(73109);">
-      <span id="brick_id">#73109</span>
-    </div>
-    <div class="tile-corner middle-left toast">
-      <span id="brick_size">2x2x3</span>
-    </div>
-    <div class="tile-corner middle-right toast line">
-      <span id="brick_weight">7</span>
-      <image src="icons/weight.png" class="icon"/>
-    </div>
+
   </div>
+</section>
 
-</div>
+<section>
+  <h1>Collectibles</h1>
+  <div class="tile-grid">
+
+    <div class="tile bg rarity0 slanted">
+      <img class="tile-thumbnail" src="textures/bricks/73109.png">
+      <div class="tile-text-wrapper"><div class="tile-text">Supply Parts</div></div>
+    </div>
+
+    <div class="tile bg rarity1 slanted">
+      <img class="tile-thumbnail" src="textures/woosh.png">
+      <div class="tile-text-wrapper"><div class="tile-text">Vehicles</div></div>
+    </div>
+
+    <div class="tile bg rarity2 slanted">
+      <img class="tile-thumbnail" src="textures/sources/unkie2.png">
+      <div class="tile-text-wrapper"><div class="tile-text">...More to come!</div></div>
+    </div>
+
+  </div>
+</section>
+
+<section style="display: none;">
+  <h1>Sources</h1>
+
+  <div class="tile-grid">
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail outline1" src="icons/bux.png" style="height: 60%">
+      <div class="tile-text-wrapper"><div class="tile-text">Unkie Shop<br/>(permanent)</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail" src="textures/sources/race.png" style="height: 55%">
+      <div class="tile-text-wrapper"><div class="tile-text">Races</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail outline3" src="textures/sources/quest.png" style="height: 49%">
+      <div class="tile-text-wrapper"><div class="tile-text">Quests</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail" src="textures/sources/map_collectible.png" style="height: 50%">
+      <div class="tile-text-wrapper"><div class="tile-text">Map Collectibles</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <div class="mask">
+        <img class="tile-thumbnail" src="textures/sources/unkie.png" style="width: 108%; height: 95%">
+      </div>
+      <div class="tile-text-wrapper"><div class="tile-text">Unkie Shop<br/>(limited)</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail outline1" src="textures/sources/brawl_legend.png" style="height: 55%">
+      <div class="tile-text-wrapper"><div class="tile-text">Multiplayer Leagues<br/>(limited)</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail" src="textures/sources/driverpass.png" style="height: 68%">
+      <div class="tile-text-wrapper"><div class="tile-text">DriverPasses</div></div>
+    </div>
+
+    <div class="tile bg source slanted">
+      <img class="tile-thumbnail" src="textures/sources/DLC2.png">
+      <div class="tile-text-wrapper"><div class="tile-text">DLCs</div></div>
+    </div>
+
+    <!--div class="tile bg source slanted">
+      <img class="tile-thumbnail outline1" src="textures/sources/challenges.png">
+      <div class="tile-text-wrapper"><div class="tile-text">Minigames</div></div>
+    </div-->
+
+  </div>
+</section>
+
+<section>
+  <h1>Vehicles</h1>
+  <div class="tile-grid" id="vehicles"></div>
+</section>
+
+<section>
+  <h1>Bricks</h1>
+  <div class="tile-grid" id="bricks"></div>
+</section>
 
     </div>
-    <object class="page" id="details" data="vehicle.html"></object>
+    <!--object class="page" id="details" data="vehicle.html"></object-->
 
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>

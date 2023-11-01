@@ -1,4 +1,4 @@
-window.onload = function () {
+{
   const name = get_url_param()
 
   const r_vehicle = fetch(`data/vehicle_parts/${encodeURIComponent(encodeURIComponent(name))}.json`)

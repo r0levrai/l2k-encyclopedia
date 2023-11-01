@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: #091024; /* prevents a white frame before #main.page loads */
   margin: 0;
   font-family: 'rocke', sans-serif;
   font-size: 1.4rem;
@@ -40,6 +41,11 @@ body {
 h1 {
   padding: 0 2rem;
   margin: 1rem 0;
+}
+
+section:has(.tile-grid:empty) {
+  display: none;
+  position: absolute;
 }
 
 .tile-grid {
