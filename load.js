@@ -62,11 +62,12 @@ function load_brick(data, tiles) {
   tile.querySelector('#brick_weight').innerText = data.weight.toPrecision(3) / 1;
   // the division per 1 trim the trailing zeros (and remove the sci notation)
   tile.querySelector('#brick_image').loading = "lazy";
-  tile.querySelector('#brick_image').src = 'textures/bricks/' + data.id + '.png';
+  tile.querySelector('#brick_image').src = data.have_icon ? 'textures/bricks/' + data.id + '.png' : 'textures/woosh.png';
   if (!data.is_surplus) {
     tile.querySelector('#brick_source').style.visibility = "hidden";
   }
   tile.querySelector('#brick_n_usage').innerText = data.n_usage;
+  tile.href = 'brick.html?' + data.id;
   tiles.append(tile);
   return tile;
 }

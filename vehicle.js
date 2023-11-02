@@ -5,7 +5,7 @@ import { load_brick, load_async, snakecase } from './load.js';
   
   Promise.all([
     fetch(`data/vehicle_parts/${id}.json`).then(response => response.json()),
-    fetch('data/bricks.json').then(response => response.json()),
+    fetch('data/bricks_by_id.json').then(response => response.json()),
     fetch('data/brick_aliases.json').then(response => response.json())
   ]
   ).then(([vehicle, all_bricks, brick_aliases]) => {

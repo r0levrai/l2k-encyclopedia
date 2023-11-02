@@ -1,0 +1,1 @@
+{"id": 6154, "aliases": [40527], "name": "FRAME 1X4X4", "have_icon": true, "size": [4, 1, 12], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireEngine_60002", "FireUtility_60111", "FirefightingTruck_60320", "MoneyTransport_60142", "PrisonTransport_7286", "Traffic_FV_01Boat", "Traffic_FV_01Offroad", "Traffic_FV_01Street"]}

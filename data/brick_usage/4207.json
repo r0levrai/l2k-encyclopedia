@@ -1,0 +1,1 @@
+{"id": 4207, "aliases": [], "name": "LADDER", "have_icon": true, "size": [14, 3, 1], "weight": 97.961426, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireEngine_60002", "FireEngine_60003", "FireEngine_7208", "FireResponseVan_60023", "Traffic_FV_01Boat", "Traffic_FV_01Offroad", "Traffic_FV_01Street"]}

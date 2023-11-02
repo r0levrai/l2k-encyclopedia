@@ -46,16 +46,16 @@ document.getElementById('main').style.height = '210000px';
 
 // fetch all data from the begining...
 Promise.all([
-  fetch("data/vehicles.json")
+  fetch("data/vehicles_by_id.json")
     .then(response => response.json())
-    .then(vehicles => load_async(vehicles, load_and_index_vehicle, "vehicles")),
-  fetch("data/bricks.json")
+    .then(vehicles => load_async(v(vehicles), load_and_index_vehicle, "vehicles")),
+  fetch("data/bricks_by_id.json")
     .then(response => response.json())
 ])
 // ...but only start loading bricks when the vehicles are done,
 // to preserve search results order, and load vehicles quicker.
 .then(([_, bricks]) =>
-  load_async(bricks, load_and_index_brick, "bricks")
+  load_async(v(bricks), load_and_index_brick, "bricks")
 )
 // [1] restore proper page height
 .then(() => {
@@ -77,4 +77,8 @@ function load_and_index_brick(data, tiles) {
   search_index.add(data.name, tile);
   search_index.add(data.id.toString(), tile);
   search_index.add(data.size.join('x'), tile);
+}
+
+function v(object) {
+  return Object.values(object);
 }
