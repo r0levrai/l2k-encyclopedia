@@ -35,7 +35,6 @@ function load_parts(vehicle, all_bricks, brick_aliases) {
   }
   let surplus_bricks = [...surplus_ids].map(i => all_bricks[i])
   load_async(surplus_bricks, load_brick, "bricks")
-  document.getElementById("brick_tile").remove();
 }
 
 function get_url_param() {
