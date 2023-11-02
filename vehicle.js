@@ -27,14 +27,22 @@ function load_vehicle(vehicle) {
 
 function load_parts(vehicle, all_bricks, brick_aliases) {
   let surplus_ids = new Set();
+  let other_ids = new Set();
   for (let [part, color] of vehicle["parts_and_colors"]) {
     let brick_id = brick_aliases[part];
     if (all_bricks[brick_id].is_surplus) {
       surplus_ids.add(brick_id);
     }
+    else {
+      other_ids.add(brick_id);
+    }
   }
   let surplus_bricks = [...surplus_ids].map(i => all_bricks[i])
-  load_async(surplus_bricks, load_brick, "bricks")
+  load_async(surplus_bricks, load_brick, "surplus")
+  .then(() => {
+    let other_bricks = [...other_ids].map(i => all_bricks[i])
+    load_async(other_bricks, load_brick, "pieces");
+  });
 }
 
 function get_url_param() {

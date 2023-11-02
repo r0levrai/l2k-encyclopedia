@@ -47,12 +47,17 @@
         </div>
       </div>
 
-      <div id="surplus">
+      <div>
         <h1>Surplus parts</h1>
-        <div class="tile-grid" id="bricks"></div>
+        <div class="tile-grid" id="surplus"></div>
       </div>
 
-      <div id="parts list"></div>
+      <div id='list' style="cursor: pointer;"
+      onclick="document.getElementById('pieces').style.display = 'grid';
+        document.getElementById('list').scrollIntoView({behavior: 'smooth'});">
+        <h1>Click here for non-surplus part list</h1>
+        <div class="tile-grid" id="pieces" style="display: none;"></div>
+      </div>
 
     </div>
   </section>
