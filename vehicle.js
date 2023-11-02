@@ -22,6 +22,7 @@ function load_vehicle(vehicle) {
   } else {
     document.getElementById('perk').src = `icons/vehicle-perks/${snakecase(vehicle.perk)}.png`;
   }
+  document.querySelector('#vehicle > #preview > img').src = 'textures/woosh_big.png';
 }
 
 function load_parts(vehicle, all_bricks, brick_aliases) {
