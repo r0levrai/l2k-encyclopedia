@@ -1,4 +1,5 @@
 import { SuffixTree } from './search.js';
+import { load_async, load_vehicle, load_brick, yieldingLoop } from './load.js';
 
 console.log('starting...');
 
@@ -31,7 +32,7 @@ serch_input.addEventListener('input', function (evt) {
   // the loop content in a setTimeout call! here we go:
   serch_results.replaceChildren([]);
   if (text != '') {
-    yieldingLoop(results.length, 32, function (i) {
+    yieldingLoop(results.length, 32, 256, function (i) {
       if (local_count == search_count)
         serch_results.append(results[i].cloneNode(true));
     }, function () {
@@ -40,73 +41,30 @@ serch_input.addEventListener('input', function (evt) {
   }
 })
 
-fetch("data/vehicle_by_name.json")
-  .then(response => response.json())
-  .then(json => load_vehicles(json));
-
-fetch("data/bricks.json")
-  .then(response => response.json())
-  .then(json => load_bricks(json));
-
-function load_vehicles(json) {
-  const tiles = document.getElementById("vehicles");
-  /*for (let key in json) {
-    load_vehicle(json[key], tiles);
-  }*/
-  json = Object.values(json);
-  yieldingLoop(json.length, 32, function (i) {
-    load_vehicle(json[i], tiles);
-  }, function () {
-    //  ...add next things here
-  }, 'vehicles');
-}
-
+// help refresh and back navigation scroll restoration until loaded [1]
 document.getElementById('main').style.height = '210000px';
-  // help refresh and back navigation scroll restoration
 
-function load_bricks(json) {
-  const tiles = document.getElementById("bricks");
-  /*for (let key in json) {
-    load_brick(json[key], tiles);
-  }*/
-  json = Object.values(json);
-  yieldingLoop(json.length, 32, function (i) {
-    load_brick(json[i], tiles);
-  }, function () {
-    //  ...add next things here
-    console.log('a')
-    document.getElementById('main').style.height = '';
-      // restore correct height
-  }, 'bricks');
-}
+// fetch all data from the begining...
+Promise.all([
+  fetch("data/vehicles.json")
+    .then(response => response.json())
+    .then(vehicles => load_async(vehicles, load_and_index_vehicle, "vehicles")),
+  fetch("data/bricks.json")
+    .then(response => response.json())
+])
+// ...but only start loading bricks when the vehicles are done,
+// to preserve search results order, and load vehicles quicker.
+.then(([_, bricks]) =>
+  load_async(bricks, load_and_index_brick, "bricks")
+)
+// [1] restore proper page height
+.then(() => {
+  console.log('restoring page height')
+  document.getElementById('main').style.height = '';
+});
 
-function load_vehicle(data, tiles) {
-  let tile = document.getElementById("v_tile").cloneNode(true);
-  tile.querySelector('#v_name').innerText = data.name;
-
-  let rarity = {
-    null: 'rarity0',
-    'Cool': 'rarity1',
-    'Awesome': 'rarity2',
-    'SuperAwesome': 'rarity3'
-  }[data.rarity]
-  tile.classList.remove('rarity3');
-  tile.classList.add(rarity);
-
-  if (data.perk == null) {
-    tile.querySelector('#v_perk').style.visibility = 'hidden';
-  } else {
-    tile.querySelector('#v_perk').src = `icons/vehicle-perks/${snakecase(data.perk)}.png`;
-  }
-
-  tile.querySelector('#v_terrain').src = `icons/vehicle-terrain/${snakecase(data.terrain)}.png`;
-  tile.querySelector('#v_n_surplus').innerText = data.n_surplus;
-  // tile.querySelector('#brick_weight').innerText = data.weight
-  //tile.querySelector('#v_image').loading = "lazy";
-  //tile.querySelector('#v_image').src = ... + data.img + '.png';
-  tile.href = 'vehicle.html?' + data.name;
-  tiles.append(tile);
-
+function load_and_index_vehicle(data, tiles) {
+  let tile = load_vehicle(data, tiles);
   search_index.add(data.name, tile);
   //search_index.add(data.id, tile);
   if (data.perk != null) {
@@ -114,54 +72,9 @@ function load_vehicle(data, tiles) {
   }
 }
 
-function load_brick(data, tiles) {
-  let tile = document.getElementById("brick_tile").cloneNode(true);
-  tile.querySelector('#brick_name').innerText = data.name;
-  tile.querySelector('#brick_id').innerText = '#' + data.id;
-  tile.querySelector('#brick_size').innerText = data.size.join('x');
-  tile.querySelector('#brick_weight').innerText = data.weight.toPrecision(3) / 1;
-  // the division per 1 trim the trailing zeros (and remove the sci notation)
-  tile.querySelector('#brick_image').loading = "lazy";
-  tile.querySelector('#brick_image').src = 'textures/bricks/' + data.id + '.png';
-  if (!data.is_surplus) {
-    tile.querySelector('#brick_source').style.visibility = "hidden";
-  }
-  tile.querySelector('#brick_n_usage').innerText = data.n_usage;
-  tiles.append(tile);
-
+function load_and_index_brick(data, tiles) {
+  let tile = load_brick(data, tiles);
   search_index.add(data.name, tile);
   search_index.add(data.id.toString(), tile);
-  search_index.add(data.size.join('x'), tile)
-}
-
-
-function yieldingLoop(count, chunksize, callback, finished, verbose = false) {
-  if (verbose) { var t1 = performance.now(); }
-  var i = 0;
-  (function chunk() {
-    var end = Math.min(i + chunksize, count);
-    for (; i < end; ++i) {
-      callback.call(null, i);
-    }
-    if (verbose && i-chunksize==0) { console.log(`first ${verbose}: ${performance.now() - t1} ms`); }
-    if (i < count) {
-      setTimeout(chunk, 0);
-      chunksize *= 2; // double the chunk size every
-      // iteration so that we can have a better
-      // time-to-interactive vs. final computation time
-      // tradeoff (since small chunk slow us down a lot,
-      // but are necessary for a fast first preview)
-    } else {
-      if (verbose) { console.log(`full ${verbose}: ${performance.now() - t1} ms`); }
-      finished.call(null);
-    }
-  })();
-}
-
-function snakecase(string) {
-  return string.charAt(0).toLowerCase() + string.slice(1);
-}
-
-function len(object) {
-  return Object.keys(object).length;
+  search_index.add(data.size.join('x'), tile);
 }
