@@ -1,9 +1,11 @@
+import { tiles } from './tiles.js';
+
 export { load_async, load_vehicle, load_brick, load_simple, yieldingLoop, snakecase };
 
 function load_async(array, load_fn, parent_id,
                     template_id = parent_id + '_template', log = parent_id) {
   return new Promise((resolve, reject) => {
-    const template = document.getElementById(template_id);
+    const template = tiles.getElementById(template_id);
     const parent = document.getElementById(parent_id);
     yieldingLoop(array.length, 32, 256, function (i) {
       load_fn(array[i], [template, parent]); // tried to pass parent as a 3rd param, but for some reason it's undefined?
@@ -89,7 +91,6 @@ function load_simple(data, [template, parent],
   tile.classList.add(rarity);
 
   tile.querySelector('#image').loading = "lazy";
-  console.log(data.have_icon);
   tile.querySelector('#image').src = !data.no_image ? image_path : 'textures/woosh.png';
   
   parent.append(tile);

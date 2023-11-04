@@ -1,5 +1,6 @@
 import { SuffixTree } from './search.js';
 import { load_async, load_vehicle, load_brick, load_simple, yieldingLoop } from './load.js';
+import { tiles } from './tiles.js';
 
 console.log('starting...');
 

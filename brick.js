@@ -1,4 +1,5 @@
 import { load_vehicle, load_brick, load_async, snakecase } from './load.js';
+import { tiles } from './tiles.js';
 
 {
   const id = get_url_param()
@@ -21,7 +22,7 @@ function load_main_brick(data) {
   document.getElementById('brick_size').innerText = data.size.join('x');
   document.getElementById('brick_weight').innerText = data.weight.toPrecision(3) / 1;
   // the division per 1 trim the trailing zeros (and remove the sci notation)
-  document.querySelector('#preview > img').src = data.have_icon ? 'textures/bricks/' + data.id + '.png' : 'textures/woosh.png';
+  document.querySelector('#preview > img').src = !data.no_image ? 'textures/bricks/' + data.id + '.png' : 'textures/woosh.png';
   document.getElementById('surplus-' + data.is_surplus).style.display = "block";
   if (!data.is_surplus) {
     let packs = document.getElementById('no-pack-yet')

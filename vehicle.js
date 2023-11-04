@@ -1,4 +1,5 @@
 import { load_brick, load_async, snakecase } from './load.js';
+import { tiles } from './tiles.js';
 
 {
   const id = get_url_param()
@@ -38,10 +39,10 @@ function load_parts(vehicle, all_bricks, brick_aliases) {
     }
   }
   let surplus_bricks = [...surplus_ids].map(i => all_bricks[i])
-  load_async(surplus_bricks, load_brick, "surplus")
+  load_async(surplus_bricks, load_brick, "surplus", "bricks_template")
   .then(() => {
     let other_bricks = [...other_ids].map(i => all_bricks[i])
-    load_async(other_bricks, load_brick, "pieces");
+    load_async(other_bricks, load_brick, "pieces", "bricks_template");
   });
 }
 

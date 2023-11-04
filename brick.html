@@ -50,66 +50,6 @@
     <div class="tile-grid" id="vehicles"></div>
   </section>
 
-  <section style="display: none;">
-    <h1>Tile templates (hidden)</h1>
-
-    <div class="tile-grid">
-
-      <div class="tile bg rarity2 slanted" id="no-pack-yet">
-        <img class="tile-thumbnail" src="textures/sources/unkie2.png">
-        <div class="tile-text-wrapper"><div class="tile-text">In constuction</div></div>
-      </div>
-
-      <div class="tile bg disabled slanted" id="no-vehicle-yet">
-        <img class="tile-thumbnail" src="textures/woosh.png">
-        <div class="tile-text-wrapper"><div class="tile-text">Not in-game yet!</div></div>
-      </div>
-
-      <a class="tile bg rarity3 slanted" id="v_tile">
-        <img class="tile-thumbnail" src="textures/woosh.png" id="v_image"
-          onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
-        <div class="tile-text-wrapper">
-          <div class="tile-text" id="v_name">Slanted Button</div>
-        </div>
-        <!--div class="tile-corner top left toast line">
-          <image src="icons/bux.png" class="icon"/>
-          <span>20000</span>
-        </div-->
-        <div class="tile-corner top right toast line">
-          <span id="v_n_surplus">12</span>
-          <image src="icons/surplus.png" class="icon" />
-        </div>
-        <img class="tile-corner middle-left" src="icons/vehicle-terrain/offroad.png" id="v_terrain">
-        <div class="tile-corner middle-right line">
-          <img src="icons/vehicle-perks/mrsBackfire.png" id="v_perk">
-          <!--div class="weight weight6" id="v_weight"><span>6</span></div-->
-        </div>
-      </a>
-
-      <a class="tile bg rarity0 slanted" id="brick_tile">
-        <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image">
-        <div class="tile-text-wrapper">
-          <div class="tile-text" id="brick_name">Part name</div>
-        </div>
-        <div class="tile-corner top left toast line" id="brick_source">
-          <image src="icons/surplus.png" class="icon"/>
-          <span id="brick_n_usage">3</span>
-        </div>
-        <div class="tile-corner top right toast" onclick="navigator.clipboard.writeText(73109);">
-          <span id="brick_id">#73109</span>
-        </div>
-        <div class="tile-corner middle-left toast">
-          <span id="brick_size">2x2x3</span>
-        </div>
-        <div class="tile-corner middle-right toast line">
-          <span id="brick_weight">7</span>
-          <image src="icons/weight.png" class="icon"/>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
   <script src="brick.js" type="module"></script>
 
 </body>
