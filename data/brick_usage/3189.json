@@ -1,1 +1,1 @@
-{"id": 3189, "aliases": [], "name": "LEFT DOOR 1X3X2", "have_icon": true, "size": [3, 1, 6], "weight": 34.484863, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FoodTruckA_VC000", "HotGarbageStreet_VC000", "MonkeyMobile_VC000"]}
+{"id": 3189, "aliases": [], "name": "LEFT DOOR 1X3X2", "no_image": false, "size": [3, 1, 6], "weight": 34.484863, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FoodTruckA_VC000", "HotGarbageStreet_VC000", "MonkeyMobile_VC000"]}

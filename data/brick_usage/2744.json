@@ -1,1 +1,1 @@
-{"id": 2744, "aliases": [28670], "name": "WING SECTION, REAR", "have_icon": true, "size": [6, 1, 5], "weight": 64.086914, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Forklift_4206", "Traffic_FV_04Boat", "Traffic_FV_04Offroad", "Traffic_FV_04Street"]}
+{"id": 2744, "aliases": [28670], "name": "WING SECTION, REAR", "no_image": false, "size": [6, 1, 5], "weight": 64.086914, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Forklift_4206", "Traffic_FV_04Boat", "Traffic_FV_04Offroad", "Traffic_FV_04Street"]}

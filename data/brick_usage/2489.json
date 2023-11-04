@@ -1,1 +1,1 @@
-{"id": 2489, "aliases": [26170], "name": "BARREL 2X2", "have_icon": true, "size": [2, 2, 5], "weight": 51.879883, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HouseBoat_31051", "OrganDonorBoat_VC000", "OutHouseBoat_VC000", "Ragecoach_VC000"]}
+{"id": 2489, "aliases": [26170], "name": "BARREL 2X2", "no_image": false, "size": [2, 2, 5], "weight": 51.879883, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HouseBoat_31051", "OrganDonorBoat_VC000", "OutHouseBoat_VC000", "Ragecoach_VC000"]}

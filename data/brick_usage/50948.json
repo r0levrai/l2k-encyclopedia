@@ -1,1 +1,1 @@
-{"id": 50948, "aliases": [], "name": "Cockpit 3x4x 2/3", "have_icon": true, "size": [4, 3, 2], "weight": 40.58838, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ShadowZ_Offroad_VC000", "Traffic_HV_08Boat", "Traffic_HV_08Offroad", "Traffic_HV_08Street"]}
+{"id": 50948, "aliases": [], "name": "Cockpit 3x4x 2/3", "no_image": false, "size": [4, 3, 2], "weight": 40.58838, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ShadowZ_Offroad_VC000", "Traffic_HV_08Boat", "Traffic_HV_08Offroad", "Traffic_HV_08Street"]}

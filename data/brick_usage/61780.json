@@ -1,1 +1,1 @@
-{"id": 61780, "aliases": [], "name": "BOX  2x2x2", "have_icon": true, "size": [2, 2, 6], "weight": 64.39209, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["AirportBaggage_VC000", "Ragecoach_VC000"]}
+{"id": 61780, "aliases": [], "name": "BOX  2x2x2", "no_image": false, "size": [2, 2, 6], "weight": 64.39209, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["AirportBaggage_VC000", "Ragecoach_VC000"]}

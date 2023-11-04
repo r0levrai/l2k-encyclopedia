@@ -1,1 +1,1 @@
-{"id": 11295, "aliases": [], "name": "BOTTOM 6X8 W. DOUBLE BOW INVERTED", "have_icon": true, "size": [8, 6, 3], "weight": 218.20068, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FishingBoat_70442", "FishingBoat_VC70442", "GothaPlaneBoat_VC000", "Traffic_FV_04Boat"]}
+{"id": 11295, "aliases": [], "name": "BOTTOM 6X8 W. DOUBLE BOW INVERTED", "no_image": false, "size": [8, 6, 3], "weight": 218.20068, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FishingBoat_VC70442", "FishingBoat_70442", "GothaPlaneBoat_VC000", "Traffic_FV_04Boat"]}

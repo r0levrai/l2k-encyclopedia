@@ -1,1 +1,1 @@
-{"id": 2875, "aliases": [], "name": "ROOF ELEMENT 2X6X1", "have_icon": true, "size": [6, 2, 3], "weight": 70.495605, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_FV_05Boat", "Traffic_FV_05Offroad", "Traffic_FV_05Street"]}
+{"id": 2875, "aliases": [], "name": "ROOF ELEMENT 2X6X1", "no_image": false, "size": [6, 2, 3], "weight": 70.495605, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_FV_05Boat", "Traffic_FV_05Offroad", "Traffic_FV_05Street"]}

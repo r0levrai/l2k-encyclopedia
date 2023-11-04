@@ -1,1 +1,1 @@
-{"id": 30139, "aliases": [], "name": "BARREL 4X4", "have_icon": true, "size": [4, 4, 10], "weight": 234.98535, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BalloonCar_VC000"]}
+{"id": 30139, "aliases": [], "name": "BARREL 4X4", "no_image": false, "size": [4, 4, 10], "weight": 234.98535, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BalloonCar_VC000"]}

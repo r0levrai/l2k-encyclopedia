@@ -1,1 +1,1 @@
-{"id": 3815, "aliases": [], "name": "MINI HIP", "have_icon": true, "size": [2, 1, 4], "weight": 19.90578, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PoliceTruckQuest_VC000", "PoliceTruck_60007", "TourBus_60200"]}
+{"id": 3815, "aliases": [], "name": "MINI HIP", "no_image": false, "size": [2, 1, 4], "weight": 19.90578, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PoliceTruckQuest_VC000", "PoliceTruck_60007", "TourBus_60200"]}

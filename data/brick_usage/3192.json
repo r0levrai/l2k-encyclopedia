@@ -1,1 +1,1 @@
-{"id": 3192, "aliases": [], "name": "DOOR 1X3X4 RIGHT", "have_icon": true, "size": [3, 1, 12], "weight": 57.373047, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PrisonTransport_7286"]}
+{"id": 3192, "aliases": [], "name": "DOOR 1X3X4 RIGHT", "no_image": false, "size": [3, 1, 12], "weight": 57.373047, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PrisonTransport_7286"]}

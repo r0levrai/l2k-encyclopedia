@@ -1,1 +1,1 @@
-{"id": 3900, "aliases": [], "name": "SIGN - STOP", "have_icon": true, "size": [1, 1, 7], "weight": 7.6293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BurgerTruck_31104A", "ScienceBuggy_1621", "SecurityCart_30352"]}
+{"id": 3900, "aliases": [], "name": "SIGN - STOP", "no_image": false, "size": [1, 1, 7], "weight": 7.6293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BurgerTruck_31104A", "ScienceBuggy_1621", "SecurityCart_30352"]}

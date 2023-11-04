@@ -1,1 +1,1 @@
-{"id": 18729, "aliases": [43376], "name": "BOW SHELL 6X10X4 22/45DEG", "have_icon": true, "size": [10, 6, 12], "weight": 393.67676, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_BB_02Boat", "Traffic_BB_02Offroad", "Traffic_BB_02Street"]}
+{"id": 18729, "aliases": [43376], "name": "BOW SHELL 6X10X4 22/45DEG", "no_image": false, "size": [10, 6, 12], "weight": 393.67676, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_BB_02Boat", "Traffic_BB_02Offroad", "Traffic_BB_02Street"]}

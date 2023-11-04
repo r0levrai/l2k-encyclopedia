@@ -1,1 +1,1 @@
-{"id": 4360, "aliases": [], "name": "CAMERA", "have_icon": true, "size": [2, 2, 9], "weight": 31.12793, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ScienceScorpion_1737B"]}
+{"id": 4360, "aliases": [], "name": "CAMERA", "no_image": false, "size": [2, 2, 9], "weight": 31.12793, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ScienceScorpion_1737B"]}

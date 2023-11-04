@@ -1,1 +1,1 @@
-{"id": 42061, "aliases": [45172], "name": "LEFT SHELL 3X12 W/BOW/ANGLE", "have_icon": true, "size": [12, 3, 3], "weight": 160.21729, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Cornmobile_VC000", "Hydro_VC001", "P59PlaneBoat_VC000", "Speedboat_6737", "UFO_Boat_VC000"]}
+{"id": 42061, "aliases": [45172], "name": "LEFT SHELL 3X12 W/BOW/ANGLE", "no_image": false, "size": [12, 3, 3], "weight": 160.21729, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Cornmobile_VC000", "Hydro_VC001", "P59PlaneBoat_VC000", "Speedboat_6737", "UFO_Boat_VC000"]}

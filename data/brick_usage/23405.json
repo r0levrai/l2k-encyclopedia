@@ -1,1 +1,1 @@
-{"id": 23405, "aliases": [], "name": "WALL 1X6X5 CONTAINER", "have_icon": true, "size": [6, 1, 15], "weight": 180.05371, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HotGarbageStreet_VC000"]}
+{"id": 23405, "aliases": [], "name": "WALL 1X6X5 CONTAINER", "no_image": false, "size": [6, 1, 15], "weight": 180.05371, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HotGarbageStreet_VC000"]}

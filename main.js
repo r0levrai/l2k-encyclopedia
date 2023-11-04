@@ -1,5 +1,5 @@
 import { SuffixTree } from './search.js';
-import { load_async, load_vehicle, load_brick, yieldingLoop } from './load.js';
+import { load_async, load_vehicle, load_brick, load_simple, yieldingLoop } from './load.js';
 
 console.log('starting...');
 
@@ -42,7 +42,7 @@ serch_input.addEventListener('input', function (evt) {
 })
 
 // help refresh and back navigation scroll restoration until loaded [1]
-document.getElementById('main').style.height = '210000px';
+document.getElementById('main').style.height = '270000px';
 
 // fetch all data from the begining...
 Promise.all([
@@ -54,9 +54,19 @@ Promise.all([
 ])
 // ...but only start loading bricks when the vehicles are done,
 // to preserve search results order, and load vehicles quicker.
-.then(([_, bricks]) =>
-  load_async(v(bricks), load_and_index_brick, "bricks")
-)
+.then(([_, bricks]) => Promise.all([
+  load_async(v(bricks), load_and_index_brick, "bricks"),
+  fetch("data/brickpacks_by_id.json")
+    .then(response => response.json())
+]))
+.then(([_, brickpacks]) => Promise.all([
+  load_async(v(brickpacks), load_and_index_simple, "brickpacks"),
+  fetch("data/flairs_by_id.json")
+    .then(response => response.json())
+]))
+.then(([_, flairs]) => Promise.all([
+  load_async(v(flairs), load_and_index_simple, "flairs"),
+]))
 // [1] restore proper page height
 .then(() => {
   console.log('restoring page height')
@@ -77,6 +87,11 @@ function load_and_index_brick(data, tiles) {
   search_index.add(data.name, tile);
   search_index.add(data.id.toString(), tile);
   search_index.add(data.size.join('x'), tile);
+}
+
+function load_and_index_simple(data, tiles) {
+  let tile = load_simple(data, tiles)
+  search_index.add(data.name, tile);
 }
 
 function v(object) {

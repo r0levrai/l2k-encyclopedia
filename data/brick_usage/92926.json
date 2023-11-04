@@ -1,1 +1,1 @@
-{"id": 92926, "aliases": [28967], "name": "DUSTBIN 2x2x2", "have_icon": true, "size": [3, 2, 6], "weight": 54.93164, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BuzzosRoyalBarge_VC000", "GarbageTruck_4432", "Road-and-railTruck_60335", "ServiceTruck_60073"]}
+{"id": 92926, "aliases": [28967], "name": "DUSTBIN 2x2x2", "no_image": false, "size": [3, 2, 6], "weight": 54.93164, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BuzzosRoyalBarge_VC000", "GarbageTruck_4432", "Road-and-railTruck_60335", "ServiceTruck_60073"]}

@@ -1,1 +1,1 @@
-{"id": 30033, "aliases": [], "name": "PARABOLIC RING", "have_icon": true, "size": [4, 4, 1], "weight": 45.776367, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BalloonCar_VC000", "LightningBug_VC000", "ShadowZ_Boat_VC000"]}
+{"id": 30033, "aliases": [], "name": "PARABOLIC RING", "no_image": false, "size": [4, 4, 1], "weight": 45.776367, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BalloonCar_VC000", "LightningBug_VC000", "ShadowZ_Boat_VC000"]}

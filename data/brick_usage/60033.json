@@ -1,1 +1,1 @@
-{"id": 60033, "aliases": [4202], "name": "BRICK 4X12", "have_icon": true, "size": [12, 4, 3], "weight": 455.84637, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["RivalHeadlessHorsepowerStreetCar_VC0000", "Traffic_FV_01Offroad"]}
+{"id": 60033, "aliases": [4202], "name": "BRICK 4X12", "no_image": false, "size": [12, 4, 3], "weight": 455.84637, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["RivalHeadlessHorsepowerStreetCar_VC0000", "Traffic_FV_01Offroad"]}

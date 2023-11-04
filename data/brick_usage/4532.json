@@ -1,1 +1,1 @@
-{"id": 4532, "aliases": [], "name": "CUPBOARD 2X3X2", "have_icon": true, "size": [3, 2, 6], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BurgerTruck_31104A", "Bus_8404", "FireEngine_7891"]}
+{"id": 4532, "aliases": [], "name": "CUPBOARD 2X3X2", "no_image": false, "size": [3, 2, 6], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BurgerTruck_31104A", "Bus_8404", "FireEngine_7891"]}

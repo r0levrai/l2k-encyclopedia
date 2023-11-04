@@ -1,1 +1,1 @@
-{"id": 30145, "aliases": [], "name": "BRICK 2X2X3", "have_icon": true, "size": [2, 2, 9], "weight": 114.44092, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DonutMonsterTruck_VC000", "GothaPlaneBoat_VC000", "GothaPlaneCar_VC000", "GothaPlaneTruck_VC000", "Sharkatron_9000"]}
+{"id": 30145, "aliases": [], "name": "BRICK 2X2X3", "no_image": false, "size": [2, 2, 9], "weight": 114.44092, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DonutMonsterTruck_VC000", "GothaPlaneBoat_VC000", "GothaPlaneCar_VC000", "GothaPlaneTruck_VC000", "Sharkatron_9000"]}

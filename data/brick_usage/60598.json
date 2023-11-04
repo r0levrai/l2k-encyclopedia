@@ -1,1 +1,1 @@
-{"id": 60598, "aliases": [], "name": "FRAME 2X4X3", "have_icon": true, "size": [4, 2, 9], "weight": 116.57715, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireResponseVan_60023", "FireTruck_7208"]}
+{"id": 60598, "aliases": [], "name": "FRAME 2X4X3", "no_image": false, "size": [4, 2, 9], "weight": 116.57715, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireResponseVan_60023", "FireTruck_7208"]}

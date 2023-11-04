@@ -1,1 +1,1 @@
-{"id": 50373, "aliases": [], "name": "BRICK 4X4/18°", "have_icon": true, "size": [4, 4, 3], "weight": 81.78711, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Dragster_60151", "FrontLoader_7630", "JetPlaneCar_VC000", "RocketBoat_31047", "SimpleBuggy_6333", "Tractor_60346"]}
+{"id": 50373, "aliases": [], "name": "BRICK 4X4/18°", "no_image": false, "size": [4, 4, 3], "weight": 81.78711, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Dragster_60151", "FrontLoader_7630", "JetPlaneCar_VC000", "RocketBoat_31047", "SimpleBuggy_6333", "Tractor_60346"]}

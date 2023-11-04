@@ -1,1 +1,1 @@
-{"id": 37762, "aliases": [], "name": "CANDLE, NO. 1", "have_icon": true, "size": [1, 1, 4], "weight": 8.544922, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["OrganDonorBoat_VC000", "OrganDonorStreet_VC000", "OrganDonorTruck_VC000", "Rev_X_LU000"]}
+{"id": 37762, "aliases": [], "name": "CANDLE, NO. 1", "no_image": false, "size": [1, 1, 4], "weight": 8.544922, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["OrganDonorBoat_VC000", "OrganDonorStreet_VC000", "OrganDonorTruck_VC000", "Rev_X_LU000"]}

@@ -1,1 +1,1 @@
-{"id": 2578, "aliases": [], "name": "SHIELD BOX", "have_icon": true, "size": [6, 3, 6], "weight": 325.6179, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["StreetSweeper_60152", "StreetSweeper_7242"]}
+{"id": 2578, "aliases": [], "name": "SHIELD BOX", "no_image": false, "size": [6, 3, 6], "weight": 325.6179, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["StreetSweeper_60152", "StreetSweeper_7242"]}

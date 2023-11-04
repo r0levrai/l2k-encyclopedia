@@ -1,1 +1,1 @@
-{"id": 30103, "aliases": [90394], "name": "BAT", "have_icon": true, "size": [3, 1, 5], "weight": 14.6484375, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["CountFistula_VC000"]}
+{"id": 30103, "aliases": [90394], "name": "BAT", "no_image": false, "size": [3, 1, 5], "weight": 14.6484375, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["CountFistula_VC000"]}

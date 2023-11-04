@@ -1,1 +1,1 @@
-{"id": 30183, "aliases": [], "name": "INV. ROOF TILE 4X6", "have_icon": true, "size": [4, 6, 3], "weight": 186.76758, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["TankerTruck_VC10184", "TrainBoat_VC000", "TrainBoat_VC001"]}
+{"id": 30183, "aliases": [], "name": "INV. ROOF TILE 4X6", "no_image": false, "size": [4, 6, 3], "weight": 186.76758, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["TankerTruck_VC10184", "TrainBoat_VC000", "TrainBoat_VC001"]}

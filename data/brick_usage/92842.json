@@ -1,1 +1,1 @@
-{"id": 92842, "aliases": [77099], "name": "PROPELLER 3 BLADES M/Ø4,8", "have_icon": true, "size": [4, 1, 12], "weight": 24.414062, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Hovercraft_60071", "Sharkatron_9000", "SwampBoat_31071", "SwampBoat_VC000"]}
+{"id": 92842, "aliases": [77099], "name": "PROPELLER 3 BLADES M/Ø4,8", "no_image": false, "size": [4, 1, 12], "weight": 24.414062, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Hovercraft_60071", "Sharkatron_9000", "SwampBoat_VC000", "SwampBoat_31071"]}

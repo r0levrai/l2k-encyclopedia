@@ -1,1 +1,1 @@
-{"id": 4080, "aliases": [], "name": "TRUCK BODY 4X6X2", "have_icon": true, "size": [9, 5, 6], "weight": 222.77832, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DumpTruck_4201"]}
+{"id": 4080, "aliases": [], "name": "TRUCK BODY 4X6X2", "no_image": false, "size": [9, 5, 6], "weight": 222.77832, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DumpTruck_4201"]}

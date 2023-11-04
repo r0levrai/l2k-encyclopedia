@@ -1,1 +1,1 @@
-{"id": 6567, "aliases": [], "name": "2F TRAIN, WINDSCREEN 2X6X2", "have_icon": true, "size": [6, 2, 6], "weight": 205.967, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ArmoredTransport_10973", "Clydesdale_VC000", "FoodTruckA_VC000", "GovSUV_VC000"]}
+{"id": 6567, "aliases": [], "name": "2F TRAIN, WINDSCREEN 2X6X2", "no_image": false, "size": [6, 2, 6], "weight": 205.967, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ArmoredTransport_10973", "Clydesdale_VC000", "FoodTruckA_VC000", "GovSUV_VC000"]}

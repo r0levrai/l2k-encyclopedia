@@ -1,1 +1,1 @@
-{"id": 6070, "aliases": [86430, 35270, 35271], "name": "WINDSCREEN 2X5X1 1/3", "have_icon": true, "size": [5, 2, 5], "weight": 46.38672, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["MonsterTruck_8630", "SimpleBuggy_6648", "Tractor_7684", "Traffic_BB_05Offroad"]}
+{"id": 6070, "aliases": [86430, 35270, 35271], "name": "WINDSCREEN 2X5X1 1/3", "no_image": false, "size": [5, 2, 5], "weight": 46.38672, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["MonsterTruck_8630", "SimpleBuggy_6648", "Tractor_7684", "Traffic_BB_05Offroad"]}

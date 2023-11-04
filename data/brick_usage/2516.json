@@ -1,1 +1,1 @@
-{"id": 2516, "aliases": [], "name": "TOOL HOLDER", "have_icon": true, "size": [3, 2, 6], "weight": 21.972656, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireBoat_60106", "FireEngine_7891", "FireInflatable_7213", "FireSpeedboat_30220"]}
+{"id": 2516, "aliases": [], "name": "TOOL HOLDER", "no_image": false, "size": [3, 2, 6], "weight": 21.972656, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireBoat_60106", "FireEngine_7891", "FireInflatable_7213", "FireSpeedboat_30220"]}

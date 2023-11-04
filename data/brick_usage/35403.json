@@ -1,1 +1,1 @@
-{"id": 35403, "aliases": [], "name": "FLAT TILE 1X1", "have_icon": true, "size": [1, 1, 1], "weight": 4.8547735, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BoatTruck_VC000", "CleaningTruck_60317", "TruckBoat_VC000", "YellowTaxi_40468"]}
+{"id": 35403, "aliases": [], "name": "FLAT TILE 1X1", "no_image": false, "size": [1, 1, 1], "weight": 4.8547735, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BoatTruck_VC000", "CleaningTruck_60317", "TruckBoat_VC000", "YellowTaxi_40468"]}

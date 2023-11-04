@@ -1,1 +1,1 @@
-{"id": 60208, "aliases": [], "name": "Turbine ø31,37 w.holes ø 4,85", "have_icon": true, "size": [4, 2, 9], "weight": 97.65625, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireBoat_60106", "RocketBoat_VC31103", "RocketTruck_31103A"]}
+{"id": 60208, "aliases": [], "name": "Turbine ø31,37 w.holes ø 4,85", "no_image": false, "size": [4, 2, 9], "weight": 97.65625, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireBoat_60106", "RocketBoat_VC31103", "RocketTruck_31103A"]}

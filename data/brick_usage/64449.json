@@ -1,1 +1,1 @@
-{"id": 64449, "aliases": [], "name": "LATTICE A-MAST 1X6X10", "have_icon": true, "size": [6, 1, 30], "weight": 197.14355, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Traffic_FV_02Boat", "Traffic_FV_02Offroad", "Traffic_FV_02Street"]}
+{"id": 64449, "aliases": [], "name": "LATTICE A-MAST 1X6X10", "no_image": false, "size": [6, 1, 30], "weight": 197.14355, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Traffic_FV_02Boat", "Traffic_FV_02Offroad", "Traffic_FV_02Street"]}

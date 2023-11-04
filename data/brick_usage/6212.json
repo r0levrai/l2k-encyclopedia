@@ -1,1 +1,1 @@
-{"id": 6212, "aliases": [], "name": "BRICK 4X10", "have_icon": true, "size": [10, 4, 3], "weight": 289.917, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["RivalMadScientistStreetCar_VC0000", "RivalSkellieOffroader_VC0000", "Traffic_FV_01Boat", "Van_31079"]}
+{"id": 6212, "aliases": [], "name": "BRICK 4X10", "no_image": false, "size": [10, 4, 3], "weight": 289.917, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["RivalMadScientistStreetCar_VC0000", "RivalSkellieOffroader_VC0000", "Traffic_FV_01Boat", "Van_31079"]}

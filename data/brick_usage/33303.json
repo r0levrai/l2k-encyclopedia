@@ -1,1 +1,1 @@
-{"id": 33303, "aliases": [], "name": "FENCE 1X4X2", "have_icon": true, "size": [4, 1, 6], "weight": 42.114258, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["HausBoat_VC000"]}
+{"id": 33303, "aliases": [], "name": "FENCE 1X4X2", "no_image": false, "size": [4, 1, 6], "weight": 42.114258, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["HausBoat_VC000"]}

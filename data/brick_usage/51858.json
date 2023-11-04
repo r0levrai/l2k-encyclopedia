@@ -1,1 +1,1 @@
-{"id": 51858, "aliases": [], "name": "BASKET 2X3X2 WITH FORK", "have_icon": true, "size": [3, 3, 6], "weight": 70.19043, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["CleaningTruck_60317", "RepairLift_30229", "Road-and-railTruck_60335", "UtilityLineTruck_60141"]}
+{"id": 51858, "aliases": [], "name": "BASKET 2X3X2 WITH FORK", "no_image": false, "size": [3, 3, 6], "weight": 70.19043, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["CleaningTruck_60317", "RepairLift_30229", "Road-and-railTruck_60335", "UtilityLineTruck_60141"]}

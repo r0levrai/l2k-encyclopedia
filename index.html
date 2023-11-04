@@ -43,7 +43,7 @@
   
   <div class="tile-grid">
 
-    <a class="tile bg rarity3 slanted" id="v_tile">
+    <a class="tile bg rarity3 slanted" id="vehicles_template">
       <img class="tile-thumbnail" src="textures/woosh.png" id="v_image"
       onerror="if (this.src != 'textures/woosh.png') this.src = 'textures/woosh.png';">
       <div class="tile-text-wrapper">
@@ -64,7 +64,7 @@
       </div>
     </a>
 
-    <a class="tile bg rarity0 slanted" id="brick_tile">
+    <a class="tile bg rarity0 slanted" id="bricks_template">
       <img class="tile-thumbnail" src="textures/bricks/73109.png" id="brick_image">
       <div class="tile-text-wrapper">
         <div class="tile-text" id="brick_name">Part name</div>
@@ -85,6 +85,20 @@
       </div>
     </a>
 
+    <div class="tile bg rarity3 slanted" id="brickpacks_template">
+      <img class="tile-thumbnail" src="textures/bricks/73109.png" id="image">
+      <div class="tile-text-wrapper">
+        <div class="tile-text" id="name">Part name</div>
+      </div>
+    </div>
+
+    <div class="tile bg rarity3 slanted" id="flairs_template">
+      <img class="tile-thumbnail" src="textures/bricks/73109.png" id="image">
+      <div class="tile-text-wrapper">
+        <div class="tile-text" id="name">Part name</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -92,14 +106,24 @@
   <h1>Collectibles</h1>
   <div class="tile-grid">
 
+    <a class="tile bg rarity1 slanted" href="#vehicles">
+      <img class="tile-thumbnail" src="textures/woosh.png">
+      <div class="tile-text-wrapper"><div class="tile-text">Vehicles</div></div>
+    </a>
+
     <a class="tile bg rarity0 slanted" href="#bricks">
       <img class="tile-thumbnail" src="textures/bricks/73109.png">
       <div class="tile-text-wrapper"><div class="tile-text">Bricks</div></div>
     </a>
 
-    <a class="tile bg rarity1 slanted" href="#vehicles">
-      <img class="tile-thumbnail" src="textures/woosh.png">
-      <div class="tile-text-wrapper"><div class="tile-text">Vehicles</div></div>
+    <a class="tile bg rarity0 slanted" href="#brickpacks">
+      <img class="tile-thumbnail" src="textures/brickpacks/Vehicle_Parts_Pack2.png" style="height: 95%;">
+      <div class="tile-text-wrapper"><div class="tile-text">Brick packs</div></div>
+    </a>
+
+    <a class="tile bg rarity0 slanted" href="#flairs">
+      <img class="tile-thumbnail" src="textures/flairs/NOS_01_Blue.png">
+      <div class="tile-text-wrapper"><div class="tile-text">Flairs</div></div>
     </a>
 
     <div class="tile bg rarity2 slanted">
@@ -173,6 +197,16 @@
 <section>
   <h1>Bricks</h1>
   <div class="tile-grid" id="bricks"></div>
+</section>
+
+<section>
+  <h1>Brick packs</h1>
+  <div class="tile-grid" id="brickpacks"></div>
+</section>
+
+<section>
+  <h1>Flairs</h1>
+  <div class="tile-grid" id="flairs"></div>
 </section>
 
     </div>

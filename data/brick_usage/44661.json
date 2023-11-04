@@ -1,1 +1,1 @@
-{"id": 44661, "aliases": [35265], "name": "RUDDER 2X3X2", "have_icon": true, "size": [3, 2, 6], "weight": 24.719238, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Speedboat_4856", "Speedio_VC000", "SurfChopper_VC000", "SwampBoat_VC60068", "ToyRocket_40335"]}
+{"id": 44661, "aliases": [35265], "name": "RUDDER 2X3X2", "no_image": false, "size": [3, 2, 6], "weight": 24.719238, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Speedboat_4856", "Speedio_VC000", "SurfChopper_VC000", "SwampBoat_VC60068", "ToyRocket_40335"]}

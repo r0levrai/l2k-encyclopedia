@@ -1,1 +1,1 @@
-{"id": 98280, "aliases": [], "name": "WALL 1X6X3 W. STUDS", "have_icon": true, "size": [6, 1, 9], "weight": 91.552734, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DumpTruck_60083", "FireUtility_60111", "Snowplow_60083"]}
+{"id": 98280, "aliases": [], "name": "WALL 1X6X3 W. STUDS", "no_image": false, "size": [6, 1, 9], "weight": 91.552734, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DumpTruck_60083", "FireUtility_60111", "Snowplow_60083"]}

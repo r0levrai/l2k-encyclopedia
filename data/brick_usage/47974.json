@@ -1,1 +1,1 @@
-{"id": 47974, "aliases": [], "name": "BRICK 4X8 1/2 CIRCLE", "have_icon": true, "size": [8, 4, 3], "weight": 207.51953, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BrickFilA_VC000", "BrickFilA_VC001", "MugBoatMinion_VC000", "MugMinion_VC000", "MugSteamedMinion_VC000"]}
+{"id": 47974, "aliases": [], "name": "BRICK 4X8 1/2 CIRCLE", "no_image": false, "size": [8, 4, 3], "weight": 207.51953, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BrickFilA_VC000", "BrickFilA_VC001", "MugBoatMinion_VC000", "MugMinion_VC000", "MugSteamedMinion_VC000"]}

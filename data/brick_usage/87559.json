@@ -1,1 +1,1 @@
-{"id": 87559, "aliases": [], "name": "ARCH BRICK 6x6x2", "have_icon": true, "size": [6, 6, 6], "weight": 282.2876, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BurgerCar_VC000", "BurgerCar_VC001", "DonutBoat_VC000", "DonutCarriage_VC000", "Hovercraft_60071"]}
+{"id": 87559, "aliases": [], "name": "ARCH BRICK 6x6x2", "no_image": false, "size": [6, 6, 6], "weight": 282.2876, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["BurgerCar_VC000", "BurgerCar_VC001", "DonutBoat_VC000", "DonutCarriage_VC000", "Hovercraft_60071"]}
