@@ -1,1 +1,1 @@
-{"id": 93549, "aliases": [], "name": "MINI BOTTLE WITH KNOB", "no_image": false, "size": [1, 1, 5], "weight": 14.2022, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 93549, "aliases": [], "name": "MINI BOTTLE WITH KNOB", "no_image": false, "size": [1, 1, 5], "weight": 14.2022, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Halloween_01", "biome": null, "rewards": {"92691": 1, "93160": 1, "93549": 1}}], "usage": []}

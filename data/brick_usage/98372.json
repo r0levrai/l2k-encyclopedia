@@ -1,1 +1,1 @@
-{"id": 98372, "aliases": [], "name": "MINI STEAK W/ Ø3,2 SHAFT", "no_image": false, "size": [1, 0, 7], "weight": 15.44596, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 98372, "aliases": [], "name": "MINI STEAK W/ Ø3,2 SHAFT", "no_image": false, "size": [1, 0, 7], "weight": 15.44596, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Food_01", "biome": null, "rewards": {"6254": 1, "10170": 1, "25386": 1, "33078": 1, "64648": 1, "98372": 1}}], "usage": []}

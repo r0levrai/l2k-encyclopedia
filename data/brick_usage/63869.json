@@ -1,1 +1,1 @@
-{"id": 63869, "aliases": [42191], "name": "CROSS BLOCK 3X2", "no_image": false, "size": [3, 1, 5], "weight": 32.043457, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 63869, "aliases": [42191], "name": "CROSS BLOCK 3X2", "no_image": false, "size": [3, 1, 5], "weight": 32.043457, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Adapter_03", "biome": null, "rewards": {"41678": 1, "42003": 1, "32557": 1, "63869": 1, "32291": 1}}], "usage": []}

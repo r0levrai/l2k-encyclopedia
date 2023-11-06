@@ -1,1 +1,1 @@
-{"id": 3963, "aliases": [], "name": "STEERING NOZZLE", "no_image": false, "size": [3, 3, 3], "weight": 30.517578, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 3963, "aliases": [], "name": "STEERING NOZZLE", "no_image": false, "size": [3, 3, 3], "weight": 30.517578, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Curio_Pack1", "biome": null, "rewards": {"3963": 1, "95354": 1, "88049": 1, "6216": 1}}], "usage": []}

@@ -1,1 +1,1 @@
-{"id": 93160, "aliases": [], "name": "2 M. Ø3.2 BONES", "no_image": false, "size": [2, 1, 1], "weight": 5.1879883, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BoneWagon_VC000", "VampHearse_9464"]}
+{"id": 93160, "aliases": [], "name": "2 M. Ø3.2 BONES", "no_image": false, "size": [2, 1, 1], "weight": 5.1879883, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Halloween_01", "biome": null, "rewards": {"92691": 1, "93160": 1, "93549": 1}}], "usage": ["BoneWagon_VC000", "VampHearse_9464"]}

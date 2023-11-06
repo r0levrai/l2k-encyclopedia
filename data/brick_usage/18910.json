@@ -1,1 +1,1 @@
-{"id": 18910, "aliases": [], "name": "WALL W. BOW 3X4X3 W3.2 SCHAFT", "no_image": false, "size": [4, 4, 7], "weight": 61.035156, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Scullywagon_60397", "Snowplow_60083"]}
+{"id": 18910, "aliases": [], "name": "WALL W. BOW 3X4X3 W3.2 SCHAFT", "no_image": false, "size": [4, 4, 7], "weight": 61.035156, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hinge_04", "biome": null, "rewards": {"18910": 1, "30161": 1, "4315": 1, "4625": 1}}], "usage": ["Scullywagon_60397", "Snowplow_60083"]}

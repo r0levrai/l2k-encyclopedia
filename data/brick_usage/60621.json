@@ -1,1 +1,1 @@
-{"id": 60621, "aliases": [], "name": "LATTICE DOOR FOR FRAME 1X4X6", "no_image": false, "size": [4, 1, 16], "weight": 61.035156, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PrisonTransport_60043"]}
+{"id": 60621, "aliases": [], "name": "LATTICE DOOR FOR FRAME 1X4X6", "no_image": false, "size": [4, 1, 16], "weight": 61.035156, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Doors_03", "biome": null, "rewards": {"60616": 1, "60621": 1, "60623": 1, "60797": 1, "60596": 1}}], "usage": ["PrisonTransport_60043"]}

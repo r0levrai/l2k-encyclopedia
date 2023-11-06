@@ -1,1 +1,1 @@
-{"id": 30554, "aliases": [], "name": "LINK 1M FRIC/FORK/STUMPF", "no_image": false, "size": [3, 1, 2], "weight": 17.089844, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 30554, "aliases": [], "name": "LINK 1M FRIC/FORK/STUMPF", "no_image": false, "size": [3, 1, 2], "weight": 17.089844, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hinge_01", "biome": null, "rewards": {"30554": 1, "47455": 1, "48170": 1, "48169": 1}}], "usage": []}

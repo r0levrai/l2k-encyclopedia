@@ -1,1 +1,1 @@
-{"id": 2952, "aliases": [], "name": "PROPELLER W. 2 BLADES", "no_image": false, "size": [9, 1, 2], "weight": 37.841797, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 2952, "aliases": [], "name": "PROPELLER W. 2 BLADES", "no_image": false, "size": [9, 1, 2], "weight": 37.841797, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Essentials_01", "biome": null, "rewards": {"15790": 1, "2952": 1, "30332": 1}}], "usage": []}

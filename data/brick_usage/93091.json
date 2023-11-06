@@ -1,1 +1,1 @@
-{"id": 93091, "aliases": [], "name": "BAG, SPORT", "no_image": false, "size": [2, 1, 4], "weight": 21.362305, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HeadlessHorsepowerOffroad_VC000"]}
+{"id": 93091, "aliases": [], "name": "BAG, SPORT", "no_image": false, "size": [2, 1, 4], "weight": 21.362305, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_06", "biome": null, "rewards": {"93553": 1, "93094": 1, "93091": 1}}], "usage": ["HeadlessHorsepowerOffroad_VC000"]}

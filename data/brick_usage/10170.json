@@ -1,1 +1,1 @@
-{"id": 10170, "aliases": [34094, 77082], "name": "MINI PRETZEL W. 3.2 SHAFT", "no_image": false, "size": [2, 1, 4], "weight": 8.544922, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 10170, "aliases": [34094, 77082], "name": "MINI PRETZEL W. 3.2 SHAFT", "no_image": false, "size": [2, 1, 4], "weight": 8.544922, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Food_01", "biome": null, "rewards": {"6254": 1, "10170": 1, "25386": 1, "33078": 1, "64648": 1, "98372": 1}}], "usage": []}

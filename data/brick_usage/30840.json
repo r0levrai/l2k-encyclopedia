@@ -1,1 +1,1 @@
-{"id": 30840, "aliases": [], "name": "TOP SHELL 4X5", "no_image": false, "size": [5, 4, 3], "weight": 145.5068, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 30840, "aliases": [], "name": "TOP SHELL 4X5", "no_image": false, "size": [5, 4, 3], "weight": 145.5068, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hood_04", "biome": null, "rewards": {"44675": 1, "93591": 1, "30840": 1, "98835": 1}}], "usage": []}

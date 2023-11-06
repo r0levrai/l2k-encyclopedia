@@ -1,1 +1,1 @@
-{"id": 33125, "aliases": [], "name": "CROISSANT", "no_image": false, "size": [1, 2, 2], "weight": 14.343262, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 33125, "aliases": [], "name": "CROISSANT", "no_image": false, "size": [1, 2, 2], "weight": 14.343262, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Food_03", "biome": null, "rewards": {"93568": 1, "33125": 1, "4342": 1}}], "usage": []}

@@ -1,1 +1,1 @@
-{"id": 32184, "aliases": [42142], "name": "DOUBLE CROSS BLOCK", "no_image": false, "size": [3, 1, 2], "weight": 19.53125, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ShadowZ_Boat_VC000"]}
+{"id": 32184, "aliases": [42142], "name": "DOUBLE CROSS BLOCK", "no_image": false, "size": [3, 1, 2], "weight": 19.53125, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Beam_01", "biome": null, "rewards": {"41677": 1, "60483": 1, "32184": 1}}], "usage": ["ShadowZ_Boat_VC000"]}

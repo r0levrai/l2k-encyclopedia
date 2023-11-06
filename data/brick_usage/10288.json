@@ -1,1 +1,1 @@
-{"id": 10288, "aliases": [49155], "name": "3 BRANCH CROSSHOLE W. HOLE", "no_image": false, "size": [3, 1, 7], "weight": 29.296875, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 10288, "aliases": [49155], "name": "3 BRANCH CROSSHOLE W. HOLE", "no_image": false, "size": [3, 1, 7], "weight": 29.296875, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Adapter_02", "biome": null, "rewards": {"15460": 1, "15461": 1, "57585": 1, "10288": 1}}], "usage": []}

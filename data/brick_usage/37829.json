@@ -1,1 +1,1 @@
-{"id": 37829, "aliases": [], "name": "ANIMAL, NO. 39", "no_image": false, "size": [4, 1, 5], "weight": 27.770996, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 37829, "aliases": [], "name": "ANIMAL, NO. 39", "no_image": false, "size": [4, 1, 5], "weight": 27.770996, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Animal_05", "biome": null, "rewards": {"30464": 1, "37829": 1, "29111": 1, "30238": 1}}], "usage": []}

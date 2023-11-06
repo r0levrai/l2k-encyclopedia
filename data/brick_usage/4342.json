@@ -1,1 +1,1 @@
-{"id": 4342, "aliases": [], "name": "WHITE BREAD", "no_image": false, "size": [4, 1, 1], "weight": 28.686523, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 4342, "aliases": [], "name": "WHITE BREAD", "no_image": false, "size": [4, 1, 1], "weight": 28.686523, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Food_03", "biome": null, "rewards": {"93568": 1, "33125": 1, "4342": 1}}], "usage": []}

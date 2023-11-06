@@ -1,1 +1,1 @@
-{"id": 32932, "aliases": [], "name": "FENCE 1X4X2,W/ SHAFT,NO.1", "no_image": false, "size": [4, 1, 6], "weight": 54.93164, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 32932, "aliases": [], "name": "FENCE 1X4X2,W/ SHAFT,NO.1", "no_image": false, "size": [4, 1, 6], "weight": 54.93164, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Sides_02", "biome": null, "rewards": {"30055": 1, "15332": 1, "32932": 1, "30077": 1}}], "usage": []}

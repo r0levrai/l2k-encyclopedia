@@ -1,1 +1,1 @@
-{"id": 11127, "aliases": [28568], "name": "CRYSTAL W/CORED KNOB", "no_image": false, "size": [2, 2, 3], "weight": 15.869141, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 11127, "aliases": [28568], "name": "CRYSTAL W/CORED KNOB", "no_image": false, "size": [2, 2, 3], "weight": 15.869141, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Mineral_02", "biome": null, "rewards": {"11127": 1, "15279": 1, "30385": 1, "15469": 1}}], "usage": []}

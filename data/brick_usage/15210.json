@@ -1,1 +1,1 @@
-{"id": 15210, "aliases": [65673], "name": "FOUR-SIDED SIGN WITH SNAP", "no_image": false, "size": [2, 1, 4], "weight": 15.258789, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["NewsroomVan_Street_41749"]}
+{"id": 15210, "aliases": [65673], "name": "FOUR-SIDED SIGN WITH SNAP", "no_image": false, "size": [2, 1, 4], "weight": 15.258789, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Grip_03", "biome": null, "rewards": {"48729": 1, "92220": 1, "60583": 1, "15210": 1}}], "usage": ["NewsroomVan_Street_41749"]}

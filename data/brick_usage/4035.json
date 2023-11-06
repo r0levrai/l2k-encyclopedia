@@ -1,1 +1,1 @@
-{"id": 4035, "aliases": [3233], "name": "FRAME F. TRAIN WINDOW 1X2X3", "no_image": false, "size": [2, 1, 9], "weight": 43.33496, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Ragecoach_VC000"]}
+{"id": 4035, "aliases": [3233], "name": "FRAME F. TRAIN WINDOW 1X2X3", "no_image": false, "size": [2, 1, 9], "weight": 43.33496, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Sides_01", "biome": null, "rewards": {"4864": 1, "2362": 1, "2377": 1, "4035": 1}}], "usage": ["Ragecoach_VC000"]}

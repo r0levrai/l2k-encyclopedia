@@ -1,1 +1,1 @@
-{"id": 6148, "aliases": [], "name": "PALMLEAF, SMALL", "no_image": false, "size": [8, 3, 4], "weight": 38.146973, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 6148, "aliases": [], "name": "PALMLEAF, SMALL", "no_image": false, "size": [8, 3, 4], "weight": 38.146973, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plant_04", "biome": null, "rewards": {"2563": 1, "2518": 1, "6255": 1, "6148": 1}}], "usage": []}

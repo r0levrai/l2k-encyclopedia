@@ -1,1 +1,1 @@
-{"id": 13392, "aliases": [], "name": "DOLPHIN", "no_image": false, "size": [6, 4, 8], "weight": 335.84122, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FlyingLunchman_VC000"]}
+{"id": 13392, "aliases": [], "name": "DOLPHIN", "no_image": false, "size": [6, 4, 8], "weight": 335.84122, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Animal_03", "biome": null, "rewards": {"11603": 1, "13392": 1, "33499": 1, "16765": 1}}], "usage": ["FlyingLunchman_VC000"]}

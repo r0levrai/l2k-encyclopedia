@@ -1,1 +1,1 @@
-{"id": 4598, "aliases": [], "name": "SEAT 2X3X2", "no_image": false, "size": [2, 3, 6], "weight": 57.06787, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ScienceBuggy_1621", "ScienceScorpion_1737C"]}
+{"id": 4598, "aliases": [], "name": "SEAT 2X3X2", "no_image": false, "size": [2, 3, 6], "weight": 57.06787, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_05", "biome": null, "rewards": {"4598": 1, "4222": 1, "4175": 1}}], "usage": ["ScienceBuggy_1621", "ScienceScorpion_1737C"]}

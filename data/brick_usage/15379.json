@@ -1,1 +1,1 @@
-{"id": 15379, "aliases": [], "name": "CHAINS M PLATE M 5 ø3, 2 HOLE", "no_image": false, "size": [1, 2, 1], "weight": 13.788513, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 15379, "aliases": [], "name": "CHAINS M PLATE M 5 ø3, 2 HOLE", "no_image": false, "size": [1, 2, 1], "weight": 13.788513, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Snap_03", "biome": null, "rewards": {"98834": 1, "15379": 1, "13695": 1, "14682": 1}}], "usage": []}

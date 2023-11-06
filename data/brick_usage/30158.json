@@ -1,1 +1,1 @@
-{"id": 30158, "aliases": [], "name": "RUCKSACK W. FILM HINGE", "no_image": false, "size": [4, 3, 6], "weight": 59.509277, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Roadster_5986"]}
+{"id": 30158, "aliases": [], "name": "RUCKSACK W. FILM HINGE", "no_image": false, "size": [4, 3, 6], "weight": 59.509277, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_04", "biome": null, "rewards": {"37776": 1, "30089": 1, "4528": 1, "30158": 1}}], "usage": ["Roadster_5986"]}

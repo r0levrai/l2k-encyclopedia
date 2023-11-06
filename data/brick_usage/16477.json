@@ -1,1 +1,1 @@
-{"id": 16477, "aliases": [], "name": "SHELL 16X8X5 W. BOW/CIRCLE", "no_image": false, "size": [16, 8, 15], "weight": 967.4072, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BrickFilA_VC000", "BrickFilA_VC001"]}
+{"id": 16477, "aliases": [], "name": "SHELL 16X8X5 W. BOW/CIRCLE", "no_image": false, "size": [16, 8, 15], "weight": 967.4072, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Extreme_Large_Pack1", "biome": null, "rewards": {"16477": 1, "41881": 1}}], "usage": ["BrickFilA_VC000", "BrickFilA_VC001"]}

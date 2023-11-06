@@ -1,1 +1,1 @@
-{"id": 61483, "aliases": [], "name": "UNDERCARRIAGE W. VERT. SNAP", "no_image": false, "size": [2, 1, 6], "weight": 14.6484375, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 61483, "aliases": [], "name": "UNDERCARRIAGE W. VERT. SNAP", "no_image": false, "size": [2, 1, 6], "weight": 14.6484375, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_05", "biome": null, "rewards": {"61483": 1, "32125": 1, "25214": 1}}], "usage": []}

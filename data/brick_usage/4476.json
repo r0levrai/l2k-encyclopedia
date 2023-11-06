@@ -1,1 +1,1 @@
-{"id": 4476, "aliases": [], "name": "SLANTING STANDARD 2X4/2X2", "no_image": false, "size": [5, 2, 15], "weight": 118.45943, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Traffic_FV_04Street"]}
+{"id": 4476, "aliases": [], "name": "SLANTING STANDARD 2X4/2X2", "no_image": false, "size": [5, 2, 15], "weight": 118.45943, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_03", "biome": null, "rewards": {"4476": 1, "3479": 1, "2340": 1, "2508": 1}}], "usage": ["Traffic_FV_04Street"]}

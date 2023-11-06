@@ -1,1 +1,1 @@
-{"id": 4515, "aliases": [3292], "name": "RAMP 6X8", "no_image": false, "size": [8, 6, 3], "weight": 216.6748, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["VampHearse_9464"]}
+{"id": 4515, "aliases": [3292], "name": "RAMP 6X8", "no_image": false, "size": [8, 6, 3], "weight": 216.6748, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hood_01", "biome": null, "rewards": {"50946": 1, "90201": 1, "4515": 1}}], "usage": ["VampHearse_9464"]}

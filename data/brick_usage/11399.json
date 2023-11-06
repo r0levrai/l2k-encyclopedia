@@ -1,1 +1,1 @@
-{"id": 11399, "aliases": [], "name": "PLATE 4X4 W/VERTICAL HOLDER", "no_image": false, "size": [4, 5, 1], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 11399, "aliases": [], "name": "PLATE 4X4 W/VERTICAL HOLDER", "no_image": false, "size": [4, 5, 1], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Grip_01", "biome": null, "rewards": {"30350": 1, "44676": 1, "2335": 1, "2525": 1, "11399": 1}}], "usage": []}

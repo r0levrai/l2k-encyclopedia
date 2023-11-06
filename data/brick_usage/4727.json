@@ -1,1 +1,1 @@
-{"id": 4727, "aliases": [], "name": "FLOWER, STALK", "no_image": false, "size": [2, 2, 3], "weight": 20.141602, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 4727, "aliases": [], "name": "FLOWER, STALK", "no_image": false, "size": [2, 2, 3], "weight": 20.141602, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Mineral_03", "biome": null, "rewards": {"24866": 1, "4727": 1, "4728": 1}}], "usage": []}

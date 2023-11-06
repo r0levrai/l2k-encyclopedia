@@ -1,1 +1,1 @@
-{"id": 33176, "aliases": [], "name": "DECORATION BALL", "no_image": false, "size": [1, 1, 4], "weight": 17.77806, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FusionOffroad_VC000", "RivalMadScientistStreetCar_VC0000"]}
+{"id": 33176, "aliases": [], "name": "DECORATION BALL", "no_image": false, "size": [1, 1, 4], "weight": 17.77806, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Round_01", "biome": null, "rewards": {"33176": 1, "20401": 1, "30367": 1}}], "usage": ["FusionOffroad_VC000", "RivalMadScientistStreetCar_VC0000"]}

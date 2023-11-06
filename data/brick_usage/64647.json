@@ -1,1 +1,1 @@
-{"id": 64647, "aliases": [28661], "name": "FEATHER", "no_image": false, "size": [2, 1, 4], "weight": 5.79834, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 64647, "aliases": [28661], "name": "FEATHER", "no_image": false, "size": [2, 1, 4], "weight": 5.79834, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_05", "biome": null, "rewards": {"64647": 1, "92590": 1, "93059": 1}}], "usage": []}

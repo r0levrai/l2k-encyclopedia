@@ -1,1 +1,1 @@
-{"id": 30622, "aliases": [], "name": "BUMPER 1X4X7,6 W/DOUB/SNAP", "no_image": false, "size": [4, 3, 4], "weight": 86.9751, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ShadowZ_Offroad_VC000", "Speedboat_6737"]}
+{"id": 30622, "aliases": [], "name": "BUMPER 1X4X7,6 W/DOUB/SNAP", "no_image": false, "size": [4, 3, 4], "weight": 86.9751, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "AddOn_03", "biome": null, "rewards": {"30622": 1, "30647": 1, "47501": 1}}], "usage": ["ShadowZ_Offroad_VC000", "Speedboat_6737"]}

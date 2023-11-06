@@ -1,1 +1,1 @@
-{"id": 11603, "aliases": [], "name": "TURTLE W/HOLE Ø 1.5", "no_image": false, "size": [3, 2, 4], "weight": 27.46582, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 11603, "aliases": [], "name": "TURTLE W/HOLE Ø 1.5", "no_image": false, "size": [3, 2, 4], "weight": 27.46582, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Animal_03", "biome": null, "rewards": {"11603": 1, "13392": 1, "33499": 1, "16765": 1}}], "usage": []}

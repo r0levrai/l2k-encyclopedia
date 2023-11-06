@@ -1,1 +1,1 @@
-{"id": 93059, "aliases": [24458], "name": "Conical hat", "no_image": false, "size": [3, 3, 2], "weight": 12.817383, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 93059, "aliases": [24458], "name": "Conical hat", "no_image": false, "size": [3, 3, 2], "weight": 12.817383, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_05", "biome": null, "rewards": {"64647": 1, "92590": 1, "93059": 1}}], "usage": []}

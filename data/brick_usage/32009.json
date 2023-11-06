@@ -1,1 +1,1 @@
-{"id": 32009, "aliases": [41486], "name": "DOUBLE ANGULAR BEAM 3X7 45°", "no_image": false, "size": [9, 1, 12], "weight": 105.59082, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Forklift_4206", "TowTruck_60081"]}
+{"id": 32009, "aliases": [41486], "name": "DOUBLE ANGULAR BEAM 3X7 45°", "no_image": false, "size": [9, 1, 12], "weight": 105.59082, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Beam_03", "biome": null, "rewards": {"32271": 1, "32009": 1, "6629": 1}}], "usage": ["Forklift_4206", "TowTruck_60081"]}

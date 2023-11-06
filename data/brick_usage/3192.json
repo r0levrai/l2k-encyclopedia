@@ -1,1 +1,1 @@
-{"id": 3192, "aliases": [], "name": "DOOR 1X3X4 RIGHT", "no_image": false, "size": [3, 1, 12], "weight": 57.373047, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PrisonTransport_7286"]}
+{"id": 3192, "aliases": [], "name": "DOOR 1X3X4 RIGHT", "no_image": false, "size": [3, 1, 12], "weight": 57.373047, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Doors_02", "biome": null, "rewards": {"3192": 1, "3193": 1, "58380": 1, "58381": 1}}], "usage": ["PrisonTransport_7286"]}

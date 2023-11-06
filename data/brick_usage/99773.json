@@ -1,1 +1,1 @@
-{"id": 99773, "aliases": [65193], "name": "TRIANGEL", "no_image": false, "size": [5, 1, 7], "weight": 36.621094, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 99773, "aliases": [65193], "name": "TRIANGEL", "no_image": false, "size": [5, 1, 7], "weight": 36.621094, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Beam_02", "biome": null, "rewards": {"60484": 1, "2905": 1, "99773": 1, "32056": 1, "14720": 1}}], "usage": []}

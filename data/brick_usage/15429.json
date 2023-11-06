@@ -1,1 +1,1 @@
-{"id": 15429, "aliases": [37993], "name": "DESIGNING PLATE 1X2X2", "no_image": false, "size": [2, 1, 5], "weight": 21.362305, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 15429, "aliases": [37993], "name": "DESIGNING PLATE 1X2X2", "no_image": false, "size": [2, 1, 5], "weight": 21.362305, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_02", "biome": null, "rewards": {"15429": 1, "30106": 1, "4495": 1}}], "usage": []}

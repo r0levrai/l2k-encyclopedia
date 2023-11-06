@@ -1,1 +1,1 @@
-{"id": 98302, "aliases": [], "name": "JET ENGINE", "no_image": false, "size": [4, 3, 2], "weight": 56.45752, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 98302, "aliases": [], "name": "JET ENGINE", "no_image": false, "size": [4, 3, 2], "weight": 56.45752, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Essentials_03", "biome": null, "rewards": {"98302": 1, "30360": 1, "41862": 1}}], "usage": []}

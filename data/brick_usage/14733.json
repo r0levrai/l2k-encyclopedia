@@ -1,1 +1,1 @@
-{"id": 14733, "aliases": [], "name": "PENGUIN W/HOLE Ø1,5", "no_image": false, "size": [2, 2, 6], "weight": 58.143486, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 14733, "aliases": [], "name": "PENGUIN W/HOLE Ø1,5", "no_image": false, "size": [2, 2, 6], "weight": 58.143486, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Animal_04", "biome": null, "rewards": {"11568": 1, "12891": 1, "14733": 1, "95327": 1}}], "usage": []}

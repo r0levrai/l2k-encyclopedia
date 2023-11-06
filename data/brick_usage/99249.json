@@ -1,1 +1,1 @@
-{"id": 99249, "aliases": [], "name": "MINI BOUQ. STEM W. 3.2 SHAFT", "no_image": false, "size": [2, 1, 5], "weight": 4.5776367, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["OrganDonorTruck_VC000"]}
+{"id": 99249, "aliases": [], "name": "MINI BOUQ. STEM W. 3.2 SHAFT", "no_image": false, "size": [2, 1, 5], "weight": 4.5776367, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plant_05", "biome": null, "rewards": {"95829": 1, "95831": 1, "99249": 1}}], "usage": ["OrganDonorTruck_VC000"]}

@@ -1,1 +1,1 @@
-{"id": 95829, "aliases": [], "name": "M3", "no_image": false, "size": [1, 1, 2], "weight": 8.073105, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["OrganDonorTruck_VC000"]}
+{"id": 95829, "aliases": [], "name": "M3", "no_image": false, "size": [1, 1, 2], "weight": 8.073105, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plant_05", "biome": null, "rewards": {"95829": 1, "95831": 1, "99249": 1}}], "usage": ["OrganDonorTruck_VC000"]}

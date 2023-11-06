@@ -1,1 +1,1 @@
-{"id": 2922, "aliases": [], "name": "PANTOGRAPH PLATE 1X4", "no_image": false, "size": [4, 2, 3], "weight": 30.517578, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Bajambug_VC000"]}
+{"id": 2922, "aliases": [], "name": "PANTOGRAPH PLATE 1X4", "no_image": false, "size": [4, 2, 3], "weight": 30.517578, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hinge_05", "biome": null, "rewards": {"60471": 1, "44822": 1, "2922": 1}}], "usage": ["Bajambug_VC000"]}

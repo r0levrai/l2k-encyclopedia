@@ -1,1 +1,1 @@
-{"id": 24111, "aliases": [], "name": "DOG W/ 1.5 HOLE, NO. 4", "no_image": false, "size": [2, 2, 5], "weight": 35.705566, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 24111, "aliases": [], "name": "DOG W/ 1.5 HOLE, NO. 4", "no_image": false, "size": [2, 2, 5], "weight": 35.705566, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "AnimalSeries", "biome": null, "rewards": {"24205": 1, "24111": 1, "24066": 1, "24212": 1, "18824": 1}}], "usage": []}

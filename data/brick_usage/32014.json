@@ -1,1 +1,1 @@
-{"id": 32014, "aliases": [42155], "name": "ANGLE ELEMENT, 90 DEGREES [6]", "no_image": false, "size": [2, 1, 5], "weight": 20.141602, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Ragecoach_VC000"]}
+{"id": 32014, "aliases": [42155], "name": "ANGLE ELEMENT, 90 DEGREES [6]", "no_image": false, "size": [2, 1, 5], "weight": 20.141602, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Adapter_01", "biome": null, "rewards": {"32014": 1, "32034": 1, "32015": 1, "32016": 1, "32192": 1}}], "usage": ["Ragecoach_VC000"]}

@@ -1,1 +1,1 @@
-{"id": 11568, "aliases": [11247], "name": "SQIURREL W/HOLE ø1.5", "no_image": false, "size": [1, 3, 6], "weight": 41.503906, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 11568, "aliases": [11247], "name": "SQIURREL W/HOLE ø1.5", "no_image": false, "size": [1, 3, 6], "weight": 41.503906, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Animal_04", "biome": null, "rewards": {"11568": 1, "12891": 1, "14733": 1, "95327": 1}}], "usage": []}

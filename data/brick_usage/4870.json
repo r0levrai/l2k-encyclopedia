@@ -1,1 +1,1 @@
-{"id": 4870, "aliases": [], "name": "HOLDER F. AEROPLANE WHEEL", "no_image": false, "size": [2, 2, 4], "weight": 25.32959, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 4870, "aliases": [], "name": "HOLDER F. AEROPLANE WHEEL", "no_image": false, "size": [2, 2, 4], "weight": 25.32959, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_02", "biome": null, "rewards": {"10247": 1, "2444": 1, "2817": 1, "15092": 1, "2476": 1, "4870": 1}}], "usage": []}

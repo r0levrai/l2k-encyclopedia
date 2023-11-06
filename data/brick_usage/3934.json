@@ -1,1 +1,1 @@
-{"id": 3934, "aliases": [], "name": "WING 4X8/23° (RIGHT)", "no_image": false, "size": [8, 4, 1], "weight": 89.416504, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BuzzosRoyalRod_VC000"]}
+{"id": 3934, "aliases": [], "name": "WING 4X8/23° (RIGHT)", "no_image": false, "size": [8, 4, 1], "weight": 89.416504, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Winged_04", "biome": null, "rewards": {"3933": 1, "3934": 1, "50304": 1, "50305": 1}}], "usage": ["BuzzosRoyalRod_VC000"]}

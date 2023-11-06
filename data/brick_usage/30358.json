@@ -1,1 +1,1 @@
-{"id": 30358, "aliases": [], "name": "ROCKET ENGINE 2X5X2 2/3", "no_image": false, "size": [5, 2, 8], "weight": 110.77881, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 30358, "aliases": [], "name": "ROCKET ENGINE 2X5X2 2/3", "no_image": false, "size": [5, 2, 8], "weight": 110.77881, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_01", "biome": null, "rewards": {"4868": 1, "4746": 1, "30358": 1}}], "usage": []}

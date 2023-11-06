@@ -1,1 +1,1 @@
-{"id": 4467, "aliases": [70969], "name": "EXHAUST PIPE (R)", "no_image": false, "size": [11, 2, 3], "weight": 49.743652, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BoatTruck_VC000", "TruckBoat_VC000"]}
+{"id": 4467, "aliases": [70969], "name": "EXHAUST PIPE (R)", "no_image": false, "size": [11, 2, 3], "weight": 49.743652, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "AddOn_04", "biome": null, "rewards": {"40620": 1, "4466": 1, "4467": 1}}], "usage": ["BoatTruck_VC000", "TruckBoat_VC000"]}

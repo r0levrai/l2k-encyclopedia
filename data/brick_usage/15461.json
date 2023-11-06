@@ -1,1 +1,1 @@
-{"id": 15461, "aliases": [46189], "name": "DOUBLE SNAP W/ HOLE, DIA. 4.85", "no_image": false, "size": [3, 1, 5], "weight": 21.057129, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["BuzzosRoyalBarge_VC000"]}
+{"id": 15461, "aliases": [46189], "name": "DOUBLE SNAP W/ HOLE, DIA. 4.85", "no_image": false, "size": [3, 1, 5], "weight": 21.057129, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Adapter_02", "biome": null, "rewards": {"15460": 1, "15461": 1, "57585": 1, "10288": 1}}], "usage": ["BuzzosRoyalBarge_VC000"]}

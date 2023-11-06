@@ -1,4 +1,4 @@
-import { load_brick, load_async, snakecase } from './load.js';
+import { load_brick, load_source, load_async, snakecase } from './load.js';
 import { tiles } from './tiles.js';
 
 {
@@ -11,11 +11,13 @@ import { tiles } from './tiles.js';
   ]
   ).then(([vehicle, all_bricks, brick_aliases]) => {
     load_vehicle(vehicle);
+    load_async(vehicle.sources, load_source, "sources");
     load_parts(vehicle, all_bricks, brick_aliases);
   });
 }
-    
+
 function load_vehicle(vehicle) {
+  console.log(vehicle);
   document.getElementById("name").innerText = vehicle.name;
   document.getElementById('terrain').src = `icons/vehicle-terrain/${snakecase(vehicle.terrain)}.png`;
   if (vehicle.perk == null) {

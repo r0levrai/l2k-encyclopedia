@@ -1,1 +1,1 @@
-{"id": 47501, "aliases": [], "name": "SHELL W. SNAP", "no_image": false, "size": [2, 1, 3], "weight": 16.784668, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 47501, "aliases": [], "name": "SHELL W. SNAP", "no_image": false, "size": [2, 1, 3], "weight": 16.784668, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "AddOn_03", "biome": null, "rewards": {"30622": 1, "30647": 1, "47501": 1}}], "usage": []}

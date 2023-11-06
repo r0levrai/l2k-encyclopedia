@@ -1,1 +1,1 @@
-{"id": 2563, "aliases": [], "name": "PALM BASE", "no_image": false, "size": [2, 2, 5], "weight": 41.19873, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HeadlessHorsepowerOffroad_VC000"]}
+{"id": 2563, "aliases": [], "name": "PALM BASE", "no_image": false, "size": [2, 2, 5], "weight": 41.19873, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plant_04", "biome": null, "rewards": {"2563": 1, "2518": 1, "6255": 1, "6148": 1}}], "usage": ["HeadlessHorsepowerOffroad_VC000"]}

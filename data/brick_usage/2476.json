@@ -1,1 +1,1 @@
-{"id": 2476, "aliases": [48241], "name": "PLATE 2X2 INVERTED W. SNAP", "no_image": false, "size": [2, 2, 4], "weight": 25.024414, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireUtility_60111"]}
+{"id": 2476, "aliases": [48241], "name": "PLATE 2X2 INVERTED W. SNAP", "no_image": false, "size": [2, 2, 4], "weight": 25.024414, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_02", "biome": null, "rewards": {"10247": 1, "2444": 1, "2817": 1, "15092": 1, "2476": 1, "4870": 1}}], "usage": ["FireUtility_60111"]}

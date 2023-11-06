@@ -1,1 +1,1 @@
-{"id": 30388, "aliases": [], "name": "BRICK 1X6 FRIC/STUB/FORK VERT.", "no_image": false, "size": [8, 1, 3], "weight": 100.40283, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Excavator_60075", "MiningDrill_60185"]}
+{"id": 30388, "aliases": [], "name": "BRICK 1X6 FRIC/STUB/FORK VERT.", "no_image": false, "size": [8, 1, 3], "weight": 100.40283, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hinge_02", "biome": null, "rewards": {"30386": 1, "30387": 1, "30388": 1}}], "usage": ["Excavator_60075", "MiningDrill_60185"]}

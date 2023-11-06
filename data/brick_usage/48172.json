@@ -1,1 +1,1 @@
-{"id": 48172, "aliases": [48461], "name": "BRICK 2X2 W. D. KLICK-FEMALE", "no_image": false, "size": [4, 2, 3], "weight": 81.48193, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DonutCarriage_VC000"]}
+{"id": 48172, "aliases": [48461], "name": "BRICK 2X2 W. D. KLICK-FEMALE", "no_image": false, "size": [4, 2, 3], "weight": 81.48193, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hinge_03", "biome": null, "rewards": {"3830": 1, "3831": 1, "48172": 1}}], "usage": ["DonutCarriage_VC000"]}

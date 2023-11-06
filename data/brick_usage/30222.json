@@ -1,1 +1,1 @@
-{"id": 30222, "aliases": [32981], "name": "ICE LOLLY", "no_image": false, "size": [1, 0, 6], "weight": 12.207031, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["IceCreamTruckPoliceChase_60314B"]}
+{"id": 30222, "aliases": [32981], "name": "ICE LOLLY", "no_image": false, "size": [1, 0, 6], "weight": 12.207031, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "AddOn_02", "biome": null, "rewards": {"30222": 1, "3596": 1, "98549": 1}}], "usage": ["IceCreamTruckPoliceChase_60314B"]}

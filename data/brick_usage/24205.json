@@ -1,1 +1,1 @@
-{"id": 24205, "aliases": [], "name": "CREATURE, W/ 1.5 HOLE, NO. 28, PART 1", "no_image": false, "size": [2, 2, 5], "weight": 61.617386, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 24205, "aliases": [], "name": "CREATURE, W/ 1.5 HOLE, NO. 28, PART 1", "no_image": false, "size": [2, 2, 5], "weight": 61.617386, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "AnimalSeries", "biome": null, "rewards": {"24205": 1, "24111": 1, "24066": 1, "24212": 1, "18824": 1}}], "usage": []}

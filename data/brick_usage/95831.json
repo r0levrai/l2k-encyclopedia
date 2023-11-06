@@ -1,1 +1,1 @@
-{"id": 95831, "aliases": [], "name": "M4", "no_image": false, "size": [1, 1, 1], "weight": 7.4053745, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 95831, "aliases": [], "name": "M4", "no_image": false, "size": [1, 1, 1], "weight": 7.4053745, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plant_05", "biome": null, "rewards": {"95829": 1, "95831": 1, "99249": 1}}], "usage": []}

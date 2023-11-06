@@ -1,1 +1,1 @@
-{"id": 93553, "aliases": [], "name": "MINI FAN", "no_image": false, "size": [2, 0, 5], "weight": 13.122559, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 93553, "aliases": [], "name": "MINI FAN", "no_image": false, "size": [2, 0, 5], "weight": 13.122559, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_06", "biome": null, "rewards": {"93553": 1, "93094": 1, "93091": 1}}], "usage": []}

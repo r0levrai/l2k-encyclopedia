@@ -1,1 +1,1 @@
-{"id": 30176, "aliases": [], "name": "BAMBOO LEAVES 3X3", "no_image": false, "size": [3, 3, 3], "weight": 13.427734, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["HouseBoat_31051"]}
+{"id": 30176, "aliases": [], "name": "BAMBOO LEAVES 3X3", "no_image": false, "size": [3, 3, 3], "weight": 13.427734, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Mineral_01", "biome": null, "rewards": {"30338": 1, "30339": 1, "28598": 1, "30176": 1}}], "usage": ["HouseBoat_31051"]}

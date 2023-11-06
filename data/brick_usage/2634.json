@@ -1,1 +1,1 @@
-{"id": 2634, "aliases": [], "name": "SHIP'S WINDOW 2X8X2", "no_image": false, "size": [8, 2, 6], "weight": 246.51216, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 2634, "aliases": [], "name": "SHIP'S WINDOW 2X8X2", "no_image": false, "size": [8, 2, 6], "weight": 246.51216, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Windshield_01", "biome": null, "rewards": {"17454": 1, "13760": 1, "2634": 1, "47758": 1, "17457": 1}}], "usage": []}

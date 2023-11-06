@@ -1,1 +1,1 @@
-{"id": 14720, "aliases": [], "name": "BEAM I -FRAME 3X5 90 DEGR. HOLE Ø4.85", "no_image": false, "size": [5, 1, 7], "weight": 69.885254, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 14720, "aliases": [], "name": "BEAM I -FRAME 3X5 90 DEGR. HOLE Ø4.85", "no_image": false, "size": [5, 1, 7], "weight": 69.885254, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Beam_02", "biome": null, "rewards": {"60484": 1, "2905": 1, "99773": 1, "32056": 1, "14720": 1}}], "usage": []}

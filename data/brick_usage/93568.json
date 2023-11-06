@@ -1,1 +1,1 @@
-{"id": 93568, "aliases": [], "name": "PIE Ø15.83", "no_image": false, "size": [2, 2, 2], "weight": 17.798874, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 93568, "aliases": [], "name": "PIE Ø15.83", "no_image": false, "size": [2, 2, 2], "weight": 17.798874, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Food_03", "biome": null, "rewards": {"93568": 1, "33125": 1, "4342": 1}}], "usage": []}

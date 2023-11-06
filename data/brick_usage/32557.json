@@ -1,1 +1,1 @@
-{"id": 32557, "aliases": [], "name": "TECHNIC CROSSBLOCK 2X3", "no_image": false, "size": [2, 1, 7], "weight": 25.939941, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 32557, "aliases": [], "name": "TECHNIC CROSSBLOCK 2X3", "no_image": false, "size": [2, 1, 7], "weight": 25.939941, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Adapter_03", "biome": null, "rewards": {"41678": 1, "42003": 1, "32557": 1, "63869": 1, "32291": 1}}], "usage": []}

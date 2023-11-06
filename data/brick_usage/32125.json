@@ -1,1 +1,1 @@
-{"id": 32125, "aliases": [51138], "name": "TECHNIC ROTOR, 3 BLADES", "no_image": false, "size": [4, 5, 1], "weight": 38.146973, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PlaneCar_VC31003", "PlaneCar_VC31003B"]}
+{"id": 32125, "aliases": [51138], "name": "TECHNIC ROTOR, 3 BLADES", "no_image": false, "size": [4, 5, 1], "weight": 38.146973, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_05", "biome": null, "rewards": {"61483": 1, "32125": 1, "25214": 1}}], "usage": ["PlaneCar_VC31003", "PlaneCar_VC31003B"]}

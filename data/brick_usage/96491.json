@@ -1,1 +1,1 @@
-{"id": 96491, "aliases": [], "name": "M13", "no_image": false, "size": [1, 0, 2], "weight": 3.6719837, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 96491, "aliases": [], "name": "M13", "no_image": false, "size": [1, 0, 2], "weight": 3.6719837, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "ClipOn_02", "biome": null, "rewards": {"10187": 1, "11089": 1, "96491": 1}}], "usage": []}

@@ -24,42 +24,32 @@
     <div id="preview">
       <img src="textures/woosh.png">
     </div>
+  </section>
 
-    <div id="perf>s"></div>
+  <div id="perf>s"></div>
 
-    <div id="sources">
-      <h1>How to get</h1>
-      <div class="tile-grid">
-
-        <div class="tile bg rarity2 slanted">
+  <section>
+    <h1>How to get</h1>
+    <div class="tile-grid" id="sources"></div>
+    <!--div class="tile bg source slanted" id="no_source">
+          <img class="tile-thumbnail" src="textures/woosh.png">
+          <div class="tile-text-wrapper"><div class="tile-text">Not in a race, quest,  minigame, driverpass</div></div>
+        </div>
+        <div class="tile bg rarity2 slanted" id="no_source">
           <img class="tile-thumbnail" src="textures/sources/unkie2.png">
-          <div class="tile-text-wrapper">
-            <div class="tile-text">...Coming soon!</div>
-          </div>
-        </div>
-        <div class="tile bg source slanted" style="visibility: hidden;">
-          <div class="mask">
-            <img class="tile-thumbnail" src="textures/sources/unkie.png" style="width: 108%; height: 95%">
-          </div>
-          <div class="tile-text-wrapper">
-            <div class="tile-text">Unkie Shop<br />(limited)</div>
-          </div>
-        </div>
-      </div>
+          <div class="tile-text-wrapper"><div class="tile-text">For the rest, I am not sure yet!</div></div>
+        </div-->
+  </section>
 
-      <div>
-        <h1>Surplus parts</h1>
-        <div class="tile-grid" id="surplus"></div>
-      </div>
+  <section>
+    <h1>Surplus parts</h1>
+    <div class="tile-grid" id="surplus"></div>
+  </section>
 
-      <div id='list' style="cursor: pointer;"
-      onclick="document.getElementById('pieces').style.display = 'grid';
+  <section id='list' style="cursor: pointer;" onclick="document.getElementById('pieces').style.display = 'grid';
         document.getElementById('list').scrollIntoView({behavior: 'smooth'});">
-        <h1>Click here for non-surplus part list</h1>
-        <div class="tile-grid" id="pieces" style="display: none;"></div>
-      </div>
-
-    </div>
+    <h1>Click here for non-surplus part list</h1>
+    <div class="tile-grid" id="pieces" style="display: none;"></div>
   </section>
 
   <script src="vehicle.js" type="module"></script>

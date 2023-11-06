@@ -1,1 +1,1 @@
-{"id": 32271, "aliases": [16616, 42160], "name": "TECHNIC ANGULAR BEAM 3X7", "no_image": false, "size": [8, 1, 6], "weight": 80.26123, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 32271, "aliases": [16616, 42160], "name": "TECHNIC ANGULAR BEAM 3X7", "no_image": false, "size": [8, 1, 6], "weight": 80.26123, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Beam_03", "biome": null, "rewards": {"32271": 1, "32009": 1, "6629": 1}}], "usage": []}

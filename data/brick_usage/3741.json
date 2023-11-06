@@ -1,1 +1,1 @@
-{"id": 3741, "aliases": [], "name": "STALK", "no_image": false, "size": [2, 2, 5], "weight": 6.1035156, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 3741, "aliases": [], "name": "STALK", "no_image": false, "size": [2, 2, 5], "weight": 6.1035156, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plant_02", "biome": null, "rewards": {"19119": 1, "24855": 1, "3741": 1}}], "usage": []}

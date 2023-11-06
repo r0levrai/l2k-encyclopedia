@@ -1,6 +1,6 @@
 import { tiles } from './tiles.js';
 
-export { load_async, load_vehicle, load_brick, load_simple, yieldingLoop, snakecase };
+export { load_async, load_vehicle, load_brick, load_source, load_simple, yieldingLoop, snakecase };
 
 function load_async(array, load_fn, parent_id,
                     template_id = parent_id + '_template', log = parent_id) {
@@ -79,7 +79,7 @@ function load_simple(data, [template, parent],
   
   let tile = template.cloneNode(true);
   
-  tile.querySelector('#name').innerText = data.name;
+  tile.querySelector('#tile_name').innerText = data.name;
   
   let rarity = {
     null: 'rarity0',
@@ -93,6 +93,15 @@ function load_simple(data, [template, parent],
   tile.querySelector('#image').loading = "lazy";
   tile.querySelector('#image').src = !data.no_image ? image_path : 'textures/woosh.png';
   
+  parent.append(tile);
+  return tile;
+}
+
+function load_source(data, [_, parent])
+{
+  let template = tiles.getElementById(data.type + "_template");
+  let tile = template.cloneNode(true);
+  tile.querySelector('.tile-text').innerHTML += data.name;
   parent.append(tile);
   return tile;
 }

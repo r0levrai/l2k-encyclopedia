@@ -1,1 +1,1 @@
-{"id": 10172, "aliases": [31922], "name": "MINI TROPHY W. 3.2 SHAFT", "no_image": false, "size": [2, 1, 6], "weight": 18.310547, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 10172, "aliases": [31922], "name": "MINI TROPHY W. 3.2 SHAFT", "no_image": false, "size": [2, 1, 6], "weight": 18.310547, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_01", "biome": null, "rewards": {"10169": 1, "10172": 1, "89801": 1}}], "usage": []}

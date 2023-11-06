@@ -1,1 +1,1 @@
-{"id": 15469, "aliases": [], "name": "PLATE 2X2,2/3 W/KRYDSHUL& CROWN LEAF", "no_image": false, "size": [3, 3, 3], "weight": 34.484863, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Cornmobile_VC000"]}
+{"id": 15469, "aliases": [], "name": "PLATE 2X2,2/3 W/KRYDSHUL& CROWN LEAF", "no_image": false, "size": [3, 3, 3], "weight": 34.484863, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Mineral_02", "biome": null, "rewards": {"11127": 1, "15279": 1, "30385": 1, "15469": 1}}], "usage": ["Cornmobile_VC000"]}

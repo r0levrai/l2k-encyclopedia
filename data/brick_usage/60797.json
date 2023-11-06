@@ -1,1 +1,1 @@
-{"id": 60797, "aliases": [], "name": "DOOR GLAS T/FRAME 1X4X6 CO.I", "no_image": false, "size": [4, 1, 16], "weight": 126.66961, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 60797, "aliases": [], "name": "DOOR GLAS T/FRAME 1X4X6 CO.I", "no_image": false, "size": [4, 1, 16], "weight": 126.66961, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Doors_03", "biome": null, "rewards": {"60616": 1, "60621": 1, "60623": 1, "60797": 1, "60596": 1}}], "usage": []}

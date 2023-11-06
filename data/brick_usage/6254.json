@@ -1,1 +1,1 @@
-{"id": 6254, "aliases": [], "name": "ICE CREAM", "no_image": false, "size": [1, 1, 3], "weight": 9.460449, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["IceCreamVan_70804A", "IceCreamVan_70804B"]}
+{"id": 6254, "aliases": [], "name": "ICE CREAM", "no_image": false, "size": [1, 1, 3], "weight": 9.460449, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Food_01", "biome": null, "rewards": {"6254": 1, "10170": 1, "25386": 1, "33078": 1, "64648": 1, "98372": 1}}], "usage": ["IceCreamVan_70804A", "IceCreamVan_70804B"]}

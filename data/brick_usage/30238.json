@@ -1,1 +1,1 @@
-{"id": 30238, "aliases": [], "name": "SPIDER", "no_image": false, "size": [3, 2, 2], "weight": 11.59668, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["SpiderTruck_VC000"]}
+{"id": 30238, "aliases": [], "name": "SPIDER", "no_image": false, "size": [3, 2, 2], "weight": 11.59668, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Animal_05", "biome": null, "rewards": {"30464": 1, "37829": 1, "29111": 1, "30238": 1}}], "usage": ["SpiderTruck_VC000"]}

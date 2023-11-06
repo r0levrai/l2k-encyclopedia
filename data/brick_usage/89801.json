@@ -1,1 +1,1 @@
-{"id": 89801, "aliases": [89802], "name": "CUP", "no_image": false, "size": [3, 2, 9], "weight": 54.93164, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 89801, "aliases": [89802], "name": "CUP", "no_image": false, "size": [3, 2, 9], "weight": 54.93164, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Deco_01", "biome": null, "rewards": {"10169": 1, "10172": 1, "89801": 1}}], "usage": []}

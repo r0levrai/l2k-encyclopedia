@@ -1,1 +1,1 @@
-{"id": 3043, "aliases": [], "name": "RIDGED TILE 2X2/45°", "no_image": false, "size": [2, 2, 2], "weight": 27.770996, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Traffic_FV_02Boat", "VampHearse_9464"]}
+{"id": 3043, "aliases": [], "name": "RIDGED TILE 2X2/45°", "no_image": false, "size": [2, 2, 2], "weight": 27.770996, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Wedges_02", "biome": null, "rewards": {"3043": 1, "3044": 1, "3041": 1, "15571": 1, "3049": 1}}], "usage": ["Traffic_FV_02Boat", "VampHearse_9464"]}

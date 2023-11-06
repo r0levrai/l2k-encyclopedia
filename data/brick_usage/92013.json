@@ -1,1 +1,1 @@
-{"id": 92013, "aliases": [], "name": "BRICK 2X2 W. CUP FOR BALL", "no_image": false, "size": [3, 2, 3], "weight": 60.424805, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 92013, "aliases": [], "name": "BRICK 2X2 W. CUP FOR BALL", "no_image": false, "size": [3, 2, 3], "weight": 60.424805, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Ball_01", "biome": null, "rewards": {"14704": 1, "63082": 1, "92013": 1, "93571": 1}}], "usage": []}
