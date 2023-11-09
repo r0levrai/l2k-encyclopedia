@@ -1,0 +1,106 @@
+#options_header, .options_footer {
+    height: 100px;
+    display: block;
+    background-color: black;
+}
+#options_header svg, .options_footer svg {
+    stroke: white;
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.options_footer svg polygon, .options_footer svg circle {
+    stroke: white;
+}
+#options {
+    background-color: black;
+}
+#options rect.show {
+    stroke: black;
+}
+#options text {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.options {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0;
+  background-color: white;
+  padding: 2vw;
+  padding-bottom: 0;
+}
+.options:last-of-type {
+    padding-bottom: 2vw;
+}
+.options_description_header {
+
+}
+.options_description {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2.4vw;
+}
+.options_description span {
+  background-color: black;
+  display: block;
+  margin-bottom: 2vw;
+  padding: 1vw;
+}
+.options_description a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: -40px;
+}
+.options_description a svg {
+    stroke: white;
+    width: 40px;
+    height: 40px;
+}
+.option_selected, .option {
+  border-right: 2px solid black;
+  padding: 0.4vw;
+  cursor: pointer;
+}
+.option_selected:last-of-type, .option:last-of-type {
+    border-right: none;
+}
+.color_option {
+  padding: 0.5em;
+}
+.color_option input {
+    width: 100%;
+}
+.color_input {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.option_selected {
+  background-color: #DDFFDD;
+}
+.option:hover, .option_selected:hover {
+    background-color: #99EE99;
+}
+.option_selected svg, .option svg {
+    display: block;
+    width: 100%;
+    opacity: 0.75;
+    font-size: 13px;
+}
+.option_selected svg {
+    opacity: 1;
+}
+#options .lego_1 {
+  font: italic 16px arial narrow;
+  fill: black;
+  stroke: #000;
+}

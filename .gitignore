@@ -1,3 +1,5 @@
 /Exports
-*.py
+data/*.py
 __pycache__/
+dependencies/buildinginstructions.js/.git_old/
+dependencies/buildinginstructions.js/ldraw_parts_complete/

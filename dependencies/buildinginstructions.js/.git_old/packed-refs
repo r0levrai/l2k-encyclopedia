@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+724561a769041d79e6ae86a1df0f21ab59b7ab3a refs/remotes/origin/GLOSSMAP_support_Issue_56
+6afb7650cc14741b82e6256197cab9ab34aef765 refs/remotes/origin/Issue-52-New-Studio-Texmap-Commands
+ed32f007657ad24fc2d6fa4dc6846d1a6e0a2f19 refs/remotes/origin/master
+1dc8189a9211e7f9f03693ed33e60905f29100f5 refs/remotes/origin/raw_geometry_files
+b83b1c9d1e7278684188712f69f37b97fe972833 refs/tags/v1.0
