@@ -1,1 +1,1 @@
-{"id": 70973, "aliases": [48245], "name": "BUCKET", "no_image": false, "size": [3, 3, 6], "weight": 1.0, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 70973, "aliases": [48245], "name": "BUCKET", "no_image": false, "size": [3, 3, 6], "weight": 1.0, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_15", "biome": null, "rewards": {"71861": 1, "70973": 1, "13783": 1, "24086": 1}}], "usage": []}

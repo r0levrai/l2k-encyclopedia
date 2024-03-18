@@ -1,1 +1,1 @@
-{"id": 30505, "aliases": [], "name": "CORNER BRICK 45 DEG. 3X3", "no_image": false, "size": [3, 3, 3], "weight": 61.645508, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DrinksTruck_60384", "Tractor_7684"]}
+{"id": 30505, "aliases": [], "name": "CORNER BRICK 45 DEG. 3X3", "no_image": false, "size": [3, 3, 3], "weight": 61.645508, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Angled_03", "biome": null, "rewards": {"30181": 1, "30505": 1, "50955": 1, "50956": 1}}], "usage": ["DrinksTruck_60384", "Tractor_7684"]}

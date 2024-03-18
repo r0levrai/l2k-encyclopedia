@@ -1,1 +1,1 @@
-{"id": 30194, "aliases": [], "name": "CIRCULAR SAW", "no_image": false, "size": [2, 1, 8], "weight": 15.258789, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FireEngine_60002", "FireEngine_60107"]}
+{"id": 30194, "aliases": [], "name": "CIRCULAR SAW", "no_image": false, "size": [2, 1, 8], "weight": 15.258789, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_12", "biome": null, "rewards": {"30088": 1, "30194": 1, "3841": 1, "4006": 1}}], "usage": ["FireEngine_60002", "FireEngine_60107"]}

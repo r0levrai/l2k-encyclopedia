@@ -1,1 +1,1 @@
-{"id": 66252, "aliases": [], "name": "PLATE 4X4 W/ VERT. HOLDER", "no_image": false, "size": [4, 5, 1], "weight": 73.24219, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["CleaningTruck_60317"]}
+{"id": 66252, "aliases": [], "name": "PLATE 4X4 W/ VERT. HOLDER", "no_image": false, "size": [4, 5, 1], "weight": 73.24219, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Booster_04", "biome": null, "rewards": {"66252": 1, "93061": 1, "93609": 1, "30258": 1}}], "usage": ["CleaningTruck_60317"]}

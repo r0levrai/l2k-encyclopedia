@@ -1,1 +1,1 @@
-{"id": 2496, "aliases": [88423], "name": "WHEEL AXLE Ø8.2/Ø1.9", "no_image": false, "size": [1, 2, 3], "weight": 9.155273, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["AirportBaggage_VC000", "CargoVan_10268"]}
+{"id": 2496, "aliases": [88423], "name": "WHEEL AXLE Ø8.2/Ø1.9", "no_image": false, "size": [1, 2, 3], "weight": 9.155273, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_07", "biome": null, "rewards": {"45918": 1, "53118": 1, "11641": 1, "2496": 1}}], "usage": ["AirportBaggage_VC000", "CargoVan_10268"]}

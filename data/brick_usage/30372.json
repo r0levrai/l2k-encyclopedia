@@ -1,1 +1,1 @@
-{"id": 30372, "aliases": [], "name": "COCKPIT 4X7X2 FRIC/FORK", "no_image": false, "size": [8, 4, 5], "weight": 167.84668, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 30372, "aliases": [], "name": "COCKPIT 4X7X2 FRIC/FORK", "no_image": false, "size": [8, 4, 5], "weight": 167.84668, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Windshield_Pack_05", "biome": null, "rewards": {"30372": 1, "46413": 1, "30083": 1, "50747": 1}}], "usage": []}

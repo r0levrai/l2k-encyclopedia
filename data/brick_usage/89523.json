@@ -1,1 +1,1 @@
-{"id": 89523, "aliases": [], "name": "PLATE OCTAGONAL 10X10 W. SNAP", "no_image": false, "size": [10, 10, 1], "weight": 318.29834, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 89523, "aliases": [], "name": "PLATE OCTAGONAL 10X10 W. SNAP", "no_image": false, "size": [10, 10, 1], "weight": 318.29834, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Plates_03", "biome": null, "rewards": {"64799": 1, "89523": 1}}], "usage": []}

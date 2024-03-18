@@ -1,1 +1,1 @@
-{"id": 61482, "aliases": [91795, 97927], "name": "HANDCUFFS", "no_image": false, "size": [3, 1, 1], "weight": 4.8828125, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PoliceK9Truck_7285", "SecurityCart_30352"]}
+{"id": 61482, "aliases": [91795, 97927], "name": "HANDCUFFS", "no_image": false, "size": [3, 1, 1], "weight": 4.8828125, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Collection_04", "biome": null, "rewards": {"6124": 1, "87989": 1, "90393": 1, "61482": 1}}], "usage": ["PoliceK9Truck_7285", "SecurityCart_30352"]}

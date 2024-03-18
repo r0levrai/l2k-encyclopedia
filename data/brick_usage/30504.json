@@ -1,1 +1,1 @@
-{"id": 30504, "aliases": [], "name": "CORNER PLATE 45 DEG. 8X8", "no_image": false, "size": [8, 8, 1], "weight": 155.63965, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Supersonic-jet_31126"]}
+{"id": 30504, "aliases": [], "name": "CORNER PLATE 45 DEG. 8X8", "no_image": false, "size": [8, 8, 1], "weight": 155.63965, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Angled_05", "biome": null, "rewards": {"30504": 1, "78443": 1, "78444": 1, "35044": 1}}], "usage": ["Supersonic-jet_31126"]}

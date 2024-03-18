@@ -1,1 +1,1 @@
-{"id": 32333, "aliases": [28840], "name": "V-ENGINE HOLDER", "no_image": false, "size": [5, 1, 8], "weight": 88.50098, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 32333, "aliases": [28840], "name": "V-ENGINE HOLDER", "no_image": false, "size": [5, 1, 8], "weight": 88.50098, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_06", "biome": null, "rewards": {"32324": 1, "32333": 1, "85940": 1, "57359": 1}}], "usage": []}

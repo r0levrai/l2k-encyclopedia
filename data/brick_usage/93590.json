@@ -1,1 +1,1 @@
-{"id": 93590, "aliases": [], "name": "WHEEL ARCH 2X4 W HORI.NOBS", "no_image": false, "size": [4, 2, 3], "weight": 48.217773, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Bajambug_VC000"]}
+{"id": 93590, "aliases": [], "name": "WHEEL ARCH 2X4 W HORI.NOBS", "no_image": false, "size": [4, 2, 3], "weight": 48.217773, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_09", "biome": null, "rewards": {"66955": 1, "87606": 1, "93590": 1, "47759": 1}}], "usage": ["Bajambug_VC000"]}

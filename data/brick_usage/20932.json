@@ -1,1 +1,1 @@
-{"id": 20932, "aliases": [20461], "name": "MINI LEG RIGHT NO. 2", "no_image": false, "size": [1, 1, 5], "weight": 16.654612, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PoliceTruckQuest_VC000", "PoliceTruck_60007", "TourBus_60200"]}
+{"id": 20932, "aliases": [20461], "name": "MINI LEG RIGHT NO. 2", "no_image": false, "size": [1, 1, 5], "weight": 1.0, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PoliceTruckQuest_VC000", "PoliceTruck_60007", "TourBus_60200"]}

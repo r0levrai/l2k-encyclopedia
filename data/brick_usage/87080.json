@@ -1,1 +1,1 @@
-{"id": 87080, "aliases": [], "name": "LEFT PANEL 3X5", "no_image": false, "size": [3, 2, 12], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DuneBuggy_8864"]}
+{"id": 87080, "aliases": [], "name": "LEFT PANEL 3X5", "no_image": false, "size": [3, 2, 12], "weight": 76.293945, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_07", "biome": null, "rewards": {"57360": 1, "87080": 1, "87086": 1, "92907": 1}}], "usage": ["DuneBuggy_8864"]}

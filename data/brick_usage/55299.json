@@ -1,1 +1,1 @@
-{"id": 55299, "aliases": [], "name": "OPEN FIRM KEY", "no_image": false, "size": [1, 0, 5], "weight": 6.543291, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["MiniSub_70433"]}
+{"id": 55299, "aliases": [], "name": "OPEN FIRM KEY", "no_image": false, "size": [1, 0, 5], "weight": 6.543291, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_14", "biome": null, "rewards": {"55296": 1, "55297": 1, "55299": 1, "55300": 1}}], "usage": ["MiniSub_70433"]}

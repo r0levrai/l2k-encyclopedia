@@ -1,1 +1,1 @@
-{"id": 30209, "aliases": [], "name": "PLATE 1X2 W. DISK  Ø 31.84", "no_image": false, "size": [4, 2, 10], "weight": 83.92334, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 30209, "aliases": [], "name": "PLATE 1X2 W. DISK  Ø 31.84", "no_image": false, "size": [4, 2, 10], "weight": 83.92334, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Brackets_01", "biome": null, "rewards": {"98287": 1, "30209": 1, "64561": 1}}], "usage": []}

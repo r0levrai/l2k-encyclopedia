@@ -1,1 +1,1 @@
-{"id": 99012, "aliases": [58489], "name": "ROTORBLAD 8M", "no_image": false, "size": [1, 8, 3], "weight": 48.828125, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["McLarenSolusGT_Street_76918"]}
+{"id": 99012, "aliases": [58489], "name": "ROTORBLAD 8M", "no_image": false, "size": [1, 8, 3], "weight": 48.828125, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_10", "biome": null, "rewards": {"2479": 1, "57906": 1, "62743": 1, "99012": 1}}], "usage": ["McLarenSolusGT_Street_76918"]}

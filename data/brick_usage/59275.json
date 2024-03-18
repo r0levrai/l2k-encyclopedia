@@ -1,1 +1,1 @@
-{"id": 59275, "aliases": [], "name": "FROGMAN'S FEET", "no_image": false, "size": [2, 1, 0], "weight": 6.6840115, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 59275, "aliases": [], "name": "FROGMAN'S FEET", "no_image": false, "size": [2, 1, 0], "weight": 6.6840115, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_11", "biome": null, "rewards": {"11253": 1, "59275": 1, "93218": 1, "2614": 1}}], "usage": []}

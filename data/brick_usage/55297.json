@@ -1,1 +1,1 @@
-{"id": 55297, "aliases": [], "name": "DRILLING MACHINE", "no_image": false, "size": [2, 1, 4], "weight": 10.490481, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["MiniSub_70433"]}
+{"id": 55297, "aliases": [], "name": "DRILLING MACHINE", "no_image": false, "size": [2, 1, 4], "weight": 10.490481, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_14", "biome": null, "rewards": {"55296": 1, "55297": 1, "55299": 1, "55300": 1}}], "usage": ["MiniSub_70433"]}
