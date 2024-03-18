@@ -35,6 +35,7 @@ from typing import Optional
 import json
 from pathlib import Path
 from glob import glob
+import filecmp
 from shutil import copy as _copy
 from urllib.parse import quote as escape
 
@@ -54,7 +55,9 @@ def copy(src, dst, crop=False):
         image = Image.open(src)
         image.crop(image.getbbox()).save(dst)
     else:
-        _copy(src, dst)
+        # for speed, only copy if dst != src (according to filesystem metadata)
+        if not Path(dst).is_file() or not filecmp.cmp(src, dst):
+            _copy(src, dst)
 
 class EnhancedJSONEncoder(json.JSONEncoder):
     def default(self, o):
@@ -378,7 +381,7 @@ def check_brick_icon_path(id, properties):
         return True
     else:
         print('brick', id, f'have no icon path')
-        if Path(brick_path + f"T_{id}_Icon.json").is_file():
+        if Path(brick_path + f"T_{id}_Icon.png").is_file():
             print(' | but icon exists anyway')
             return True
         else:
@@ -396,6 +399,8 @@ def parse_bricks():
         if id in aliases:
             aliases.remove(id)
         no_image = not check_brick_icon_path(id, properties)
+        if not no_image:
+            copy(brick_path + f"T_{id}_Icon.png", f'../textures/bricks/{id}.png')
         size = try_parse(properties, "GridSize", required=True)
         size = (size['X'], size['Y'], size['Z'])
         weight = try_parse(properties, "Mass", required=True)
@@ -493,10 +498,10 @@ def parse_flairs():
             sources.append(Source.default)
         
         image_path  = try_parse_image(properties, "Icon")
-        no_image = image_path is None
-        if image_path is None or image_path in [
+        no_image = image_path is None or image_path in [
             '../Exports/LEGO2KDrive/Content/LEGO/Flair/T_Flair_Eye1_Icon.png'
-        ]:  # these ones are referenced but don't exist for some reason
+        ]  # these ones are referenced but don't exist for some reason
+        if no_image:
             pass #print(id, ':', name, 'have no image')
         else:
             copy(image_path, f'../textures/flairs/{id}.png')
