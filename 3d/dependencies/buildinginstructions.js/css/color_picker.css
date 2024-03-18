@@ -1,0 +1,46 @@
+#color_button {
+  display: none;
+}
+#color_picker_holder {
+  position: absolute;
+}
+.color_container {
+  display: inline-block;
+  text-align: center;
+  line-height: 8vw;
+  font-weight: bold;
+  border: none;
+  padding: 0.2vw;
+  margin: 0.3vw;
+  cursor: pointer;
+  font-size: 4vw;
+  border-radius: 100%;
+}
+.color_ele {
+  display: block;
+  min-width: 8vw;
+  height: 8vw;
+  border-radius: 20vw;
+}
+#color_picker_button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  min-width: 4vw;
+  height: 4vw;
+  background: none;
+  cursor: pointer;
+  border-radius: 100%;
+  font-size: 2vw;
+  line-height: 4vw;
+  text-align: center;
+}
+#color_picker_button svg {
+  width: 4vw;
+  height: 4vw;
+}
+#color_text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+

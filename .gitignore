@@ -1,4 +1,5 @@
 /Exports
 __pycache__/
-dependencies/buildinginstructions.js/.git_old/
-dependencies/buildinginstructions.js/ldraw_parts_complete/
+3d/dependencies/buildinginstructions.js/.git_old/
+3d/dependencies/buildinginstructions.js/ldraw_parts/
+3d/dependencies/buildinginstructions.js/ldraw_parts_me/
