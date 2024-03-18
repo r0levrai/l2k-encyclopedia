@@ -27,6 +27,9 @@ Before running this, you want to dump the following folders (relative to base_pa
   - Game/UI/Textures/4K/BrickPackImages
 - uasset:
   - Game/Vehicle/Configs/BrickGraphs
+
+You can also copy your old ./data/*_by_id.json to ./data/last_version/ if you want
+the new ones to have " (new!)" appended to their names
 """
 
 from dataclasses import dataclass, asdict, is_dataclass
@@ -68,13 +71,22 @@ class EnhancedJSONEncoder(json.JSONEncoder):
         else:
             return super().default(o)
 
-def dump(name, value, verbose=True):
+def dump(name, value, add_new_to_name=True, verbose=True):
     json_path = f'./{name}.json'
+    new_count = 0
+    if add_new_to_name and (Path('last_version') / json_path).is_file():
+        with open(Path('last_version') / json_path) as old_file:
+            old_value = json.load(old_file)
+        for k, v in value.items():
+            if str(k) not in old_value:
+                v.name += ' (new!)'
+                new_count += 1
     Path(json_path).parents[0].mkdir(parents=True, exist_ok=True)
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(value, f, cls=EnhancedJSONEncoder, ensure_ascii=False)
     if verbose:
-        print('-> Dumped', len(value), name)
+        print('-> Dumped', len(value), name
+              + (f' ({new_count} new!)' if new_count else ''))
         
 def proper_sort_dict(dict_):
     return dict(sorted(dict_.items(), key=lambda kv: proper_order(kv[1].name)))
@@ -532,7 +544,7 @@ class Chassis(Assembly):
 @dataclass
 class Chassis:
     id: str
-    name: Optional[str]  # only a few have these
+    name: str  # only a few have these, we'll store the id otherwise
     # chassis_assembly: todo
     # properties: physics, not saving. however, we can use the path to identify the terrain type!
     terrain: str  # boat/street/offroad
@@ -545,7 +557,7 @@ class Chassis:
 chassis_by_id = {}
 def parse_chassis():
     for id, properties, oid in load(base_path + "Game/Vehicle/Inventory/*ChassisConfigs/*.json", type='ChassisConfig'):
-        name = get_name(properties, "ChassisName")
+        name = get_name(properties, "ChassisName") or id
         default_engine = try_parse(properties, "DefaultEngineConfig")
         stats = try_parse(properties, "ChassisPerformanceStats")
         
