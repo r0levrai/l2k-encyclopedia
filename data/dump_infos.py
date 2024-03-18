@@ -311,7 +311,7 @@ def add_brickpacks_to_sources():
         for reward in rewards:
             sources_for_any_id[reward].append(all_sources[-1])
 add_brickpacks_to_sources()
-print(all_sources)
+#print(all_sources)
 dump("sources", all_sources)
 dump("sources_for_any_id", sources_for_any_id)
 
@@ -592,9 +592,9 @@ def parse_vehicles():
         garage_valid = try_parse(properties, 'GarageValidation')
         sources = sources_for_any_id.get(id, [])
         if properties.get("bIsQuestVehicle", False):
-            print('| quest vehicle', id, 'have sources:', sources)
+            pass #print('| quest vehicle', id, 'have sources:', sources)
         if properties.get("bIsRivalVehicle", False):
-            print('| rival vehicle', id, 'have sources:', sources)
+            pass #print('| rival vehicle', id, 'have sources:', sources)
         if try_parse(properties, "AlwaysUnlocked", False):
             sources.append(Source.default)
             
