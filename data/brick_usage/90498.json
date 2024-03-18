@@ -1,1 +1,1 @@
-{"id": 90498, "aliases": [], "name": "FLAT TILE 8X16", "no_image": false, "size": [16, 8, 1], "weight": 427.2461, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 90498, "aliases": [], "name": "FLAT TILE 8X16", "no_image": false, "size": [16, 8, 1], "weight": 427.2461, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Covers_05", "biome": null, "rewards": {"48288": 1, "69729": 1, "90498": 1}}], "usage": []}

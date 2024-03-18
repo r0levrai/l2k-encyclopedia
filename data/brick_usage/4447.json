@@ -1,1 +1,1 @@
-{"id": 4447, "aliases": [], "name": "FRAME SKYLIGHT 4X4X3/45°", "no_image": false, "size": [4, 4, 9], "weight": 67.44385, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 4447, "aliases": [], "name": "FRAME SKYLIGHT 4X4X3/45°", "no_image": false, "size": [4, 4, 9], "weight": 67.44385, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Booster_01", "biome": null, "rewards": {"4447": 1, "4448": 1, "4345": 1, "4346": 1}}], "usage": []}

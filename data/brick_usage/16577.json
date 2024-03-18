@@ -1,1 +1,1 @@
-{"id": 16577, "aliases": [40296], "name": "BRICK W. BOW 1X8X2", "no_image": false, "size": [8, 1, 6], "weight": 109.25293, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["FastroStreet_VC000", "SpaceRoverExplorer_VC31107"]}
+{"id": 16577, "aliases": [40296], "name": "BRICK W. BOW 1X8X2", "no_image": false, "size": [8, 1, 6], "weight": 109.25293, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Arches_05", "biome": null, "rewards": {"6060": 1, "16577": 1, "32739": 1}}], "usage": ["FastroStreet_VC000", "SpaceRoverExplorer_VC31107"]}

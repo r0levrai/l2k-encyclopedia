@@ -1,1 +1,1 @@
-{"id": 35173, "aliases": [], "name": "COCKPIT DIA. 47,79 W/ SHAFT DIA. 3,2", "no_image": false, "size": [7, 6, 2], "weight": 273.0191, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["LunarRovingVehicle_60348"]}
+{"id": 35173, "aliases": [], "name": "COCKPIT DIA. 47,79 W/ SHAFT DIA. 3,2", "no_image": false, "size": [7, 6, 2], "weight": 1.0, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_13", "biome": null, "rewards": {"1871": 1, "88293": 1, "3876": 1, "35173": 1}}], "usage": ["LunarRovingVehicle_60348"]}

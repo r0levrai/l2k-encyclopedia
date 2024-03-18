@@ -1,1 +1,1 @@
-{"id": 30294, "aliases": [42291, 53528, 53934, 28696], "name": "ROCK 4X4X1 2/3 LOWER PART", "no_image": false, "size": [4, 4, 5], "weight": 91.552734, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ForkLift_60125"]}
+{"id": 30294, "aliases": [42291, 53528, 53934, 28696], "name": "ROCK 4X4X1 2/3 LOWER PART", "no_image": false, "size": [4, 4, 5], "weight": 91.552734, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Extras_01", "biome": null, "rewards": {"30293": 1, "30294": 1, "30342": 1, "30361": 1}}], "usage": ["ForkLift_60125"]}

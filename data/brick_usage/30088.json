@@ -1,1 +1,1 @@
-{"id": 30088, "aliases": [], "name": "HARPOON 5 M", "no_image": false, "size": [4, 0, 8], "weight": 9.155273, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 30088, "aliases": [], "name": "HARPOON 5 M", "no_image": false, "size": [4, 0, 8], "weight": 9.155273, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_12", "biome": null, "rewards": {"30088": 1, "30194": 1, "3841": 1, "4006": 1}}], "usage": []}

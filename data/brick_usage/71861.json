@@ -1,1 +1,1 @@
-{"id": 71861, "aliases": [48246], "name": "HANDLE FOR BUCKET", "no_image": false, "size": [3, 0, 4], "weight": 22.70916, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 71861, "aliases": [48246], "name": "HANDLE FOR BUCKET", "no_image": false, "size": [3, 0, 4], "weight": 22.70916, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_15", "biome": null, "rewards": {"71861": 1, "70973": 1, "13783": 1, "24086": 1}}], "usage": []}

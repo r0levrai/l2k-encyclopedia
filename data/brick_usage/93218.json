@@ -1,1 +1,1 @@
-{"id": 93218, "aliases": [18746], "name": "MINI FIGURE SNOW BOARD", "no_image": false, "size": [6, 2, 1], "weight": 61.452606, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["PizzaCar_VC000", "PizzaCar_VC001"]}
+{"id": 93218, "aliases": [18746], "name": "MINI FIGURE SNOW BOARD", "no_image": false, "size": [6, 2, 1], "weight": 61.452606, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_11", "biome": null, "rewards": {"11253": 1, "59275": 1, "93218": 1, "2614": 1}}], "usage": ["PizzaCar_VC000", "PizzaCar_VC001"]}

@@ -1,1 +1,1 @@
-{"id": 604614, "aliases": [], "name": "ADJUSTABLE SPANNER", "no_image": false, "size": [1, 0, 6], "weight": 12.959512, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["MonkeyMobile_VC000"]}
+{"id": 604614, "aliases": [], "name": "ADJUSTABLE SPANNER", "no_image": false, "size": [1, 0, 6], "weight": 12.959512, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Collection_03", "biome": null, "rewards": {"604552": 1, "604553": 1, "604614": 1, "604615": 1}}], "usage": ["MonkeyMobile_VC000"]}

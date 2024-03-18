@@ -1,1 +1,1 @@
-{"id": 2479, "aliases": [], "name": "ROTOR", "no_image": false, "size": [5, 5, 3], "weight": 42.114258, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Hydro_31023", "SwampBoat_5866"]}
+{"id": 2479, "aliases": [], "name": "ROTOR", "no_image": false, "size": [5, 5, 3], "weight": 42.114258, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_10", "biome": null, "rewards": {"2479": 1, "57906": 1, "62743": 1, "99012": 1}}], "usage": ["Hydro_31023", "SwampBoat_5866"]}

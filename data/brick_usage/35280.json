@@ -1,1 +1,1 @@
-{"id": 35280, "aliases": [], "name": "WALL ELEMENT, ROUND 2X4X4", "no_image": false, "size": [4, 2, 12], "weight": 259.8649, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["DrinksTruck_60384"]}
+{"id": 35280, "aliases": [], "name": "WALL ELEMENT, ROUND 2X4X4", "no_image": false, "size": [4, 2, 12], "weight": 1.0, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Barrier_Pack_03", "biome": null, "rewards": {"30562": 1, "30987": 1, "35280": 1, "24593": 1}}], "usage": ["DrinksTruck_60384"]}

@@ -1,1 +1,1 @@
-{"id": 3838, "aliases": [], "name": "MINI OXYGEN BOTTLES", "no_image": false, "size": [1, 2, 4], "weight": 15.563965, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ScienceStation_452"]}
+{"id": 3838, "aliases": [], "name": "MINI OXYGEN BOTTLES", "no_image": false, "size": [1, 2, 4], "weight": 15.563965, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Collection_05", "biome": null, "rewards": {"92585": 1, "98368": 1, "99253": 1, "3838": 1}}], "usage": ["ScienceStation_452"]}

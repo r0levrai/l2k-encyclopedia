@@ -1,1 +1,1 @@
-{"id": 42445, "aliases": [49546], "name": "PLATE 1X2 W. SHAFT 12M", "no_image": false, "size": [12, 1, 1], "weight": 37.231445, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 42445, "aliases": [49546], "name": "PLATE 1X2 W. SHAFT 12M", "no_image": false, "size": [12, 1, 1], "weight": 37.231445, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Snap_04", "biome": null, "rewards": {"42445": 1, "58176": 1, "2921": 1, "27262": 1}}], "usage": []}

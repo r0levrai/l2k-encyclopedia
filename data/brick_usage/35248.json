@@ -1,1 +1,1 @@
-{"id": 35248, "aliases": [], "name": "RADIATOR GRILLE 1X2", "no_image": false, "size": [2, 1, 1], "weight": 8.85484, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Hydro_VC001"]}
+{"id": 35248, "aliases": [], "name": "RADIATOR GRILLE 1X2", "no_image": false, "size": [2, 1, 1], "weight": 8.85484, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Covers_02", "biome": null, "rewards": {"27507": 1, "27925": 1, "1126": 1, "35248": 1}}], "usage": ["Hydro_VC001"]}

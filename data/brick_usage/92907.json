@@ -1,1 +1,1 @@
-{"id": 92907, "aliases": [42193], "name": "CROSS BLOCK/FORM 2X2X2", "no_image": false, "size": [2, 2, 4], "weight": 33.569336, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["TowTruck_60081"]}
+{"id": 92907, "aliases": [42193], "name": "CROSS BLOCK/FORM 2X2X2", "no_image": false, "size": [2, 2, 4], "weight": 33.569336, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Hybrid_07", "biome": null, "rewards": {"57360": 1, "87080": 1, "87086": 1, "92907": 1}}], "usage": ["TowTruck_60081"]}

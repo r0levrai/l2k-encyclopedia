@@ -1,1 +1,1 @@
-{"id": 3876, "aliases": [], "name": "MINI SHIELD Ø19", "no_image": false, "size": [2, 1, 6], "weight": 16.784668, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["ScienceStation_452"]}
+{"id": 3876, "aliases": [], "name": "MINI SHIELD Ø19", "no_image": false, "size": [2, 1, 6], "weight": 16.784668, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_13", "biome": null, "rewards": {"1871": 1, "88293": 1, "3876": 1, "35173": 1}}], "usage": ["ScienceStation_452"]}

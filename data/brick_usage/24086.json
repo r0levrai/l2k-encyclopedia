@@ -1,1 +1,1 @@
-{"id": 24086, "aliases": [37997], "name": "NET NO. 1", "no_image": false, "size": [3, 3, 15], "weight": 32.65381, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["OutHouseBoat_VC000"]}
+{"id": 24086, "aliases": [37997], "name": "NET NO. 1", "no_image": false, "size": [3, 3, 15], "weight": 32.65381, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Accessory_15", "biome": null, "rewards": {"71861": 1, "70973": 1, "13783": 1, "24086": 1}}], "usage": ["OutHouseBoat_VC000"]}

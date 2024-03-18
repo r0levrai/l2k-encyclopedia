@@ -1,1 +1,1 @@
-{"id": 6124, "aliases": [28681], "name": "MAGIC WAND", "no_image": false, "size": [1, 0, 8], "weight": 5.493164, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 6124, "aliases": [28681], "name": "MAGIC WAND", "no_image": false, "size": [1, 0, 8], "weight": 5.493164, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Collection_04", "biome": null, "rewards": {"6124": 1, "87989": 1, "90393": 1, "61482": 1}}], "usage": []}

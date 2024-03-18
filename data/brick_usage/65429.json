@@ -1,1 +1,1 @@
-{"id": 65429, "aliases": [100868], "name": "LEFT PLATE 2X4, DEG. 27", "no_image": false, "size": [4, 2, 1], "weight": 16.784668, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["McLarenSolusGT_Street_76918"]}
+{"id": 65429, "aliases": [100868], "name": "LEFT PLATE 2X4, DEG. 27", "no_image": false, "size": [4, 2, 1], "weight": 16.784668, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Angled_04", "biome": null, "rewards": {"51739": 1, "65426": 1, "65429": 1, "30181": 1}}], "usage": ["McLarenSolusGT_Street_76918"]}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset=utf-8>
+    <title>LDraw 2 Studio - Convert Textured LDraw Parts to Studio 2.0 Custom Parts</title>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      body {
+        font-family: "Arial","Helvetica",sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #EEE;
+      }
+      h1, h3 {
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0.5em;
+        font-size: 2em;
+      }
+      h1 {
+        background-color: #000;
+        color: white;
+      }
+      h3 {
+        background-color: #9D9;
+      }
+      .section {
+        display: block;
+        margin: 0.5em;
+      }
+      .desc {
+        margin: 0.5em;
+      }
+      .choice {
+        display: table;
+        margin: 0.5em;
+      }
+      .choice, textarea, button {
+        display: block;
+        width: 95%;
+      }
+      button {
+        height: 4em;
+      }
+      #contact {
+        margin: 2em;
+        text-align: center;
+      }
+      .error, .warning {
+        display: block;
+        margin: 1em;
+        padding: 0.5em;
+        font-weight: bold;
+      }
+      .error {
+        border: 0.2em solid red;
+      }
+      .warning {
+        border: 0.2em solid orange;
+      }
+      canvas {
+        display: block;
+        margin: auto;
+      }
+      img {
+        display: block;
+        width: 50%;
+        margin: auto;
+      }
+      .download {
+        display: block;
+        margin: 1em;
+        text-align: center;
+        padding: 0.5em;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+ </head>
+ <body>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/colors.js"></script>
+    <script src="../js/ClientStorage.js"></script>
+    <script src="../js/LDROptions.js"></script>
+    <script src="../js/LDRShaders.js"></script>
+    <script src="../js/LDRColorMaterials.js"></script>
+    <script src="../js/LDRGeometries.js"></script>
+    <script src="../js/LDRLoader.js"></script>
+    <script src="../js/LDRGenerator.js"></script>
+    <script src="../js/LDRStuds.js"></script>
+    <script src="../js/StudioTexmap.js"></script>
+  
+    <h1>LDraw 2 Studio - Convert Textured LDraw Parts to Studio 2.0 Custom Parts</h1>
+
+    <h3>step 1 - Select the file to convert</h3>
+  <div class="section">
+   <span class="desc">
+     Select your textured LDraw part which you would like to see converted to the format that works with <b>Studio 2.0</b>.
+     The .dat file can either be uploaded or its content be pasted directly below.
+     There should be a single texture. This texture should either be inlined, or be placed in the <b>textures</b> folder.
+   </span>
+   <span class="choice">
+    <label for="file">Upload the file here:</label>
+    <input id="file" name="file" type="file" onchange="readFromFile(event);" />
+   </span>
+   <span class="choice">
+    <textarea id="file_content" onkeyup="convert(null)" rows="8">
+0 Sample file. Insert or upload your own in the place of this. Note how the texture file 'ab.png' is placed in the 'textures' folder.
+0 Name: sample_file.dat
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+0 !TEXMAP NEXT PLANAR -10 -24 0 10 -24 0 -10 0 0 ab.png
+0 !: 4 16 -10 -24 -10 -10 0 -10 10 0 -10 10 -24 -10
+1 16 0 -24 0 1 0 0 0 1 0 0 0 1 s/3005s01.dat
+</textarea>
+   </span>
+
+   <div id="warnings"></div>
+   <div id="errors"></div>
+
+   <canvas id="preview"></canvas>
+  </div>
+
+  <h3>Step 3 - Get the Studio 2.0 / Part Designer File</h3>
+  <div class="section">
+   <span class="desc">
+     Copy or download the Studio 2.0 / Part Designer file below.
+   </span>
+   <span class="choice">
+     <textarea id="ldr_result" rows="10"></textarea>
+     <button onclick="copyToClipboard();">Copy File to Clipboard</button>
+     <a class="download" id="downloadContent"></a>
+   </span>
+  </div>
+
+  <div id="contact">
+    <a href="https://github.com/LasseD/buildinginstructions.js">LDraw 2 Studio is part of buildinginstructions.js</a> which is in the public domain and may be freely distributed.
+    <a href="https://github.com/mrdoob/three.js">three.js and OrbitControls.js</a> use the MIT license.
+    Contact: Lasse Deleuran on <a href="mailto:lasse.deleuran@gmail.com">lasse.deleuran@gmail.com</a>.
+  </div>
+
+  <script>
+/*
+  Warnings and errors:
+ */
+function resetWarningsAndErrors() {
+  $('#warnings').empty();
+  $('#errors').empty();
+}
+function onWarning(obj) {
+  let message = obj.message + ' on line ' + obj.line;
+
+  console.dir(obj);
+
+  message = message.replace('<', '&lt;');
+
+  var span = document.createElement('span');
+  span.setAttribute('class', 'warning');
+  span.innerHTML = message;
+  $('#warnings').append(span);
+}
+function onError(obj) {
+  var span = document.createElement('span');
+  span.setAttribute('class', 'error');
+  span.innerHTML = obj.message;
+  $('#errors').empty().append(span);
+}
+
+/*
+  three.js rendering:
+ */
+LDR.Options.studLogo = 1;
+LDR.Studs.makeGenerators('', LDR.Options.studHighContrast, LDR.Options.studLogo); // Determine how to show parts.
+
+// Set up camera:
+var camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000000);
+camera.position.set(10000, 7000, 10000);
+camera.lookAt(0, 0, 0);
+
+// Set up scene:
+var scene = new THREE.Scene();
+scene.background = new THREE.Color(0xFFFFFF);
+var baseObject;
+
+// Set up renderer:
+let canvas = document.getElementById('preview');
+var renderer = new THREE.WebGLRenderer({antialias:true, canvas:canvas});
+renderer.setPixelRatio(window.devicePixelRatio);
+
+function render() {
+  renderer.render(scene, camera);
+}
+
+var w, h;
+function onWindowResize(){
+  w = window.innerHeight * 0.7;
+  h = window.innerWidth * 0.7;
+  w = h = Math.min(w, h);
+  camera.left = -w;
+  camera.right = w;
+  camera.top = h;
+  camera.bottom = -h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+  render();
+}
+window.addEventListener('resize', onWindowResize, false);
+onWindowResize();
+
+// React to user input:
+let controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.addEventListener('change', render);
+
+let ldrLoader, storage, dataurl;
+
+function onLoad() {
+    if(!ldrLoader.mainModel) {
+      onError({message:'A valid model was not parsed. Nothing will be shown'});
+      return;
+    }
+
+    if(ldrLoader.texmapDataurls.length === 1) {
+      dataurl = ldrLoader.texmapDataurls[0].content;
+    }
+
+    if(baseObject) {
+      scene.remove(baseObject);
+    }
+    baseObject = new THREE.Group();
+    scene.add(baseObject);
+
+    var mc = new LDR.MeshCollector(baseObject, baseObject, baseObject);
+    ldrLoader.generate(16, mc);
+
+    // Find center of drawn model:
+    var b = mc.boundingBox;
+    var elementCenter = new THREE.Vector3();
+    b.getCenter(elementCenter);
+    baseObject.position.set(-elementCenter.x, -elementCenter.y, -elementCenter.z);
+
+    camera.zoom = w/b.min.distanceTo(b.max)*2;
+    onWindowResize();
+
+    // Output:
+    let m = ldrLoader.getMainModel();
+    let ret = '0 FILE ' + m.ID +
+      '\r\n0 ' + (m.modelDescription ? m.modelDescription : '') +
+      '\r\n0 Name:  ' + m.ID +
+      '\r\n0 Author:  ' + (m.author ? m.author : '') + 
+      '\r\n0 BFC ' + (m.certifiedBFC?'':'NO') + 'CERTIFY ' + (m.CCW ? '' : 'CW') +
+      '\r\n0 PE_TEX_PATH -1' +
+      '\r\n0 PE_TEX_INFO ' + dataurl + '\r\n';
+    m.steps.forEach(step => {
+      step.subModels.forEach(x => ret += x.toLDR(ldrLoader));
+      step.lines.forEach(x => ret += new LDR.Line2(x.c, x.p1, x.p2).toLDR());
+      step.conditionalLines.forEach(x => ret += new LDR.Line5(x.c, x.p1, x.p2, x.p3, x.p4).toLDR());
+      let tt = []; // Textured triangles
+      step.triangles.forEach(x => {
+        if(x.tmp) {
+          tt.push(x);
+        }
+        else{
+          ret += new LDR.Line3(x.c, x.p1, x.p2, x.p3).toLDR();
+        }
+      });
+      step.quads.forEach(x => {
+        if(x.tmp) {
+          tt.push({c:x.c, p1:x.p1, p2:x.p2, p3:x.p3, tmp:x.tmp});
+          tt.push({c:x.c, p1:x.p1, p2:x.p3, p3:x.p4, tmp:x.tmp});
+        }
+        else{
+          ret += new LDR.Line4(x.c, x.p1, x.p2, x.p3, x.p4).toLDR();
+        }
+      });
+      tt.forEach(x => { // Studio 2.0 triangle lines:
+        ret += '3 ' + x.c + ' ' + x.p1.toLDR() + ' ' + x.p2.toLDR() + ' ' + x.p3.toLDR();
+        let [U1, V1]=x.tmp.getUV(x.p1, x.p2, x.p3);
+        let [U2, V2]=x.tmp.getUV(x.p2, x.p3, x.p1);
+        let [U3, V3]=x.tmp.getUV(x.p3, x.p1, x.p2);
+        [U1,V1,U2,V2,U3,V3].map(LDR.convertFloat).forEach(x => ret += ' ' + x);
+        ret += '\r\n';
+      });
+    });    
+
+    // Output:
+    let e = document.getElementById('ldr_result');
+    e.innerHTML = ret;
+    e = document.getElementById('downloadContent');
+    e.href = 'data:text/x-ldraw;base64,' + btoa(ret);
+    e.setAttribute('download', ldrLoader.mainModel);
+    e.innerHTML = 'Click here to download ' + ldrLoader.mainModel;
+}
+
+THREE.LDRLoader.prototype.loadTexmaps = function() {
+    let self = this;
+    if(LDR.TexmapPlacements.length > 0) {
+        if(!this.texmapLoader) {
+            this.texmapLoader = new THREE.TextureLoader();
+        }
+
+        function setTexture(texture, file) {
+            self.texmaps[file] = texture;
+            self.texmapListeners[file].forEach(listener => listener(texture));
+            let image = texture.image;
+
+            var canvas = document.createElement("canvas");
+            canvas.width = image.width;
+            canvas.height = image.height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(image, 0, 0);
+            let mimetype = 'image/png';
+            dataurl = canvas.toDataURL(mimetype).replace('data:image/png;base64,','');
+            onLoad();
+        }
+        LDR.TexmapPlacements.forEach(tmp => {
+                let file = tmp.file; // TODO: Can't currently handle glossmaps.
+                if(!self.texmaps.hasOwnProperty(file)) {
+                    self.texmaps[file] = true;
+                    self.texmapListeners[file] = [];
+                    self.texmapLoader.load(self.idToTextureUrl(file),
+                                           t => setTexture(t, file),
+                                           undefined,
+                                           e => self.onError({message:e.message, subModel:file}));
+                }
+            });
+    }
+}
+
+/*
+  Converting
+ */
+function convert(ldr) {
+  resetWarningsAndErrors();
+
+  if(!ldr) { // Fetch from text area:
+    ldr = $('#file_content')[0].value;
+  }
+  else { // Update text area:
+    $('#file_content').val(ldr);
+  }
+
+  // Find file name:
+  let dataLines = ldr.split(/(\r\n)|\n/);
+  let fileName = 'main.dat';
+  for(let i = 0; i < dataLines.length; i++) {
+    let line = dataLines[i];
+    if(!line) {
+      continue; // Empty line, or 'undefined' due to '\r\n' split.
+    }
+
+    let parts = line.split(' ').filter(x => x !== ''); // Remove empty strings.
+    if(parts.length <= 1 || parts[0] !== '0') {
+      continue; // Empty/ empty comment line
+    }
+    if(parts[1] === 'FILE' || parts[1] === 'Name:') {
+      fileName = parts.slice(2).join(' ');
+      break;
+    }
+  }
+
+  LDR.TexmapPlacements = [];
+  let idToUrl = id => ['../ldraw_parts/'+id.toLowerCase(), '../ldraw_unofficial'+id.toLowerCase()];
+  let idToTextureUrl = id => "../textures/" + id.toLowerCase();
+  ldrLoader = new THREE.LDRLoader(onLoad, storage, {idToUrl:idToUrl, idToTextureUrl:idToTextureUrl, onError:onError, onWarning:onWarning, onProgress:render, saveFileLines:true});
+  ldrLoader.parse(ldr, fileName);
+  ldrLoader.reportProgress(fileName);
+}
+
+function readFromFile(event) {
+  var reader = new FileReader();
+  reader.onload = function(){
+    convert(reader.result);
+  };
+  reader.readAsText(event.target.files[0]);
+}
+
+function copyToClipboard() {
+  $('#ldr_result')[0].select();
+  document.execCommand('copy');
+}
+
+$(document).ready(function() {
+  convert();
+});
+  </script>
+ </body>
+</html>

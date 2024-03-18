@@ -1,1 +1,1 @@
-{"id": 604615, "aliases": [], "name": "SOCKET SPANNER", "no_image": false, "size": [1, 1, 7], "weight": 16.480598, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["MonkeyMobile_VC000"]}
+{"id": 604615, "aliases": [], "name": "SOCKET SPANNER", "no_image": false, "size": [1, 1, 7], "weight": 16.480598, "is_surplus": false, "n_usage": -1, "sources": [{"type": "brickpack", "name": "Collection_03", "biome": null, "rewards": {"604552": 1, "604553": 1, "604614": 1, "604615": 1}}], "usage": ["MonkeyMobile_VC000"]}
