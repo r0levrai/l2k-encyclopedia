@@ -1,4 +1,33 @@
-"""Parse .uasset files into several .json served by the website"""
+"""
+Parse .uasset files into several .json served by the website
+
+Before running this, you want to dump the following folders (relative to base_path) as:
+- json:
+  - Data/RewardsTables
+  - LEGO/BrickPacks
+  - LEGO/Bricks
+  - LEGO/Flair
+  - Game/Vehicle/Inventory/StatArchetypes
+  - Game/Vehicle/Inventory/BoatChassisConfigs
+  - Game/Vehicle/Inventory/CarChassisConfigs
+  - Game/Vehicle/Configs/BrickGraphs
+  - Game/StringTables
+  - Update_0/StringTables
+  - Update_1/StringTables
+  - Update_2/StringTables
+  - Update_3/StringTables
+  - Update_4/StringTables
+  - Update_5/StringTables
+  - Update_5
+- png:
+  - LEGO/BrickPacks
+  - LEGO/Bricks
+  - LEGO/Flair
+  - LEGO/Flair/Thumbnails
+  - Game/UI/Textures/4K/BrickPackImages
+- uasset:
+  - Game/Vehicle/Configs/BrickGraphs
+"""
 
 from dataclasses import dataclass, asdict, is_dataclass
 from collections import defaultdict, Counter
@@ -120,11 +149,17 @@ def get_name(properties, key=None, default=None, required=False):
                 with open(base_path + string_table_file) as f:
                     string_tables[table_id] = json.load(f)[0]['StringTable']['KeysToMetaData']
             except FileNotFoundError as e:
-                e.strerror += '\n | maybe you forgot to dump the game files from the new update(s)? \n | file'
+                e.args = (*e.args, 'maybe you forgot to dump the game files from the new update(s)?', string_table_file)
                 raise(e)
-        return string_tables[table_id][key]
+        try:
+            return string_tables[table_id][key]
+        except KeyError as e:
+            e.args = (*e.args, 'maybe you forgot to re-dump the game files from the new update(s)?', table_id.replace('/Game/', '', 1).split('.')[0] + '.json')
+            raise(e)
     elif 'CultureInvariantString' in name_property:
         return name_property['CultureInvariantString']
+    elif 'LocalizedString' in name_property:
+        return name_property['LocalizedString']
     elif not required:
         return default
     else:
@@ -149,7 +184,7 @@ class Source:
 
 Source.default = Source('default', 'Unlocked by default!', None, {})
 
-biomes = ['Turbo Acres', 'Big Butte', 'Frontier Valley', 'Haunts']
+biomes = ['Turbo Acres', 'Big Butte', 'Frontier Valley', 'Haunts', 'Ice']  # found in Data/RewardsTable/CollectiblesRewardsTable.json or Data/RewardsTable/RaceRewardsTable.json
 def get_biome(in_string, default=None, required=False):
     if not in_string:
         assert not required, f"empty in_string: '{in_string}'"
@@ -198,6 +233,10 @@ def parse_sources():
             elif type == 'Collectibles':
                 type = 'Collectible'
                 name = notes
+                name = (
+                    name.replace('Frontier:', 'Frontier Valley:')
+                        .replace('Biome 5', 'Ice')
+                )
             elif type == 'Minigame':
                 if 'Objectives.BeatenActivity' not in context:
                     continue
@@ -433,7 +472,12 @@ class Flair(Assembly):
 flairs_by_id = {}
 def parse_flairs():
     for id, properties, oid in load(base_path + "LEGO/Flair/*.json", type='LegoFlairAssembly',
-                               remove_type_prefix='Flair_', rename_ids={'JetTurbine_31074_REd': 'JetTurbine_31074_Red'}):
+                               remove_type_prefix='Flair_', rename_ids={'JetTurbine_31074_REd': 'JetTurbine_31074_Red', 'Flair_Jetpack_Legend': 'Flair_JetPack_Legend'}):
+        skip_ids = [  # skip a few problematics files
+            'JeffOffroad_Jet',  # only reference a niagara (particle system), no other infos
+        ]
+        if id in skip_ids: continue
+        
         name = get_name(properties, "AssemblyName", required=True)
         rarity = try_parse(properties, "Rarity")
         garage_cost = try_parse(properties, "GarageCost")
