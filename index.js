@@ -45,6 +45,10 @@ serch_input.addEventListener('input', function (evt) {
 // help refresh and back navigation scroll restoration until loaded [1]
 document.getElementById('main').style.height = '270000px';
 
+function show() {
+  
+}
+
 // fetch all data from the begining...
 Promise.all([
   fetch("data/vehicles_by_id.json")

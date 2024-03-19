@@ -18,6 +18,37 @@ body {
   overscroll-behavior: contain;
 }
 
+.frame {
+  margin: 32px;
+  padding: 4px 24px;
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  font-family: sans-serif;
+}
+
+.frame > p > a {
+  color: #c08d41;
+}
+
+.center {
+  display:block;
+  text-align:center;
+}
+
+.nav {
+  position: absolute;
+  top: 22px;
+  right: 12px;
+}
+
+.nav > a {
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 0 1rem;
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
 .page {
 }
 
@@ -52,7 +83,7 @@ section:has(.tile-grid:empty) {
   filter: invert(0.9);
   width: 2.5rem;
   height: 2.5rem;
-  /*vertical-align: middle;*/
+  vertical-align: middle;
 }
 
 .loading {
