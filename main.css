@@ -48,6 +48,22 @@ section:has(.tile-grid:empty) {
   position: absolute;
 }
 
+.loading {
+  border: 0.2rem solid rgba(255, 255, 255, 0.2); /* circle bg */
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.8); /* circle fg */
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  animation: spin-loading 2s linear infinite;
+  display: inline-block;
+  margin: 0 0.9rem;
+}
+
+@keyframes spin-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .tile-grid {
   margin-left: 16px;
   padding-left: 26px; /* avoid initial slant overflow */

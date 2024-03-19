@@ -68,8 +68,12 @@ Promise.all([
 .then(([_, flairs]) => Promise.all([
   load_async(v(flairs), load_and_index_simple, "flairs"),
 ]))
-// [1] restore proper page height
 .then(() => {
+  // stop displaying loading indicators
+  for (let e of document.getElementsByClassName('loading')) {
+    e.style.visibility = 'hidden';
+  }
+  // [1] restore proper page height
   console.log('restoring page height')
   document.getElementById('main').style.height = '';
 });
