@@ -49,12 +49,13 @@ section:has(.tile-grid:empty) {
 }
 
 .tile-grid {
-  padding-left: 34px;
-  /* for the initial slant */
+  margin-left: 16px;
+  padding-left: 26px; /* avoid initial slant overflow */
+  padding-right: 26px; /* avoid final slant overflow */
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
-  grid-template-rows: repeat(auto-fit, 300px);
-  grid-gap: 24px;
+  grid-template-rows: repeat(auto-fit, 280px);
+  grid-gap: 20px;
 }
 
 .tile {
@@ -62,7 +63,7 @@ section:has(.tile-grid:empty) {
   border-radius: 14px;
   height: 280px;
   width: 300px;
-  margin: 10px;
+  margin: 0px;
   display: grid;
   background-color: white;
   overflow: clip;
