@@ -3,6 +3,7 @@
 
   @media (max-width:960px) {
     width: 100%;
+    box-sizing: border-box;
   }
 
   align-self: center;
@@ -17,7 +18,7 @@
     'abovetext .'
     'text submit'
     'undertext .';
-  grid-template-columns: 1fr 58px;
+  grid-template-columns: 1fr 52px;
 }
 .search-abovetext { grid-area: abovetext; }
 .search-text { grid-area: text; }
