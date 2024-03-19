@@ -21,7 +21,7 @@ function load_vehicle(vehicle) {
   document.getElementById("name").innerText = vehicle.name;
   document.getElementById('terrain').src = `icons/vehicle-terrain/${snakecase(vehicle.terrain)}.png`;
   if (vehicle.perk == null) {
-    document.getElementById('perk').style.visibility = 'hidden';
+    document.getElementById('perk').style.display = 'none';
   } else {
     document.getElementById('perk').src = `icons/vehicle-perks/${snakecase(vehicle.perk)}.png`;
   }
