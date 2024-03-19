@@ -1,4 +1,4 @@
-export { SuffixTree }
+export { SuffixTree, all_words_in_name }
 
 class suffixTreeNode {
     constructor() {
@@ -48,6 +48,7 @@ class SuffixTree {
     }
 
     search_all_words(string) {
+        /* return the set intersection of a pattern search for each word in string */
         let words = string.split(' ');
         let results = null;
         for (let i in words) {
@@ -61,6 +62,20 @@ class SuffixTree {
         }
         return Array.from(results);
     }
+}
+
+function all_words_in_name(string, name) {
+    /* return true if all words of string are in name
+    use this when you don't need the data structure,
+    e.g. if you are loading names one by one */
+    let words = string.split(' ');
+    for (let i in words) {
+        let word = words[i];
+        if (!name.includes(word)) {
+            return false;
+        }
+    }
+    return true;
 }
 
 function intersection(set1, set2) {

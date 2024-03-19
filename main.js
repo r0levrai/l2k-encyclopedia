@@ -1,4 +1,4 @@
-import { SuffixTree } from './search.js';
+import { SuffixTree, all_words_in_name } from './search.js';
 import { load_async, load_vehicle, load_brick, load_simple, yieldingLoop } from './load.js';
 import { tiles } from './tiles.js';
 
@@ -77,9 +77,12 @@ Promise.all([
 function load_and_index_vehicle(data, tiles) {
   let tile = load_vehicle(data, tiles);
   search_index.add(data.name, tile);
+  add_to_ongoing_search(data.name, tile);
   //search_index.add(data.id, tile);
+  //add_to_ongoing_search(data.id, tile);
   if (data.perk != null) {
     search_index.add(data.perk, tile);
+    add_to_ongoing_search(data.perk, tile);
   }
 }
 
@@ -88,11 +91,27 @@ function load_and_index_brick(data, tiles) {
   search_index.add(data.name, tile);
   search_index.add(data.id.toString(), tile);
   search_index.add(data.size.join('x'), tile);
+  add_to_ongoing_search(data.name, tile);
+  add_to_ongoing_search(data.id.toString(), tile);
+  add_to_ongoing_search(data.size.join('x'), tile);
 }
 
 function load_and_index_simple(data, tiles) {
   let tile = load_simple(data, tiles)
   search_index.add(data.name, tile);
+  add_to_ongoing_search(data.name, tile);
+}
+
+function add_to_ongoing_search(key, result) {
+  let ongoing_search = serch_input.value;
+  if (ongoing_search != '')
+  {
+    if (all_words_in_name(ongoing_search, key))
+    {
+      serch_results.append(result.cloneNode(true));
+      return;
+    }
+  }
 }
 
 function v(object) {
