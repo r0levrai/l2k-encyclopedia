@@ -64,10 +64,15 @@ class SuffixTree {
     }
 }
 
-function all_words_in_name(string, name) {
+function all_words_in_name(string, name, case_sensitive = false) {
     /* return true if all words of string are in name
     use this when you don't need the data structure,
     e.g. if you are loading names one by one */
+    if (!case_sensitive)
+    {
+        string = string.toLowerCase();
+        name = name.toLowerCase();
+    }
     let words = string.split(' ');
     for (let i in words) {
         let word = words[i];
