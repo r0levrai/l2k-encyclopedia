@@ -48,6 +48,13 @@ section:has(.tile-grid:empty) {
   position: absolute;
 }
 
+#back {
+  filter: invert(0.9);
+  width: 2.5rem;
+  height: 2.5rem;
+  /*vertical-align: middle;*/
+}
+
 .loading {
   border: 0.2rem solid rgba(255, 255, 255, 0.2); /* circle bg */
   border-top: 0.2rem solid rgba(255, 255, 255, 0.8); /* circle fg */
