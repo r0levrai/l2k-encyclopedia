@@ -106,7 +106,7 @@ def invert_zip(args):
     return zip(*args)
 
 
-def load(paths, exclude_paths="", exclude_prefix=['T_', 'SM_', 'LPG_'],
+def load(paths, exclude_paths="", exclude_prefix=['T_', 't_', 'SM_', 'LPG_'],
          type="", key="Properties", remove_type_prefix=True,
          n_per_file=1, rename_ids={}):
     for path in set(glob(paths)) - set(glob(exclude_paths)):
@@ -537,14 +537,63 @@ class Assembly:
     id: int
     name: str
     is_surplus: bool
+    no_image: bool
     sources: list
 
-# TODO
+@dataclass
+class Wheel(Assembly):
+    pass
+
+@dataclass
+class Propeller(Assembly):
+    pass
+
+def parse_assembly(id, properties, oid, out_texture_path, skip_image_paths=[]):
+    name = get_name(properties, "AssemblyName", required=True)
+    is_surplus =  not try_parse(properties, "bIsInBrickPack", False)
+    #can_separate =  try_parse(properties, "bCanSeparate", False)
+    #clusters =  try_parse(properties, "InseparableClusters", False)
+    image_path  = try_parse_image(properties, "Icon")
+    no_image = image_path is None or image_path in skip_image_paths
+    if no_image:
+        pass #print(id, ':', name, 'have no image')
+    else:
+        copy(image_path, out_texture_path + f'{id}.png')
+    sources = sources_for_any_id.get(oid, [])
+    if try_parse(properties, "AlwaysUnlocked", False):
+        sources.append(Source.default)
+    return Assembly(id, name, is_surplus, no_image, sources)
+
+assemblies_by_id = {}
+wheels_by_id = {}
+propellers_by_id = {}
+def parse_assemblies():
+    for id, properties, oid in load(base_path + "LEGO/Assemblies/*.json", type='LegoAssembly'):
+        assembly = parse_assembly(id, properties, oid, '../textures/assemblies/')
+        assemblies_by_id[id] = assembly
+def parse_wheels():
+    for id, properties, oid in load(base_path + "LEGO/Wheel/*.json", type='LegoWheelAssembly'):
+        assembly = parse_assembly(id, properties, oid, '../textures/wheels/')
+        wheels_by_id[id] = Wheel(**assembly.__dict__)
+def parse_propellers():
+    for id, properties, oid in load(base_path + "LEGO/Propeller/*.json", type='LegoPropellerAssembly'):
+        assembly = parse_assembly(id, properties, oid, '../textures/propellers/')
+        propellers_by_id[id] = Propeller(**assembly.__dict__)
+parse_assemblies()
+parse_wheels()
+parse_propellers()
+assemblies_by_id = proper_sort_dict(assemblies_by_id)
+wheels_by_id     = proper_sort_dict(wheels_by_id)
+propellers_by_id = proper_sort_dict(propellers_by_id)
+dump('assemblies_by_id', assemblies_by_id)
+dump('wheels_by_id', wheels_by_id)
+dump('propellers_by_id', propellers_by_id)
+
+
 
 @dataclass
 class Flair(Assembly):
     rarity: Optional[str]
-    no_image: bool
     garage_cost: Optional[int]
     # sound: str
 
@@ -554,45 +603,32 @@ flairs_by_id = {}
 def parse_flairs():
     for id, properties, oid in load(base_path + "LEGO/Flair/*.json", type='LegoFlairAssembly',
                                remove_type_prefix='Flair_', rename_ids={'JetTurbine_31074_REd': 'JetTurbine_31074_Red', 'Flair_Jetpack_Legend': 'Flair_JetPack_Legend'}):
-        skip_ids = [  # skip a few problematics files
+        # skip a few problematics files
+        if id in [
             'JeffOffroad_Jet',  # only reference a niagara (particle system), no other infos
-        ]
-        if id in skip_ids: continue
+        ]:
+            continue
         
-        name = get_name(properties, "AssemblyName", required=True)
+        assembly = parse_assembly(
+            id, properties, oid, '../textures/flairs/',
+            skip_image_paths=[
+                '../Exports/LEGO2KDrive/Content/LEGO/Flair/T_Flair_Eye1_Icon.png'  # this one is referenced but don't exist for some reason
+            ]
+        )
         rarity = try_parse(properties, "Rarity")
         garage_cost = try_parse(properties, "GarageCost")
-        is_surplus =  not try_parse(properties, "bIsInBrickPack", False)
+        
+        name = assembly.name
         description = get_name(properties, "Description")
         if description is not None and description != name and name.startswith("Flair_"):
             print(f"| replaceing name '{name}' with description '{description}'")
-            name = description
-        #can_separate =  try_parse(properties, "bCanSeparate", False)
-        #clusters =  try_parse(properties, "InseparableClusters", False)
-        sources = sources_for_any_id.get(oid, [])
-        if try_parse(properties, "AlwaysUnlocked", False):
-            sources.append(Source.default)
+            assembly.name = description
         
-        image_path  = try_parse_image(properties, "Icon")
-        no_image = image_path is None or image_path in [
-            '../Exports/LEGO2KDrive/Content/LEGO/Flair/T_Flair_Eye1_Icon.png'
-        ]  # these ones are referenced but don't exist for some reason
-        if no_image:
-            pass #print(id, ':', name, 'have no image')
-        else:
-            copy(image_path, f'../textures/flairs/{id}.png')
-        
-        flairs_by_id[id] = Flair(id, name, is_surplus, sources, rarity, no_image, garage_cost)
+        flairs_by_id[id] = Flair(**assembly.__dict__, rarity=rarity, garage_cost=garage_cost)
 
 parse_flairs()
 flairs_by_id = proper_sort_dict(flairs_by_id)
 dump('flairs_by_id', flairs_by_id)
-
-
-
-@dataclass
-class Wheel(Assembly):
-    pass
 
 
 # TODO
