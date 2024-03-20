@@ -317,10 +317,13 @@ def try_parse_image(properties, key, default=None, required=False, ext='.png'):
     if key not in properties:
         assert not required, f'{properties}\n-> did not find required {key} in the json above'
         return default
-    if "AssetPathName" not in properties[key]:
-        assert not required, f'{properties}\n-> did not find required {key}\'s AssetPathName in the json above'
+    if "ObjectPath" in properties[key]:
+        path = properties[key]["ObjectPath"].replace('LEGO2KDrive/Content/', '', 1)
+    elif "AssetPathName" in properties[key]:
+        path = properties[key]["AssetPathName"].replace('/Game/', '', 1)
+    else:
+        assert not required, f'{properties}\n-> did not find required {key}\'s AssetPathName or ObjectPath in the json above'
         return default
-    path = properties[key]["AssetPathName"].replace('/Game/', '', 1)
     path = '.'.join(path.split('.')[:-1])  # remove last '.' and things after
     return base_path + path + ext
 
@@ -499,6 +502,36 @@ dump('stat_archetypes', stat_archetypes)
 
 
 
+#list_properties(base_path + 'Garage/LegoAssets/Stickers/*.json', detail=['DecorationType', 'bIsGarageAsset', 'Material', 'bCanMirror'])
+
+@dataclass
+class Sticker:
+    id: str
+    name: str
+    rarity: Optional[str]
+    can_mirror: bool
+    sources: list
+
+stickers_by_id = {}
+def parse_stickers():
+    for id, properties, oid in load(base_path + "Garage/LegoAssets/Stickers/*.json", type='LegoDecoration',
+                               remove_type_prefix='StickerGarage_'):
+        name = get_name(properties, "DisplayName", required=True)
+        if name == "Garage Test Sticker": continue
+        rarity = try_parse(properties, "Rarity")
+        can_mirror = try_parse(properties, "bCanMirror", default=False)
+        image_path  = try_parse_image(properties, "Texture", required=True)
+        copy(image_path, f'../textures/stickers/{id}.png')
+        sources = sources_for_any_id.get(oid, [])
+        if try_parse(properties, "AlwaysUnlocked", False):
+            sources.append(Source.default)
+        stickers_by_id[id] = Sticker(id, name, rarity, can_mirror, sources)
+parse_stickers()
+stickers_by_id = proper_sort_dict(stickers_by_id)
+dump('stickers_by_id', stickers_by_id)
+
+
+
 @dataclass
 class Assembly:
     id: int
@@ -560,6 +593,7 @@ dump('flairs_by_id', flairs_by_id)
 @dataclass
 class Wheel(Assembly):
     pass
+
 
 # TODO
 
