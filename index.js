@@ -102,6 +102,10 @@ function load_and_index_brick(data, tiles) {
   add_to_ongoing_search(data.name, tile);
   add_to_ongoing_search(data.id.toString(), tile);
   add_to_ongoing_search(data.size.join('x'), tile);
+  for (let alias of data.aliases) {
+    search_index.add(alias.toString(), tile);
+    add_to_ongoing_search(alias.toString(), tile);
+  }
 }
 
 function load_and_index_simple(data, tiles) {
