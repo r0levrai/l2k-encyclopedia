@@ -34,7 +34,7 @@ the new ones to have " (new!)" appended to their names
 
 from dataclasses import dataclass, asdict, is_dataclass
 from collections import defaultdict, Counter
-from typing import Optional
+from typing import Optional, Any
 import json
 from pathlib import Path
 from glob import glob
@@ -221,9 +221,9 @@ def is_hex(string, length=None):
 
 all_sources = []
 sources_for_any_id = defaultdict(list)
-def parse_sources():
+def parse_sources(verbose=False):
     for id, rows, oid in load(base_path + "Data/RewardsTables/*.json", type='DataTable', key='Rows'):
-        print(id.replace('RewardsTable', '').strip('_'))
+        if verbose: print(id.replace('RewardsTable', '').strip('_'))
         for row_id, row in rows.items():
             type = id.replace('RewardsTable', '').strip('_')
             name = row_id if not is_hex(row_id, length=32) else None
@@ -237,8 +237,7 @@ def parse_sources():
             for reward in try_parse(row, "LockRewards", []):
                 rewards[reward["LockRewardAsset"]["PrimaryAssetName"]] = 1
             rewards = {k: v for (k, v) in rewards.items() if v}  # if v is not None and v != 0 and v != []
-            if rewards:
-                print(f' | {name}, {notes}, {context}: {rewards}')
+            if verbose and rewards: print(f' | {name}, {notes}, {context}: {rewards}')
 
             biome = None
             if type == 'Quest':
@@ -257,7 +256,7 @@ def parse_sources():
                     continue
                 name = notes
             elif 'DrivePass' in type:
-                print(type, id)
+                if verbose: print(type, id)
                 season = type.removeprefix('DrivePass_Season')
                 tier = name.removeprefix('Tier')
                 name = f'Season {season} Tier {tier}'
@@ -285,8 +284,8 @@ def parse_sources():
             all_sources.append(Source(type.lower(), name, biome, rewards))
             for reward in rewards:
                 sources_for_any_id[reward].append(all_sources[-1])
-    with (open('manual/unkie_official.txt') as f1,
-          open('manual/unkie_store.txt') as f2):
+    with (open('unkie_manually_typed/unkie_official.txt') as f1,
+          open('unkie_manually_typed/unkie_store.txt') as f2):
         for id in [s.strip() for s in f1.readlines()]:
             all_sources.append(Source('unkie_permanent', 'LEGO Official tab', None, {id: 1}))
             sources_for_any_id[id].append(all_sources[-1])
@@ -392,7 +391,7 @@ def check_brick_icon_path(id, properties):
             print(f' | copyied {brick_path + f"T_{other_id}_Icon.png"} to {brick_path + f"T_{id}_Icon.png"}')
         return True
     else:
-        print('brick', id, f'have no icon path')
+        #print('brick', id, f'have no icon path')
         if Path(brick_path + f"T_{id}_Icon.png").is_file():
             print(' | but icon exists anyway')
             return True
@@ -418,18 +417,50 @@ def parse_bricks():
         weight = try_parse(properties, "Mass", required=True)
         is_surplus = not try_parse(properties, "bIsInBrickPack", False)
         sources = sources_for_any_id.get(id, [])
+        
         bricks.append(Brick(id, aliases, name, no_image, size, weight, is_surplus, n_usage=-1, sources=sources))
     
     bricks.sort(key=lambda brick: brick.id)
+    
+    for brick in bricks:
+        bricks_by_id[brick.id] = brick
+
+def map_aliases():
+    # simple one-way alias->id mapping
+    for brick in bricks:
+        brick_aliases[brick.id] = brick.id
+        for alias in brick.aliases:
+            if alias not in brick_aliases:  # priority for the brick with the id
+                brick_aliases[alias] = brick.id
+    
+    # recursivelly propagate aliases bidirectionally
+    graph = {id: set(bricks_by_id[id].aliases) - set([id]) for id in bricks_by_id}
+    aliases_groups = {}
+    for brick in bricks:
+        if brick.id not in aliases_groups:
+            group = dfs(graph, brick.id)
+            for id in group:
+                aliases_groups[id] = group
+            if len([alias for alias in group if alias in bricks_by_id and bricks_by_id[alias].sources]) > 1:
+                print(group, {id: bricks_by_id[id].sources for id in group if id in bricks_by_id})
+        brick.aliases = sorted(aliases_groups[brick.id] - set([brick.id]))
+
+def dfs(graph: dict[Any, set], start):
+    visited = set()
+    stack = [start]
+    while stack:
+        vertex = stack.pop()
+        if vertex not in visited:
+            visited.add(vertex)
+            if vertex not in graph:
+                #print('neighbor', vertex, 'not in the graph; adding it')
+                graph[vertex] = set()
+            stack.extend(graph[vertex] - visited)
+    return visited
 
 parse_bricks()
-for brick in bricks:
-    bricks_by_id[brick.id] = brick
-    
-    brick_aliases[brick.id] = brick.id
-    for alias in brick.aliases:
-        if alias not in brick_aliases:  # priority for the brick with the id
-            brick_aliases[alias] = brick.id
+map_aliases()
+
     
     
 # dump('bricks', bricks)  # deferred to later
