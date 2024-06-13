@@ -1,6 +1,6 @@
 import { tiles } from './tiles.js';
 
-export { load_async, load_vehicle, load_brick, load_source, load_simple, yieldingLoop, snakecase };
+export { load_async, load_vehicle, load_brick, load_source, load_simple, yieldingLoop, snakecase, removeSuffix };
 
 function load_async(array, load_fn, parent_id,
                     template_id = parent_id + '_template', log = parent_id) {
@@ -93,6 +93,9 @@ function load_simple(data, [template, parent],
   tile.querySelector('#image').loading = "lazy";
   tile.querySelector('#image').src = !data.no_image ? image_path : 'textures/woosh.png';
   
+  let itemType = removeSuffix(parent.id, 's'); // remove 's' plural, ex 'brickpacks' -> 'brickpack'
+  tile.href = `${itemType}.html?${data.id}`;
+  
   parent.append(tile);
   return tile;
 }
@@ -133,4 +136,11 @@ function snakecase(string) {
 
 function len(object) {
   return Object.keys(object).length;
+}
+
+function removeSuffix(str, suffix) {
+  if (str.endsWith(suffix)) {
+    str = str.slice(0, -suffix.length);
+  }
+  return str;
 }
