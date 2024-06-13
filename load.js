@@ -2,6 +2,15 @@ import { tiles } from './tiles.js';
 
 export { load_async, load_vehicle, load_brick, load_source, load_simple, yieldingLoop, snakecase, removeSuffix };
 
+const rarities = {
+  undefined: 'rarity0',
+  null: 'rarity0',
+  'Unknown': 'rarity0',
+  'Cool': 'rarity1',
+  'Awesome': 'rarity2',
+  'SuperAwesome': 'rarity3'
+}
+
 function load_async(array, load_fn, parent_id,
                     template_id = parent_id + '_template', log = parent_id) {
   return new Promise((resolve, reject) => {
@@ -31,12 +40,7 @@ function load_vehicle(data, [template, parent]) {
   let tile = template.cloneNode(true);
   tile.querySelector('#v_name').innerText = data.name;
 
-  let rarity = {
-    null: 'rarity0',
-    'Cool': 'rarity1',
-    'Awesome': 'rarity2',
-    'SuperAwesome': 'rarity3'
-  }[data.rarity]
+  let rarity = rarities[data.rarity]
   tile.classList.remove('rarity3');
   tile.classList.add(rarity);
 
@@ -81,18 +85,12 @@ function load_simple(data, [template, parent],
   
   tile.querySelector('#tile_name').innerText = data.name;
   
-  let rarity = {
-    null: 'rarity0',
-    'Cool': 'rarity1',
-    'Awesome': 'rarity2',
-    'SuperAwesome': 'rarity3'
-  }[data.rarity]
+  let rarity = rarities[data.rarity]
   tile.classList.remove('rarity3');
   tile.classList.add(rarity);
 
   tile.querySelector('#image').loading = "lazy";
   tile.querySelector('#image').src = !data.no_image ? image_path : 'textures/woosh.png';
-  
   let itemType = removeSuffix(parent.id, 's'); // remove 's' plural, ex 'brickpacks' -> 'brickpack'
   tile.href = `${itemType}.html?${data.id}`;
   

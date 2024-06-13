@@ -49,30 +49,28 @@ function show() {
   
 }
 
-// fetch all data from the begining...
+// fetch all data from the begining, and start loading vehicle right away...
 Promise.all([
-  fetch("data/vehicles_by_id.json")
-    .then(response => response.json())
+  fetch("data/vehicles_by_id.json").then(response => response.json())
     .then(vehicles => load_async(v(vehicles), load_and_index_vehicle, "vehicles")),
-  fetch("data/bricks_by_id.json")
-    .then(response => response.json())
+  fetch("data/bricks_by_id.json").then(response => response.json()),
+  fetch("data/brickpacks_by_id.json").then(response => response.json()),
+  fetch("data/flairs_by_id.json").then(response => response.json()),
+  fetch("data/wheels_by_id.json").then(response => response.json()),
+  fetch("data/propellers_by_id.json").then(response => response.json()),
+  fetch("data/assemblies_by_id.json").then(response => response.json()),
+  fetch("data/stickers_by_id.json").then(response => response.json())
 ])
-// ...but only start loading bricks when the vehicles are done,
+// ...but only start loading the other things sequentially after that,
 // to preserve search results order, and load vehicles quicker.
-.then(([_, bricks]) => Promise.all([
-  load_async(v(bricks), load_and_index_brick, "bricks"),
-  fetch("data/brickpacks_by_id.json")
-    .then(response => response.json())
-]))
-.then(([_, brickpacks]) => Promise.all([
-  load_async(v(brickpacks), load_and_index_simple, "brickpacks"),
-  fetch("data/flairs_by_id.json")
-    .then(response => response.json())
-]))
-.then(([_, flairs]) => Promise.all([
-  load_async(v(flairs), load_and_index_simple, "flairs"),
-]))
-.then(() => {
+.then(async ([_, bricks, brickpacks, flairs, wheels, propellers, assemblies, stickers]) => {
+  await load_async(v(bricks), load_and_index_brick, "bricks");
+  await load_async(v(brickpacks), load_and_index_simple, "brickpacks", "items_template");
+  await load_async(v(flairs), load_and_index_simple, "flairs", "items_template");
+  await load_async(v(wheels), load_and_index_simple, "wheels", "items_template");
+  await load_async(v(propellers), load_and_index_simple, "propellers", "items_template");
+  await load_async(v(assemblies), load_and_index_simple, "assemblies", "items_template");
+  await load_async(v(stickers), load_and_index_simple, "stickers", "items_template");
   // stop displaying loading indicators
   for (let e of document.getElementsByClassName('loading')) {
     e.style.visibility = 'hidden';
