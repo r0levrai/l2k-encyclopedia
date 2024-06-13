@@ -1,1 +1,1 @@
-{"id": 91884, "aliases": [17835], "name": "ROUND SHIELD", "no_image": false, "size": [2, 1, 6], "weight": 15.258789, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["VikingShip_LU000"]}
+{"id": 91884, "aliases": [17835], "name": "ROUND SHIELD", "no_image": false, "size": [2, 1, 6], "weight": 15.258789, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_B5_12Boat", "Traffic_B5_12Offroad", "VikingShip_LU000"]}

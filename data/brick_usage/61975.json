@@ -1,1 +1,1 @@
-{"id": 61975, "aliases": [], "name": "WHIP", "no_image": false, "size": [0, 2, 5], "weight": 9.765625, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["OINK_LU000"]}
+{"id": 61975, "aliases": [], "name": "WHIP", "no_image": false, "size": [0, 2, 5], "weight": 9.765625, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["OINK_LU000", "TravelWagon_VC000"]}

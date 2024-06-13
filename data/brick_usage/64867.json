@@ -1,1 +1,1 @@
-{"id": 64867, "aliases": [28625, 29383], "name": "ROOf ROCK TILE 4X4  W.ANGLE", "no_image": false, "size": [4, 4, 3], "weight": 80.26123, "is_surplus": true, "n_usage": -1, "sources": [], "usage": []}
+{"id": 64867, "aliases": [28625, 29383], "name": "ROOf ROCK TILE 4X4  W.ANGLE", "no_image": false, "size": [4, 4, 3], "weight": 80.26123, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_B5_03Boat", "Traffic_B5_03Offroad", "Traffic_B5_03Street"]}

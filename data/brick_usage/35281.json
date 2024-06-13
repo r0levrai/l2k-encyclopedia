@@ -1,1 +1,1 @@
-{"id": 35281, "aliases": [3040, 6270], "name": "ROOF TILE 1X2/45°", "no_image": true, "size": [1, 2, 3], "weight": 1.0, "is_surplus": true, "n_usage": -1, "sources": [], "usage": []}
+{"id": 35281, "aliases": [3040, 6270], "name": "ROOF TILE 1X2/45°", "no_image": true, "size": [1, 2, 3], "weight": 1.0, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["CarlaOffroad_VC000"]}

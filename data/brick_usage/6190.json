@@ -1,1 +1,1 @@
-{"id": 6190, "aliases": [], "name": "TELEPHONE RECIVER", "no_image": false, "size": [3, 1, 1], "weight": 11.59668, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["MonsterTanker_LU000"]}
+{"id": 6190, "aliases": [], "name": "TELEPHONE RECIVER", "no_image": false, "size": [3, 1, 1], "weight": 11.59668, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["MonsterTanker_LU000", "RoastedBoat_LU000", "Traffic_B5_04Boat", "Traffic_B5_04Offroad", "Traffic_B5_04Street"]}

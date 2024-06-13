@@ -1,1 +1,1 @@
-{"id": 90509, "aliases": [18744], "name": "SKI 6M WITH KNOB", "no_image": false, "size": [6, 1, 0], "weight": 16.479492, "is_surplus": true, "n_usage": -1, "sources": [], "usage": []}
+{"id": 90509, "aliases": [18744], "name": "SKI 6M WITH KNOB", "no_image": false, "size": [6, 1, 0], "weight": 16.479492, "is_surplus": true, "n_usage": -1, "sources": [], "usage": ["Traffic_B5_06Offroad", "Traffic_B5_10Boat", "Traffic_B5_10Offroad", "Traffic_B5_10Street"]}

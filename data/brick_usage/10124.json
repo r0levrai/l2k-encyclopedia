@@ -1,1 +1,1 @@
-{"id": 10124, "aliases": [], "name": "GIANT NR. 1 RIGHT ARM", "no_image": false, "size": [3, 2, 10], "weight": 105.285645, "is_surplus": false, "n_usage": -1, "sources": [], "usage": []}
+{"id": 10124, "aliases": [], "name": "GIANT NR. 1 RIGHT ARM", "no_image": false, "size": [3, 2, 10], "weight": 105.285645, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["Traffic_B5_12Boat", "Traffic_B5_12Offroad", "Traffic_B5_12Street"]}

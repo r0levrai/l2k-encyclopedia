@@ -1,1 +1,1 @@
-{"id": 60485, "aliases": [], "name": "CROSS AXLE 9M", "no_image": false, "size": [1, 9, 1], "weight": 39.67285, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["CouchCar_LU000", "GothaPlaneTruck_VC000", "SpookyCarriage_VC0000", "Truck_VC31046"]}
+{"id": 60485, "aliases": [], "name": "CROSS AXLE 9M", "no_image": false, "size": [1, 9, 1], "weight": 39.67285, "is_surplus": false, "n_usage": -1, "sources": [], "usage": ["CouchCar_LU000", "GothaPlaneTruck_VC000", "SpookyCarriage_VC0000", "TravelWagon_VC000", "Truck_VC31046"]}
