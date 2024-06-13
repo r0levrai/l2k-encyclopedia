@@ -7,9 +7,13 @@ Before running this, you want to dump the following folders (relative to base_pa
   - LEGO/BrickPacks
   - LEGO/Bricks
   - LEGO/Flair
+  - LEGO/Wheel
+  - LEGO/Decorations
+  - Garage/LegoAssets/Stickers
   - Game/Vehicle/Inventory/StatArchetypes
   - Game/Vehicle/Inventory/BoatChassisConfigs
   - Game/Vehicle/Inventory/CarChassisConfigs
+  - Game/Vehicle/Configs
   - Game/Vehicle/Configs/BrickGraphs
   - Game/StringTables
   - Update_0/StringTables
@@ -24,7 +28,10 @@ Before running this, you want to dump the following folders (relative to base_pa
   - LEGO/Bricks
   - LEGO/Flair
   - LEGO/Flair/Thumbnails
+  - LEGO/Wheel
+  - LEGO/Decorations
   - Game/UI/Textures/4K/BrickPackImages
+  - Game/UI/Textures/Garage/Stickers
 - uasset:
   - Game/Vehicle/Configs/BrickGraphs
 
@@ -34,9 +41,11 @@ the new ones to have " (new!)" appended to their names
 
 from dataclasses import dataclass, asdict, is_dataclass
 from collections import defaultdict, Counter
+from itertools import chain
 from typing import Optional, Any
 import json
 from pathlib import Path
+from os.path import basename
 from glob import glob
 import filecmp
 from shutil import copy as _copy
@@ -45,6 +54,15 @@ from urllib.parse import quote as escape
 from vehicle_parts import parse_vehicle_parts  # straight from binary
 from surplus_v2 import vehicle_surplus  # could have done it here
 from list_properties import list_properties  # just a helper to print what to parse
+
+try:
+    from PIL import Image
+    from sticker_uv_mapping import uv_map_pil
+    do_uv_map = True
+except ImportError as e:
+    print('/!\ WARNING /!\: numpy/scipy/pillow not found. skipping the sticker uv transformations...', e.msg)
+    do_uv_map = False
+
 
 base_path = "../Exports/LEGO2KDrive/Content/"
 brick_path = base_path + "LEGO/Bricks/"
@@ -109,7 +127,7 @@ def invert_zip(args):
 def load(paths, exclude_paths="", exclude_prefix=['T_', 't_', 'SM_', 'LPG_'],
          type="", key="Properties", remove_type_prefix=True,
          n_per_file=1, rename_ids={}):
-    for path in set(glob(paths)) - set(glob(exclude_paths)):
+    for path in set(glob(paths, recursive=True)) - set(glob(exclude_paths, recursive=True)):
         if any(Path(path).stem.startswith(prefix) for prefix in exclude_prefix):
             continue
         id = Path(path).stem
@@ -261,6 +279,8 @@ def parse_sources(verbose=False):
                 tier = name.removeprefix('Tier')
                 name = f'Season {season} Tier {tier}'
                 type = 'DrivePass'  # remove '_Season{n}'
+            elif 'ReverseRace' in type:
+                name = row_id
             elif 'Race' in type:
                 name = notes
                 name = (
@@ -275,6 +295,8 @@ def parse_sources(verbose=False):
                 race_class = after_prefix.split()[0].split('|')[0]
                 name += f' (Class {race_class})'
                 biome = get_biome(name)
+            elif 'Folk' in type:
+                pass #TODO: some minifig rewards
             elif 'Default' in type:
                 name = name.replace('OTG', 'OnTheGo')
             else:
@@ -501,8 +523,8 @@ parse_stat_archetypes()
 dump('stat_archetypes', stat_archetypes)
 
 
-
 #list_properties(base_path + 'Garage/LegoAssets/Stickers/*.json', detail=['DecorationType', 'bIsGarageAsset', 'Material', 'bCanMirror'])
+#list_properties(base_path + 'LEGO/Decorations/**/*.json')
 
 @dataclass
 class Sticker:
@@ -513,15 +535,36 @@ class Sticker:
     sources: list
 
 stickers_by_id = {}
+sheets_ids = set()
 def parse_stickers():
-    for id, properties, oid in load(base_path + "Garage/LegoAssets/Stickers/*.json", type='LegoDecoration',
-                               remove_type_prefix='StickerGarage_'):
+    for id, properties, oid in chain(
+        load(base_path + "Garage/LegoAssets/Stickers/*.json", type='LegoDecoration',
+            remove_type_prefix='StickerGarage_'),
+        load(base_path + "LEGO/Decorations/VC/Vehicles/*.json", type='LegoDecoration',
+            remove_type_prefix='Deco_', n_per_file=None),  # n_per_file=None ignore the textures
+        load(base_path + "LEGO/Decorations/Licensed/*/*.json", type='LegoDecoration',
+            n_per_file=None)  # n_per_file=None ignore the textures
+    ):
         name = get_name(properties, "DisplayName", required=True)
-        if name == "Garage Test Sticker": continue
         rarity = try_parse(properties, "Rarity")
         can_mirror = try_parse(properties, "bCanMirror", default=False)
         image_path  = try_parse_image(properties, "Texture", required=True)
-        copy(image_path, f'../textures/stickers/{id}.png')
+        if 'Grease_Monkey_Sign.png' in image_path:
+            continue  # dev test sticker, let's skip it
+        if do_uv_map and ('UVOffset' in properties or 'UVScale' in properties):
+            new_image_path = Path(image_path).parent / '{id}.png'
+            id = Path(image_path).stem + '/' + id
+            name = Path(image_path).stem + '/' + name
+            def xy(a): return a['X'], a['Y']
+            u1, v1 = xy(properties['UVOffset']) if 'UVOffset' in properties else (0, 0)
+            us, vs = xy(properties['UVScale']) if 'UVScale' in properties else (1, 1)
+            u1, v1, us, vs = (float(e) for e in (u1, v1, us, vs))
+            image = Image.open(image_path)
+            uv_map_pil(image, u1, v1, us, vs).save(new_image_path)
+            copy(new_image_path, f'../textures/stickers/{id}.png')
+            copy(new_image_path, f'../textures/stickers/_/{id.replace("/", "_")}.png')
+        else:
+            copy(image_path, f'../textures/stickers/{id}.png')
         sources = sources_for_any_id.get(oid, [])
         if try_parse(properties, "AlwaysUnlocked", False):
             sources.append(Source.default)

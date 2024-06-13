@@ -11,7 +11,7 @@ def list_properties(in_files, detail=[], key="Properties"):
     property_key_count_for_type = {}
     property_value_count = {}
 
-    for path in glob(in_files):
+    for path in glob(in_files, recursive=True):
         with open(path) as f:
             json_dict = json.load(f)
         for struct in json_dict:
