@@ -18,9 +18,9 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-0 Street,Drag Mantis,10000,1 Blue
 0 Store,0-0 Street,Dusky Minecart,10000,1 Blue
 0 Store,0-0 Street,Family Man,10000,1 Blue
-0 Store,0-0 Street,Fiswagon Coupe,10000,1 Blue
-0 Store,0-0 Street,Fiswagon Sport,10000,1 Blue
-0 Store,0-0 Street,Fiswagon Wagon,10000,1 Blue
+0 Store,0-0 Street,Figswagon Coupe,10000,1 Blue
+0 Store,0-0 Street,Figswagon Sport,10000,1 Blue
+0 Store,0-0 Street,Figswagon Wagon,10000,1 Blue
 0 Store,0-0 Street,Food Truck,10000,1 Blue
 0 Store,0-0 Street,Foul Runnings Street,14000,2 Purple
 0 Store,0-0 Street,Garbage Truck,10000,1 Blue
@@ -57,7 +57,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-0 Street,Secret Agent Turbocar,14000,2 Purple
 0 Store,0-0 Street,Shadow Thunder,14000,2 Purple
 0 Store,0-0 Street,Shadow Z-Ray,14000,2 Purple
-0 Store,0-0 Street,Sharkotron 9000,20000,3 Orange
+0 Store,0-0 Street,Sharkatron 9000,20000,3 Orange
 0 Store,0-0 Street,Sidewalk Sprinter,10000,1 Blue
 0 Store,0-0 Street,Silver Spinner,10000,1 Blue
 0 Store,0-0 Street,Simple Tow Truck,10000,1 Blue
@@ -86,7 +86,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-0 Street,Vampyre Hearse,10000,1 Blue
 0 Store,0-0 Street,Van Go,10000,1 Blue
 0 Store,0-0 Street,Vestas Wind Turbine Van,10000,1 Blue
-0 Store,0-0 Street,Zombie Coffin Chauffeur,14000,2 Purple
+0 Store,0-0 Street,Zombie Chauffeur Coffin Car,14000,2 Purple
 0 Store,0-0 Street,Zombie Smasher Roadster,10000,1 Blue
 0 Store,0-1 Off-Road,4xTwopedo,10000,1 Blue
 0 Store,0-1 Off-Road,92 Bereaver,10000,1 Blue
@@ -95,7 +95,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-1 Off-Road,BFD Heavy Rescue,10000,1 Blue
 0 Store,0-1 Off-Road,Boat Truck,20000,3 Orange
 0 Store,0-1 Off-Road,Boomer Truck,10000,1 Blue
-0 Store,0-1 Off-Road,Boulder Dasher,10000,1 Blue
+0 Store,0-1 Off-Road,Boulder Basher,10000,1 Blue
 0 Store,0-1 Off-Road,Brickbilt 39,10000,1 Blue
 0 Store,0-1 Off-Road,Buggy,10000,1 Blue
 0 Store,0-1 Off-Road,Citrus Smash,10000,1 Blue
@@ -114,7 +114,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-1 Off-Road,Glow Buggy Off-road,10000,1 Blue
 0 Store,0-1 Off-Road,Gold Rush Minion Truck,10000,1 Blue
 0 Store,0-1 Off-Road,Government Bison,10000,1 Blue
-0 Store,0-1 Off-Road,Hambughini,14000,2 Purple
+0 Store,0-1 Off-Road,Hamburghini,14000,2 Purple
 0 Store,0-1 Off-Road,Horned Beef,14000,2 Purple
 0 Store,0-1 Off-Road,Jungle Roadster,10000,1 Blue
 0 Store,0-1 Off-Road,Kaido Monster,14000,2 Purple
@@ -146,7 +146,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-1 Off-Road,Surf Chopper,20000,3 Orange
 0 Store,0-1 Off-Road,Taco Dirtito,14000,2 Purple
 0 Store,0-1 Off-Road,The Educator,10000,1 Blue
-0 Store,0-1 Off-Road,The Fusion Juggermaut,14000,2 Purple
+0 Store,0-1 Off-Road,The Fusion Juggernaut,14000,2 Purple
 0 Store,0-1 Off-Road,The Organ Grinder,10000,1 Blue
 0 Store,0-1 Off-Road,Travel Wagon,14000,2 Purple
 0 Store,0-1 Off-Road,Turtle King,14000,2 Purple
@@ -155,9 +155,9 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-1 Off-Road,Wulf,10000,1 Blue
 0 Store,0-1 Off-Road,XL Traffic Cones,14000,2 Purple
 0 Store,0-2 Water,87 Handel,10000,1 Blue
-0 Store,0-2 Water,9 Bereaver Dead Sled,10000,1 Blue
+0 Store,0-2 Water,92 Bereaver Dead Sled,10000,1 Blue
 0 Store,0-2 Water,BFD Fire Boat,10000,1 Blue
-0 Store,0-2 Water,Bone Cclipper,20000,3 Orange
+0 Store,0-2 Water,Bone Clipper,20000,3 Orange
 0 Store,0-2 Water,Bonified,10000,1 Blue
 0 Store,0-2 Water,Bottle Ship,14000,2 Purple
 0 Store,0-2 Water,Chumdinger,10000,1 Blue
@@ -417,8 +417,8 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-4 Flair,Antenna Light (Red),2000,0 Gray
 0 Store,0-4 Flair,Antenna Light (White),2000,0 Gray
 0 Store,0-4 Flair,Antenna Light (Yellow),2000,0 Gray
-0 Store,0-4 Flair,Baseball Cap (Blue/Red),2000,0 Gray
-0 Store,0-4 Flair,Baseball Cap (White),2000,0 Gray
+0 Store,0-4 Flair,Ball Cap (Blue/Red),2000,0 Gray
+0 Store,0-4 Flair,Ball Cap (White),2000,0 Gray
 0 Store,0-4 Flair,Big Eye (Small Pupil),4000,1 Blue
 0 Store,0-4 Flair,Big Iron (Blue),4000,1 Blue
 0 Store,0-4 Flair,Big Iron (Orange),4000,1 Blue
@@ -451,12 +451,12 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Black),6000,2 Purple
 0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Blue),6000,2 Purple
 0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Pink),6000,2 Purple
-0 Store,0-4 Flair,Double Jet Boost (Blue),6000,2 Purple
-0 Store,0-4 Flair,Double Jet Boost (Orange),6000,2 Purple
-0 Store,0-4 Flair,Double Jet Boost (Pink),6000,2 Purple
-0 Store,0-4 Flair,Double Jet Boost (Purple),6000,2 Purple
-0 Store,0-4 Flair,Double Jet Boost (Red),6000,2 Purple
-0 Store,0-4 Flair,Double Jet Boost (Yellow),6000,2 Purple
+0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Blue),6000,2 Purple
+0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Orange),6000,2 Purple
+0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Pink),6000,2 Purple
+0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Purple),6000,2 Purple
+0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Red),6000,2 Purple
+0 Store,0-4 Flair,Double Prop Spoiler Deluxe (Yellow),6000,2 Purple
 0 Store,0-4 Flair,Dual Master Blaster (Black),10000,3 Orange
 0 Store,0-4 Flair,Dual Master Blaster (Blue),10000,3 Orange
 0 Store,0-4 Flair,Dual Master Blaster (Orange),10000,3 Orange
@@ -535,7 +535,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-4 Flair,Micro Jet (Red),10000,3 Orange
 0 Store,0-4 Flair,Micro Jet (Yellow),10000,3 Orange
 0 Store,0-4 Flair,O2 Tank (Blue),4000,1 Blue
-0 Store,0-4 Flair,O2Tank (Green),4000,1 Blue
+0 Store,0-4 Flair,O2 Tank (Green),4000,1 Blue
 0 Store,0-4 Flair,Overloaded Capacitor,4000,1 Blue
 0 Store,0-4 Flair,Pennant (Black),2000,0 Gray
 0 Store,0-4 Flair,Pennant (Blue),2000,0 Gray
@@ -577,7 +577,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-4 Flair,Square Flag (Green),2000,0 Gray
 0 Store,0-4 Flair,Square Flag (Pink),2000,0 Gray
 0 Store,0-4 Flair,Square Flag (Purple),2000,0 Gray
-0 Store,0-4 Flair,Square Hat,2000,0 Gray
+0 Store,0-4 Flair,Squat Hat,2000,0 Gray
 0 Store,0-4 Flair,Stabby Stinger,6000,2 Purple
 0 Store,0-4 Flair,Super Engine Block (Black),6000,2 Purple
 0 Store,0-4 Flair,Super Engine Block (Green),6000,2 Purple
@@ -770,7 +770,7 @@ Main Tab,Sub Tab,Item Name,Item Price,Rarity
 0 Store,0-6 Brick Packs,Animal Pack 06,4000,1 Blue
 0 Store,0-6 Brick Packs,Antennas,4000,1 Blue
 0 Store,0-6 Brick Packs,Boat Accessory Set 01,6000,2 Purple
-0 Store,0-6 Brick Packs,Classic Wheel Wells,4000,1 Blue
+0 Store,0-6 Brick Packs,Classic Wheelwells,4000,1 Blue
 0 Store,0-6 Brick Packs,Connect-3,4000,1 Blue
 0 Store,0-6 Brick Packs,Deco Pack 02,4000,1 Blue
 0 Store,0-6 Brick Packs,Dog Pack,6000,2 Purple
