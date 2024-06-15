@@ -1,15 +1,14 @@
 import csv
 import json
 from functools import cache
-from pprint import pprint
 
 @cache
 def read_json(path):
     with open(path, encoding='utf-8') as f:
         return json.load(f)
 
-path_in = "unkie_manually_typed/update 5 manually typed by burger/without_ids.csv"
-path_out = "unkie_manually_typed/update 5 manually typed by burger/with_ids.csv"
+path_in = "unkie/update 5 manually typed by burger/without_ids.csv"
+path_out = "unkie/update 5 manually typed by burger/with_ids.csv"
 with open(path_in, encoding='utf-8') as file_in, open(path_out, 'w', encoding='utf-8') as file_out:
     for i_row, row in enumerate(csv.reader(file_in)):
         if i_row == 0:  # ignore header

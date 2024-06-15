@@ -44,6 +44,7 @@ from collections import defaultdict, Counter
 from itertools import chain
 from typing import Optional, Any
 import json
+import csv
 from pathlib import Path
 from os.path import basename
 from glob import glob
@@ -306,13 +307,10 @@ def parse_sources(verbose=False):
             all_sources.append(Source(type.lower(), name, biome, rewards))
             for reward in rewards:
                 sources_for_any_id[reward].append(all_sources[-1])
-    with (open('unkie_manually_typed/unkie_official.txt') as f1,
-          open('unkie_manually_typed/unkie_store.txt') as f2):
-        for id in [s.strip() for s in f1.readlines()]:
-            all_sources.append(Source('unkie_permanent', 'LEGO Official tab', None, {id: 1}))
-            sources_for_any_id[id].append(all_sources[-1])
-        for id in [s.strip() for s in f2.readlines()]:
-            all_sources.append(Source('unkie_permanent', 'Store tab', None, {id: 1}))
+    with open("unkie/update 5 manually typed by burger/with_ids.csv", encoding='utf-8') as f:
+        for row in csv.reader(f):
+            id, tab, subtab, price = row
+            all_sources.append(Source('unkie_permanent', f'{tab}: {subtab.strip()}: {price}Brickbux', None, {id: 1}))
             sources_for_any_id[id].append(all_sources[-1])
 parse_sources()
 #dump("sources", all_sources)  # defered for adding brickpacks
